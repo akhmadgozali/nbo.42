@@ -1,0 +1,10 @@
+########################################################################
+#From    : sbm
+#To      : jali
+#Subject : m01source
+#Date    : 11-04-2014 22:29
+#Q       : Sumber Data untuk module Inventory, Pembelian dan Penjualan
+           kok dimasukkan tabel m01source, padahal tabel itu khusus utk
+           sumber dari Fina saja. 
+#A       :
+########################################################################

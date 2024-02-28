@@ -1,0 +1,337 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class UI_SanYuDataPEB
+  Inherits Core.Win.Forms.BlankForm
+
+  'Form overrides dispose to clean up the component list.
+  <System.Diagnostics.DebuggerNonUserCode()>
+  Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+    Try
+      If disposing AndAlso components IsNot Nothing Then
+        components.Dispose()
+      End If
+    Finally
+      MyBase.Dispose(disposing)
+    End Try
+  End Sub
+
+  'Required by the Windows Form Designer
+  Private components As System.ComponentModel.IContainer
+
+  'NOTE: The following procedure is required by the Windows Form Designer
+  'It can be modified using the Windows Form Designer.  
+  'Do not modify it using the code editor.
+  <System.Diagnostics.DebuggerStepThrough()>
+  Private Sub InitializeComponent()
+    Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UI_SanYuDataPEB))
+    Me.xGrid = New DevExpress.XtraGrid.GridControl()
+    Me.ifSource = New DevExpress.Xpo.XPInstantFeedbackSource()
+    Me.xGridView = New DevExpress.XtraGrid.Views.Grid.GridView()
+    Me.GridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn()
+    Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
+    Me.colQty = New DevExpress.XtraGrid.Columns.GridColumn()
+    Me.colNoBukti = New DevExpress.XtraGrid.Columns.GridColumn()
+    Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn()
+    Me.GridColumn5 = New DevExpress.XtraGrid.Columns.GridColumn()
+    Me.GridColumn6 = New DevExpress.XtraGrid.Columns.GridColumn()
+    Me.colLotNo = New DevExpress.XtraGrid.Columns.GridColumn()
+    Me.GridColumn8 = New DevExpress.XtraGrid.Columns.GridColumn()
+    Me.GridColumn9 = New DevExpress.XtraGrid.Columns.GridColumn()
+    Me.colProduksiID = New DevExpress.XtraGrid.Columns.GridColumn()
+    Me.BarManager1 = New DevExpress.XtraBars.BarManager()
+    Me.Bar3 = New DevExpress.XtraBars.Bar()
+    Me.btnRefresh = New DevExpress.XtraBars.BarButtonItem()
+    Me.BarSubItem1 = New DevExpress.XtraBars.BarSubItem()
+    Me.btnFilter = New DevExpress.XtraBars.BarButtonItem()
+    Me.btnFilterHariIni = New DevExpress.XtraBars.BarButtonItem()
+    Me.btnFilterMingguIni = New DevExpress.XtraBars.BarButtonItem()
+    Me.btnFilterBulanIni = New DevExpress.XtraBars.BarButtonItem()
+    Me.btnFilterExpert = New DevExpress.XtraBars.BarButtonItem()
+    Me.btnTampilkanProduksi = New DevExpress.XtraBars.BarButtonItem()
+    Me.barDockControlTop = New DevExpress.XtraBars.BarDockControl()
+    Me.barDockControlBottom = New DevExpress.XtraBars.BarDockControl()
+    Me.barDockControlLeft = New DevExpress.XtraBars.BarDockControl()
+    Me.barDockControlRight = New DevExpress.XtraBars.BarDockControl()
+    Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
+    CType(Me.session, System.ComponentModel.ISupportInitialize).BeginInit()
+    CType(Me.xGrid, System.ComponentModel.ISupportInitialize).BeginInit()
+    CType(Me.xGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+    CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).BeginInit()
+    Me.SuspendLayout()
+    '
+    'xGrid
+    '
+    Me.xGrid.DataSource = Me.ifSource
+    Me.xGrid.Dock = System.Windows.Forms.DockStyle.Fill
+    Me.xGrid.Location = New System.Drawing.Point(0, 0)
+    Me.xGrid.MainView = Me.xGridView
+    Me.xGrid.Name = "xGrid"
+    Me.xGrid.Size = New System.Drawing.Size(843, 397)
+    Me.xGrid.TabIndex = 0
+    Me.xGrid.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.xGridView})
+    '
+    'ifSource
+    '
+    Me.ifSource.DisplayableProperties = resources.GetString("ifSource.DisplayableProperties")
+    Me.ifSource.ObjectType = GetType(NuSoft.NUI.Win.Forms.Modules.NuSoft006.Persistent.SanYu_PEBDetail)
+    '
+    'xGridView
+    '
+    Me.xGridView.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.colQty, Me.colNoBukti, Me.GridColumn4, Me.GridColumn5, Me.GridColumn6, Me.colLotNo, Me.GridColumn8, Me.GridColumn9, Me.colProduksiID, Me.GridColumn3})
+    Me.xGridView.GridControl = Me.xGrid
+    Me.xGridView.GroupCount = 2
+    Me.xGridView.Name = "xGridView"
+    Me.xGridView.OptionsBehavior.Editable = False
+    Me.xGridView.OptionsBehavior.ReadOnly = True
+    Me.xGridView.OptionsDetail.EnableMasterViewMode = False
+    Me.xGridView.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() {New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.GridColumn9, DevExpress.Data.ColumnSortOrder.Ascending), New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.GridColumn8, DevExpress.Data.ColumnSortOrder.Ascending)})
+    '
+    'GridColumn1
+    '
+    Me.GridColumn1.Caption = "Kode Barang"
+    Me.GridColumn1.FieldName = "Barang.Kode"
+    Me.GridColumn1.Name = "GridColumn1"
+    Me.GridColumn1.Visible = True
+    Me.GridColumn1.VisibleIndex = 0
+    '
+    'GridColumn2
+    '
+    Me.GridColumn2.Caption = "Nama Barang"
+    Me.GridColumn2.FieldName = "Barang.Nama"
+    Me.GridColumn2.Name = "GridColumn2"
+    Me.GridColumn2.Visible = True
+    Me.GridColumn2.VisibleIndex = 1
+    '
+    'colQty
+    '
+    Me.colQty.Caption = "Qty"
+    Me.colQty.FieldName = "Qty"
+    Me.colQty.Name = "colQty"
+    Me.colQty.Visible = True
+    Me.colQty.VisibleIndex = 2
+    '
+    'colNoBukti
+    '
+    Me.colNoBukti.Caption = "No Bukti"
+    Me.colNoBukti.FieldName = "Main.Kode"
+    Me.colNoBukti.Name = "colNoBukti"
+    Me.colNoBukti.Visible = True
+    Me.colNoBukti.VisibleIndex = 3
+    '
+    'GridColumn4
+    '
+    Me.GridColumn4.Caption = "No PEB"
+    Me.GridColumn4.FieldName = "Main.ReffNo"
+    Me.GridColumn4.Name = "GridColumn4"
+    Me.GridColumn4.Visible = True
+    Me.GridColumn4.VisibleIndex = 4
+    '
+    'GridColumn5
+    '
+    Me.GridColumn5.Caption = "No Pengajuan"
+    Me.GridColumn5.FieldName = "Main.NoPengajuan"
+    Me.GridColumn5.Name = "GridColumn5"
+    Me.GridColumn5.Visible = True
+    Me.GridColumn5.VisibleIndex = 5
+    '
+    'GridColumn6
+    '
+    Me.GridColumn6.Caption = "Tanggal Pengajuan"
+    Me.GridColumn6.FieldName = "Main.TglPendaftaran"
+    Me.GridColumn6.Name = "GridColumn6"
+    Me.GridColumn6.Visible = True
+    Me.GridColumn6.VisibleIndex = 6
+    '
+    'colLotNo
+    '
+    Me.colLotNo.Caption = "Lot No"
+    Me.colLotNo.FieldName = "PengirimanBarang.ProduksiID.Main.BatchNo"
+    Me.colLotNo.Name = "colLotNo"
+    Me.colLotNo.Visible = True
+    Me.colLotNo.VisibleIndex = 7
+    '
+    'GridColumn8
+    '
+    Me.GridColumn8.Caption = "Bulan"
+    Me.GridColumn8.FieldName = "Main.Bulan"
+    Me.GridColumn8.Name = "GridColumn8"
+    Me.GridColumn8.Visible = True
+    Me.GridColumn8.VisibleIndex = 0
+    '
+    'GridColumn9
+    '
+    Me.GridColumn9.Caption = "Tahun"
+    Me.GridColumn9.FieldName = "Main.Tahun"
+    Me.GridColumn9.Name = "GridColumn9"
+    Me.GridColumn9.Visible = True
+    Me.GridColumn9.VisibleIndex = 8
+    '
+    'colProduksiID
+    '
+    Me.colProduksiID.Caption = "ID Produksi"
+    Me.colProduksiID.FieldName = "PengirimanBarang.ProduksiID.Id"
+    Me.colProduksiID.Name = "colProduksiID"
+    '
+    'BarManager1
+    '
+    Me.BarManager1.Bars.AddRange(New DevExpress.XtraBars.Bar() {Me.Bar3})
+    Me.BarManager1.DockControls.Add(Me.barDockControlTop)
+    Me.BarManager1.DockControls.Add(Me.barDockControlBottom)
+    Me.BarManager1.DockControls.Add(Me.barDockControlLeft)
+    Me.BarManager1.DockControls.Add(Me.barDockControlRight)
+    Me.BarManager1.Form = Me
+    Me.BarManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.BarSubItem1, Me.btnRefresh, Me.btnFilter, Me.btnFilterHariIni, Me.btnFilterMingguIni, Me.btnFilterBulanIni, Me.btnFilterExpert, Me.btnTampilkanProduksi})
+    Me.BarManager1.MaxItemId = 8
+    Me.BarManager1.StatusBar = Me.Bar3
+    '
+    'Bar3
+    '
+    Me.Bar3.BarName = "Status bar"
+    Me.Bar3.CanDockStyle = DevExpress.XtraBars.BarCanDockStyle.Bottom
+    Me.Bar3.DockCol = 0
+    Me.Bar3.DockRow = 0
+    Me.Bar3.DockStyle = DevExpress.XtraBars.BarDockStyle.Bottom
+    Me.Bar3.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.btnRefresh, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.BarSubItem1, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph), New DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, Me.btnTampilkanProduksi, "", True, True, True, 0, Nothing, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)})
+    Me.Bar3.OptionsBar.AllowQuickCustomization = False
+    Me.Bar3.OptionsBar.DrawDragBorder = False
+    Me.Bar3.OptionsBar.UseWholeRow = True
+    Me.Bar3.Text = "Status bar"
+    '
+    'btnRefresh
+    '
+    Me.btnRefresh.Caption = "Refresh"
+    Me.btnRefresh.Glyph = CType(resources.GetObject("btnRefresh.Glyph"), System.Drawing.Image)
+    Me.btnRefresh.Id = 1
+    Me.btnRefresh.LargeGlyph = CType(resources.GetObject("btnRefresh.LargeGlyph"), System.Drawing.Image)
+    Me.btnRefresh.Name = "btnRefresh"
+    '
+    'BarSubItem1
+    '
+    Me.BarSubItem1.Caption = "Filter Data"
+    Me.BarSubItem1.Glyph = CType(resources.GetObject("BarSubItem1.Glyph"), System.Drawing.Image)
+    Me.BarSubItem1.Id = 0
+    Me.BarSubItem1.LargeGlyph = CType(resources.GetObject("BarSubItem1.LargeGlyph"), System.Drawing.Image)
+    Me.BarSubItem1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.btnFilter, True), New DevExpress.XtraBars.LinkPersistInfo(Me.btnFilterHariIni, True), New DevExpress.XtraBars.LinkPersistInfo(Me.btnFilterMingguIni), New DevExpress.XtraBars.LinkPersistInfo(Me.btnFilterBulanIni), New DevExpress.XtraBars.LinkPersistInfo(Me.btnFilterExpert, True)})
+    Me.BarSubItem1.Name = "BarSubItem1"
+    '
+    'btnFilter
+    '
+    Me.btnFilter.Caption = "Filter Data"
+    Me.btnFilter.Id = 2
+    Me.btnFilter.Name = "btnFilter"
+    '
+    'btnFilterHariIni
+    '
+    Me.btnFilterHariIni.Caption = "Hari Ini"
+    Me.btnFilterHariIni.Id = 3
+    Me.btnFilterHariIni.Name = "btnFilterHariIni"
+    '
+    'btnFilterMingguIni
+    '
+    Me.btnFilterMingguIni.Caption = "Minggu Ini"
+    Me.btnFilterMingguIni.Id = 4
+    Me.btnFilterMingguIni.Name = "btnFilterMingguIni"
+    '
+    'btnFilterBulanIni
+    '
+    Me.btnFilterBulanIni.Caption = "Bulan Ini"
+    Me.btnFilterBulanIni.Id = 5
+    Me.btnFilterBulanIni.Name = "btnFilterBulanIni"
+    '
+    'btnFilterExpert
+    '
+    Me.btnFilterExpert.Caption = "Filter Expert"
+    Me.btnFilterExpert.Id = 6
+    Me.btnFilterExpert.Name = "btnFilterExpert"
+    '
+    'btnTampilkanProduksi
+    '
+    Me.btnTampilkanProduksi.Caption = "Tampilkan Produksi"
+    Me.btnTampilkanProduksi.Glyph = CType(resources.GetObject("btnTampilkanProduksi.Glyph"), System.Drawing.Image)
+    Me.btnTampilkanProduksi.Id = 7
+    Me.btnTampilkanProduksi.LargeGlyph = CType(resources.GetObject("btnTampilkanProduksi.LargeGlyph"), System.Drawing.Image)
+    Me.btnTampilkanProduksi.Name = "btnTampilkanProduksi"
+    '
+    'barDockControlTop
+    '
+    Me.barDockControlTop.CausesValidation = False
+    Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
+    Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
+    Me.barDockControlTop.Size = New System.Drawing.Size(843, 0)
+    '
+    'barDockControlBottom
+    '
+    Me.barDockControlBottom.CausesValidation = False
+    Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
+    Me.barDockControlBottom.Location = New System.Drawing.Point(0, 397)
+    Me.barDockControlBottom.Size = New System.Drawing.Size(843, 27)
+    '
+    'barDockControlLeft
+    '
+    Me.barDockControlLeft.CausesValidation = False
+    Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
+    Me.barDockControlLeft.Location = New System.Drawing.Point(0, 0)
+    Me.barDockControlLeft.Size = New System.Drawing.Size(0, 397)
+    '
+    'barDockControlRight
+    '
+    Me.barDockControlRight.CausesValidation = False
+    Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
+    Me.barDockControlRight.Location = New System.Drawing.Point(843, 0)
+    Me.barDockControlRight.Size = New System.Drawing.Size(0, 397)
+    '
+    'GridColumn3
+    '
+    Me.GridColumn3.Caption = "No Bukti Produksi"
+    Me.GridColumn3.FieldName = "PengirimanBarang.ProduksiID.Main.Kode"
+    Me.GridColumn3.Name = "GridColumn3"
+    '
+    'UI_SanYuDataPEB
+    '
+    Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+    Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+    Me.ClientSize = New System.Drawing.Size(843, 424)
+    Me.Controls.Add(Me.xGrid)
+    Me.Controls.Add(Me.barDockControlLeft)
+    Me.Controls.Add(Me.barDockControlRight)
+    Me.Controls.Add(Me.barDockControlBottom)
+    Me.Controls.Add(Me.barDockControlTop)
+    Me.Name = "UI_SanYuDataPEB"
+    Me.Text = "Data PEB"
+    CType(Me.session, System.ComponentModel.ISupportInitialize).EndInit()
+    CType(Me.xGrid, System.ComponentModel.ISupportInitialize).EndInit()
+    CType(Me.xGridView, System.ComponentModel.ISupportInitialize).EndInit()
+    CType(Me.BarManager1, System.ComponentModel.ISupportInitialize).EndInit()
+    Me.ResumeLayout(False)
+
+  End Sub
+
+  Friend WithEvents xGrid As DevExpress.XtraGrid.GridControl
+  Friend WithEvents xGridView As DevExpress.XtraGrid.Views.Grid.GridView
+  Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
+  Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
+  Friend WithEvents colQty As DevExpress.XtraGrid.Columns.GridColumn
+  Friend WithEvents colNoBukti As DevExpress.XtraGrid.Columns.GridColumn
+  Friend WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
+  Friend WithEvents GridColumn5 As DevExpress.XtraGrid.Columns.GridColumn
+  Friend WithEvents GridColumn6 As DevExpress.XtraGrid.Columns.GridColumn
+  Friend WithEvents colLotNo As DevExpress.XtraGrid.Columns.GridColumn
+  Friend WithEvents GridColumn8 As DevExpress.XtraGrid.Columns.GridColumn
+  Friend WithEvents GridColumn9 As DevExpress.XtraGrid.Columns.GridColumn
+  Friend WithEvents BarManager1 As DevExpress.XtraBars.BarManager
+  Friend WithEvents Bar3 As DevExpress.XtraBars.Bar
+  Friend WithEvents barDockControlTop As DevExpress.XtraBars.BarDockControl
+  Friend WithEvents barDockControlBottom As DevExpress.XtraBars.BarDockControl
+  Friend WithEvents barDockControlLeft As DevExpress.XtraBars.BarDockControl
+  Friend WithEvents barDockControlRight As DevExpress.XtraBars.BarDockControl
+  Friend WithEvents btnRefresh As DevExpress.XtraBars.BarButtonItem
+  Friend WithEvents BarSubItem1 As DevExpress.XtraBars.BarSubItem
+  Friend WithEvents btnFilter As DevExpress.XtraBars.BarButtonItem
+  Friend WithEvents btnFilterHariIni As DevExpress.XtraBars.BarButtonItem
+  Friend WithEvents btnFilterMingguIni As DevExpress.XtraBars.BarButtonItem
+  Friend WithEvents btnFilterBulanIni As DevExpress.XtraBars.BarButtonItem
+  Friend WithEvents btnFilterExpert As DevExpress.XtraBars.BarButtonItem
+  Friend WithEvents ifSource As DevExpress.Xpo.XPInstantFeedbackSource
+  Friend WithEvents btnTampilkanProduksi As DevExpress.XtraBars.BarButtonItem
+  Friend WithEvents colProduksiID As DevExpress.XtraGrid.Columns.GridColumn
+  Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
+End Class

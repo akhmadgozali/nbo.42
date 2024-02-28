@@ -1,0 +1,453 @@
+/// <XRTypeInfo>
+///   <AssemblyFullName>DevExpress.XtraReports.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</AssemblyFullName>
+///   <AssemblyLocation>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraReports.v13.2\v4.0_13.2.13.0__b88d1754d700e49a\DevExpress.XtraReports.v13.2.dll</AssemblyLocation>
+///   <TypeName>DevExpress.XtraReports.UI.XtraReport</TypeName>
+///   <Localization>en-US</Localization>
+///   <Version>13.2.13</Version>
+///   <Resources>
+///     <Resource Name="XtraReportSerialization.OrderSampul">
+/// zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAABAAAAAAAAAFBBRFBBRFC5Fb+iAAAAANkAAAAYbABhAGIAZQBsADEAOAAuAFQAZQB4AHQAAAAAAAHOAi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4NCi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4u
+/// Li4uLi4uLi4uLi4NCi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4NCi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4=</Resource>
+///   </Resources>
+/// </XRTypeInfo>
+namespace XtraReportSerialization {
+    
+    public class OrderSampul : DevExpress.XtraReports.UI.XtraReport {
+        private DevExpress.XtraReports.UI.TopMarginBand TopMargin;
+        private DevExpress.XtraReports.UI.DetailBand Detail;
+        private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
+        private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
+        private DevExpress.XtraReports.UI.XRLabel label15;
+        private DevExpress.XtraReports.UI.XRPageInfo pageInfo1;
+        private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
+        private DevExpress.XtraReports.UI.XRLabel label1;
+        private DevExpress.XtraReports.UI.XRLabel label2;
+        private DevExpress.XtraReports.UI.XRLabel label3;
+        private DevExpress.XtraReports.UI.XRLabel label4;
+        private DevExpress.XtraReports.UI.XRLabel label5;
+        private DevExpress.XtraReports.UI.XRLabel label6;
+        private DevExpress.XtraReports.UI.XRLabel label7;
+        private DevExpress.XtraReports.UI.XRLabel label8;
+        private DevExpress.XtraReports.UI.XRLabel label9;
+        private DevExpress.XtraReports.UI.XRLabel label10;
+        private DevExpress.XtraReports.UI.XRLabel label11;
+        private DevExpress.XtraReports.UI.XRLabel label12;
+        private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
+        private DevExpress.XtraReports.UI.XRLabel label17;
+        private DevExpress.XtraReports.UI.XRLabel label18;
+        private DevExpress.XtraReports.UI.XRCrossBandBox crossBandBox1;
+        private DevExpress.XtraReports.Parameters.Parameter UserX;
+        private DevExpress.XtraReports.Parameters.Parameter NamaPerusahaan;
+        private DevExpress.XtraReports.Parameters.Parameter NamaAlias;
+        private DevExpress.XtraReports.Parameters.Parameter Slogan;
+        private DevExpress.XtraReports.Parameters.Parameter Alamat1;
+        private DevExpress.XtraReports.Parameters.Parameter Alamat2;
+        private DevExpress.XtraReports.Parameters.Parameter NoTelp;
+        private DevExpress.XtraReports.Parameters.Parameter NoFax;
+        private DevExpress.XtraReports.Parameters.Parameter TTdNama;
+        private DevExpress.XtraReports.Parameters.Parameter TTdJabatan;
+        private DevExpress.XtraReports.Parameters.Parameter Tanggal;
+        private DevExpress.XtraReports.Parameters.Parameter TglKemarin;
+        private DevExpress.XtraReports.Parameters.Parameter JumlahCetak;
+        private System.Resources.ResourceManager _resources;
+        private string _resourceString;
+        public OrderSampul() {
+            this._resourceString = DevExpress.XtraReports.Serialization.XRResourceManager.GetResourceFor("XtraReportSerialization.OrderSampul");
+            this.InitializeComponent();
+        }
+        private System.Resources.ResourceManager resources {
+            get {
+                if (_resources == null) {
+                    this._resources = new DevExpress.XtraReports.Serialization.XRResourceManager(this._resourceString);
+                }
+                return this._resources;
+            }
+        }
+        private void InitializeComponent() {
+            this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
+            this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
+            this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
+            this.label15 = new DevExpress.XtraReports.UI.XRLabel();
+            this.pageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
+            this.label1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label3 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label4 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label5 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label6 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label7 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label8 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label9 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label10 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label11 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label12 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label17 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label18 = new DevExpress.XtraReports.UI.XRLabel();
+            this.crossBandBox1 = new DevExpress.XtraReports.UI.XRCrossBandBox();
+            this.UserX = new DevExpress.XtraReports.Parameters.Parameter();
+            this.NamaPerusahaan = new DevExpress.XtraReports.Parameters.Parameter();
+            this.NamaAlias = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Slogan = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Alamat1 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Alamat2 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.NoTelp = new DevExpress.XtraReports.Parameters.Parameter();
+            this.NoFax = new DevExpress.XtraReports.Parameters.Parameter();
+            this.TTdNama = new DevExpress.XtraReports.Parameters.Parameter();
+            this.TTdJabatan = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Tanggal = new DevExpress.XtraReports.Parameters.Parameter();
+            this.TglKemarin = new DevExpress.XtraReports.Parameters.Parameter();
+            this.JumlahCetak = new DevExpress.XtraReports.Parameters.Parameter();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            // 
+            // TopMargin
+            // 
+            this.TopMargin.HeightF = 24.00001F;
+            this.TopMargin.Name = "TopMargin";
+            // 
+            // Detail
+            // 
+            this.Detail.HeightF = 48.74992F;
+            this.Detail.Name = "Detail";
+            // 
+            // BottomMargin
+            // 
+            this.BottomMargin.HeightF = 24F;
+            this.BottomMargin.Name = "BottomMargin";
+            // 
+            // PageFooter
+            // 
+            this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.label15,
+                        this.pageInfo1});
+            this.PageFooter.HeightF = 33.95831F;
+            this.PageFooter.Name = "PageFooter";
+            // 
+            // PageHeader
+            // 
+            this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.label1,
+                        this.label2,
+                        this.label3,
+                        this.label4,
+                        this.label5,
+                        this.label6,
+                        this.label7,
+                        this.label8,
+                        this.label9,
+                        this.label10,
+                        this.label11,
+                        this.label12});
+            this.PageHeader.HeightF = 486.4584F;
+            this.PageHeader.Name = "PageHeader";
+            // 
+            // ReportFooter
+            // 
+            this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.label17,
+                        this.label18});
+            this.ReportFooter.HeightF = 291.25F;
+            this.ReportFooter.Name = "ReportFooter";
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Italic);
+            this.label15.LocationFloat = new DevExpress.Utils.PointFloat(161.0418F, 9.375F);
+            this.label15.Name = "label15";
+            this.label15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label15.SizeF = new System.Drawing.SizeF(575.9997F, 14.66669F);
+            this.label15.StylePriority.UseFont = false;
+            this.label15.Text = "[Parameters.UserX]";
+            // 
+            // pageInfo1
+            // 
+            this.pageInfo1.AnchorVertical = DevExpress.XtraReports.UI.VerticalAnchorStyles.Bottom;
+            this.pageInfo1.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Italic);
+            this.pageInfo1.Format = "Dicetak : {0:dd MMM yyyy HH:mm:ss}";
+            this.pageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 9.375F);
+            this.pageInfo1.Name = "pageInfo1";
+            this.pageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.pageInfo1.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
+            this.pageInfo1.SizeF = new System.Drawing.SizeF(151.0418F, 14.66666F);
+            this.pageInfo1.StylePriority.UseFont = false;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Calibri", 28F, System.Drawing.FontStyle.Bold);
+            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(27.08324F, 26.04167F);
+            this.label1.Name = "label1";
+            this.label1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label1.SizeF = new System.Drawing.SizeF(700F, 51.04167F);
+            this.label1.StylePriority.UseFont = false;
+            this.label1.StylePriority.UseTextAlignment = false;
+            this.label1.Text = "ORDER CETAK [Parameters.NamaAlias]";
+            this.label1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.label2.LocationFloat = new DevExpress.Utils.PointFloat(27.08336F, 118.75F);
+            this.label2.Name = "label2";
+            this.label2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label2.SizeF = new System.Drawing.SizeF(371.875F, 27.08334F);
+            this.label2.StylePriority.UseFont = false;
+            this.label2.Text = "HARI / TANGGAL";
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.label3.LocationFloat = new DevExpress.Utils.PointFloat(398.9584F, 118.75F);
+            this.label3.Name = "label3";
+            this.label3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label3.SizeF = new System.Drawing.SizeF(328.1249F, 27.08334F);
+            this.label3.StylePriority.UseFont = false;
+            this.label3.Text = ":   [Parameters.Tanggal!dddd, dd MMMM yyyy]";
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.label4.LocationFloat = new DevExpress.Utils.PointFloat(27.08352F, 168.75F);
+            this.label4.Name = "label4";
+            this.label4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label4.SizeF = new System.Drawing.SizeF(371.8751F, 27.08334F);
+            this.label4.StylePriority.UseFont = false;
+            this.label4.Text = "JUMLAH DICETAK HARI INI";
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.label5.LocationFloat = new DevExpress.Utils.PointFloat(398.9586F, 168.75F);
+            this.label5.Name = "label5";
+            this.label5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label5.SizeF = new System.Drawing.SizeF(328.1248F, 27.08334F);
+            this.label5.StylePriority.UseFont = false;
+            this.label5.Text = ":   [Parameters.JumlahCetak!n0]";
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.label6.LocationFloat = new DevExpress.Utils.PointFloat(27.0834F, 230.2083F);
+            this.label6.Name = "label6";
+            this.label6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label6.SizeF = new System.Drawing.SizeF(371.8751F, 27.08334F);
+            this.label6.StylePriority.UseFont = false;
+            this.label6.Text = "KETERANGAN";
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.label7.LocationFloat = new DevExpress.Utils.PointFloat(27.08352F, 269.7915F);
+            this.label7.Name = "label7";
+            this.label7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label7.SizeF = new System.Drawing.SizeF(371.8751F, 27.08334F);
+            this.label7.StylePriority.UseFont = false;
+            this.label7.Text = "FILM TERAKHIR DITERIMA PERCETAKAN JAM";
+            // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.label8.LocationFloat = new DevExpress.Utils.PointFloat(398.9586F, 269.7915F);
+            this.label8.Name = "label8";
+            this.label8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label8.SizeF = new System.Drawing.SizeF(328.1247F, 27.08334F);
+            this.label8.StylePriority.UseFont = false;
+            this.label8.Text = ": ";
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.label9.LocationFloat = new DevExpress.Utils.PointFloat(27.08346F, 319.7915F);
+            this.label9.Name = "label9";
+            this.label9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label9.SizeF = new System.Drawing.SizeF(371.8749F, 27.08334F);
+            this.label9.StylePriority.UseFont = false;
+            this.label9.Text = "MULAI CETAK JAM";
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.label10.LocationFloat = new DevExpress.Utils.PointFloat(398.9585F, 319.7915F);
+            this.label10.Name = "label10";
+            this.label10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label10.SizeF = new System.Drawing.SizeF(328.125F, 27.08334F);
+            this.label10.StylePriority.UseFont = false;
+            this.label10.Text = ": ";
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.label11.LocationFloat = new DevExpress.Utils.PointFloat(27.08346F, 369.7917F);
+            this.label11.Name = "label11";
+            this.label11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label11.SizeF = new System.Drawing.SizeF(371.8749F, 27.08334F);
+            this.label11.StylePriority.UseFont = false;
+            this.label11.Text = "SELESAI CETAK JAM";
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.label12.LocationFloat = new DevExpress.Utils.PointFloat(398.9585F, 369.7917F);
+            this.label12.Name = "label12";
+            this.label12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label12.SizeF = new System.Drawing.SizeF(328.1249F, 27.08334F);
+            this.label12.StylePriority.UseFont = false;
+            this.label12.Text = ": ";
+            // 
+            // label17
+            // 
+            this.label17.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
+                        | DevExpress.XtraPrinting.BorderSide.Right) 
+                        | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.label17.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.label17.LocationFloat = new DevExpress.Utils.PointFloat(27.08324F, 76.6667F);
+            this.label17.Multiline = true;
+            this.label17.Name = "label17";
+            this.label17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label17.SizeF = new System.Drawing.SizeF(422.9167F, 56.25F);
+            this.label17.StylePriority.UseBorders = false;
+            this.label17.StylePriority.UseFont = false;
+            this.label17.Text = "  APABILA ADA KETERLAMBATAN PADA PROSES\r\n  CETAK SUPAYA DI ISI ALASANNYA DIBAWAH " +
+                "INI";
+            // 
+            // label18
+            // 
+            this.label18.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.label18.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.label18.LocationFloat = new DevExpress.Utils.PointFloat(27.08324F, 146.4583F);
+            this.label18.Multiline = true;
+            this.label18.Name = "label18";
+            this.label18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.label18.SizeF = new System.Drawing.SizeF(464.5833F, 114.5833F);
+            this.label18.StylePriority.UseBorders = false;
+            this.label18.StylePriority.UseFont = false;
+            this.label18.Text = resources.GetString("label18.Text");
+            // 
+            // crossBandBox1
+            // 
+            this.crossBandBox1.BorderWidth = 1F;
+            this.crossBandBox1.EndBand = this.ReportFooter;
+            this.crossBandBox1.EndPointFloat = new DevExpress.Utils.PointFloat(15.16666F, 281.25F);
+            this.crossBandBox1.LocationFloat = new DevExpress.Utils.PointFloat(15.16666F, 12.45829F);
+            this.crossBandBox1.Name = "crossBandBox1";
+            this.crossBandBox1.StartBand = this.PageHeader;
+            this.crossBandBox1.StartPointFloat = new DevExpress.Utils.PointFloat(15.16666F, 12.45829F);
+            this.crossBandBox1.WidthF = 722.9166F;
+            // 
+            // UserX
+            // 
+            this.UserX.Name = "UserX";
+            this.UserX.ValueInfo = "NuSoft - NuSoft Administrator";
+            this.UserX.Visible = false;
+            // 
+            // NamaPerusahaan
+            // 
+            this.NamaPerusahaan.Name = "NamaPerusahaan";
+            this.NamaPerusahaan.ValueInfo = "PT.  DUTA KALIMANTAN PRESS";
+            this.NamaPerusahaan.Visible = false;
+            // 
+            // NamaAlias
+            // 
+            this.NamaAlias.Name = "NamaAlias";
+            this.NamaAlias.ValueInfo = "DISWAY BERAU";
+            this.NamaAlias.Visible = false;
+            // 
+            // Slogan
+            // 
+            this.Slogan.Name = "Slogan";
+            this.Slogan.ValueInfo = "SELALU TAMPIL BEDA";
+            this.Slogan.Visible = false;
+            // 
+            // Alamat1
+            // 
+            this.Alamat1.Name = "Alamat1";
+            this.Alamat1.ValueInfo = "Jl. Durian III No.40, Tanjung Redeb";
+            this.Alamat1.Visible = false;
+            // 
+            // Alamat2
+            // 
+            this.Alamat2.Name = "Alamat2";
+            this.Alamat2.ValueInfo = "Berau, Kalimantan Timur";
+            this.Alamat2.Visible = false;
+            // 
+            // NoTelp
+            // 
+            this.NoTelp.Name = "NoTelp";
+            this.NoTelp.ValueInfo = "(0554) 02038544";
+            this.NoTelp.Visible = false;
+            // 
+            // NoFax
+            // 
+            this.NoFax.Name = "NoFax";
+            this.NoFax.Visible = false;
+            // 
+            // TTdNama
+            // 
+            this.TTdNama.Name = "TTdNama";
+            this.TTdNama.ValueInfo = "TTD NAMA";
+            this.TTdNama.Visible = false;
+            // 
+            // TTdJabatan
+            // 
+            this.TTdJabatan.Name = "TTdJabatan";
+            this.TTdJabatan.ValueInfo = "TTD JABATAN";
+            this.TTdJabatan.Visible = false;
+            // 
+            // Tanggal
+            // 
+            this.Tanggal.Name = "Tanggal";
+            this.Tanggal.Type = typeof(System.DateTime);
+            this.Tanggal.ValueInfo = "08/25/2020 21:42:38";
+            this.Tanggal.Visible = false;
+            // 
+            // TglKemarin
+            // 
+            this.TglKemarin.Name = "TglKemarin";
+            this.TglKemarin.Type = typeof(System.DateTime);
+            this.TglKemarin.ValueInfo = "08/24/2020 21:42:38";
+            this.TglKemarin.Visible = false;
+            // 
+            // JumlahCetak
+            // 
+            this.JumlahCetak.Name = "JumlahCetak";
+            this.JumlahCetak.Type = typeof(int);
+            this.JumlahCetak.ValueInfo = "1985";
+            this.JumlahCetak.Visible = false;
+            // 
+            // OrderSampul
+            // 
+            this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
+                        this.TopMargin,
+                        this.Detail,
+                        this.BottomMargin,
+                        this.PageFooter,
+                        this.PageHeader,
+                        this.ReportFooter});
+            this.CrossBandControls.AddRange(new DevExpress.XtraReports.UI.XRCrossBandControl[] {
+                        this.crossBandBox1});
+            this.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margins = new System.Drawing.Printing.Margins(49, 52, 24, 24);
+            this.Name = "OrderSampul";
+            this.PageHeight = 1100;
+            this.PageWidth = 850;
+            this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
+                        this.UserX,
+                        this.NamaPerusahaan,
+                        this.NamaAlias,
+                        this.Slogan,
+                        this.Alamat1,
+                        this.Alamat2,
+                        this.NoTelp,
+                        this.NoFax,
+                        this.TTdNama,
+                        this.TTdJabatan,
+                        this.Tanggal,
+                        this.TglKemarin,
+                        this.JumlahCetak});
+            this.ScriptLanguage = DevExpress.XtraReports.ScriptLanguage.VisualBasic;
+            this.Version = "13.2";
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+        }
+    }
+}

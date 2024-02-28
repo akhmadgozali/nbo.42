@@ -1,0 +1,60 @@
++++++ Start 10-05-2014+++++ ##tmkm
+#### m06 - SALES ####
+-design ulang layout form
+-design lebar kolom combo
++++++  End 10-05-2014+++++
+
+
++++++ Start 06-05-2014+++++ ##agn
+#### m06 - SALES ####
+-Tambah Filter Laporan
++++++  End 06-05-2014+++++
+
++++++ Start 04-05-2014+++++ ##agn
+#### m06 - SALES ####
+-Rombak untuk persisten pengiriman barang
++++++  End 04-05-2014+++++
+
++++++ Start 28-04-2014+++++ ##agn
+#### m06 - SALES ####
+-Tambah Tooltip pada SQ
+-
++++++  End 28-04-2014+++++
+
++++++ Start 27-04-2014+++++ ##agn
+#### m06 - SALES ####
+-Tambah Persisten AutoSearchKontak
+-Form Setting : Tambah Auto Search Kontak
+-Form SQ : Pasang Auto Search Kontak, History Grid
++++++  End 27-04-2014+++++
+
++++++ Start 26-04-2014+++++ ##agn
+#### m06 - SALES ####
+-Finishing form setting
+=Pasang Seting Sales di semua form
+-Pasang untuk visible colDivisi di semua Form
+-Pasang untuk Filter Kontak di semua form
++++++  End 26-04-2014+++++
+
++++++ Start 25-04-2014+++++ ##agn
+#### m06 - SALES ####
+-Tambah Persistent DP Penjualan
+-Tambah Form DP Penjualan dan Dialog
+-Tambah Persistent SJ
+-Tambah Form SJ dan Dialog
+-Tambah Persistent Invoice
+-Tambah Form Invoice dan Dialog
+-Tambah Form Seting Sales
++++++  End 25-04-2014+++++
+
++++++ Start 24-04-2014+++++ ##agn
+#### m06 - SALES ####
+-Create Module Sales
+-Tambah Persistent Penawaran
+-Tambah Form Penawaran dan Penawaran Dialog
+-Tambah Persistent Order Penjualan
+-Tambah Form Order Penjualan dan Dialog
++++++  End 24-04-2014+++++
+
+
+

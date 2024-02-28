@@ -1,0 +1,27 @@
+﻿Imports DevExpress.Xpo
+Friend Class UI_CekGiro
+  Sub New()
+    ' This call is required by the designer.
+    InitializeComponent()
+    ' Add any initialization after the InitializeComponent() call.
+    xChart = nChart
+    showChart = True
+    useFeedbackSource = True
+  End Sub
+  Overrides Sub FirstLoad()
+    GetSession()
+    'Dim a As New Logic.FinaSetting(session)
+    'GridColumn8.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+    'GridColumn8.DisplayFormat.FormatString = a.NumericFormatString
+
+    'nChart.DataSource = ifSource
+    Dim xData As New XPCollection(Of Persistent.ViewGiro)(session)
+    nChart.DataSource = xData
+    xGrid.DataSource = xData
+  End Sub
+  Private Sub btnGM_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles btnGM.ItemClick
+    Dim xData As New XPCollection(Of Persistent.ViewGiro)(session)
+    nChart.DataSource = xData
+    xGrid.DataSource = xData
+  End Sub
+End Class

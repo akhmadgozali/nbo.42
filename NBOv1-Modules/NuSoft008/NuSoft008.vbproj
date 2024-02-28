@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{F5D947F8-1210-4223-914E-9E65201D4217}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NuSoft.NUI.Win.Forms.Modules.NuSoft008</RootNamespace>
+    <AssemblyName>NuSoft008</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\release\Modules\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.Charts.v13.2.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.Data.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.Utils.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.Xpo.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraBars.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraCharts.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2.UI, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraCharts.v13.2.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraEditors.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraGrid.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraLayout.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraNavBar.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraPivotGrid.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraPrinting.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraScheduler.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraScheduler.v13.2.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraTreeList.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraVerticalGrid.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Core">
+      <HintPath>..\..\Release\NuSoft.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Core.Win.Forms">
+      <HintPath>..\..\Release\NuSoft.Core.Win.Forms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Data">
+      <HintPath>..\..\Release\NuSoft.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.NPO">
+      <HintPath>..\..\Release\NuSoft.NPO.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Utils">
+      <HintPath>..\..\Release\NuSoft.Utils.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Utils.Cryptograph">
+      <HintPath>..\..\Release\NuSoft.Utils.Cryptograph.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft001, Version=1.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\Modules\NuSoft001.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoftModSys, Version=1.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\Modules\NuSoftModSys.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LogicLayer\clsNumber.vb" />
+    <Compile Include="LogicLayer\Coa.vb" />
+    <Compile Include="LogicLayer\Kurs.vb" />
+    <Compile Include="LogicLayer\m003_aktivatetap.vb" />
+    <Compile Include="LogicLayer\m003_budget.vb" />
+    <Compile Include="LogicLayer\m003_master.vb" />
+    <Compile Include="LogicLayer\m003_setting.vb" />
+    <Compile Include="LogicLayer\m003_aLogic.vb" />
+    <Compile Include="LogicLayer\m004_master.vb" />
+    <Compile Include="LogicLayer\m005_master.vb" />
+    <Compile Include="MainClass.vb" />
+    <Compile Include="UILayer\Master\UI_Akun.Designer.vb">
+      <DependentUpon>UI_Akun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Akun.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AkunDialog.Designer.vb">
+      <DependentUpon>UI_AkunDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AkunDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AkunZ.Designer.vb">
+      <DependentUpon>UI_AkunZ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AkunZ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AkunZDialog.Designer.vb">
+      <DependentUpon>UI_AkunZDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AkunZDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Barang.Designer.vb">
+      <DependentUpon>UI_Barang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Barang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_BarangDialog.Designer.vb">
+      <DependentUpon>UI_BarangDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_BarangDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Cost.Designer.vb">
+      <DependentUpon>UI_Cost.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Cost.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Gudang.Designer.vb">
+      <DependentUpon>UI_Gudang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Gudang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Kategori.Designer.vb">
+      <DependentUpon>UI_Kategori.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Kategori.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Merk.Designer.vb">
+      <DependentUpon>UI_Merk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Merk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Pajak.Designer.vb">
+      <DependentUpon>UI_Pajak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Pajak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_ProyekSub.Designer.vb">
+      <DependentUpon>UI_ProyekSub.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_ProyekSub.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Aktiva.Designer.vb">
+      <DependentUpon>UI_Aktiva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Aktiva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AktivaDialog.Designer.vb">
+      <DependentUpon>UI_AktivaDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AktivaDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AktivaKelompok.Designer.vb">
+      <DependentUpon>UI_AktivaKelompok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AktivaKelompok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AktivaKelompokDialog.Designer.vb">
+      <DependentUpon>UI_AktivaKelompokDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AktivaKelompokDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_KategoriKontak.Designer.vb">
+      <DependentUpon>UI_KategoriKontak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_KategoriKontak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Kontak.Designer.vb">
+      <DependentUpon>UI_Kontak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Kontak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_KontakDialog.Designer.vb">
+      <DependentUpon>UI_KontakDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_KontakDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_MataUangDialog.Designer.vb">
+      <DependentUpon>UI_MataUangDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_MataUangDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Proyek.Designer.vb">
+      <DependentUpon>UI_Proyek.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Proyek.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_ProyekDialog.Designer.vb">
+      <DependentUpon>UI_ProyekDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_ProyekDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Bank.Designer.vb">
+      <DependentUpon>UI_Bank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Bank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_MataUang.Designer.vb">
+      <DependentUpon>UI_MataUang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_MataUang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_SubKategori.Designer.vb">
+      <DependentUpon>UI_SubKategori.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_SubKategori.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Termin.Designer.vb">
+      <DependentUpon>UI_Termin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Termin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_TerminDialog.Designer.vb">
+      <DependentUpon>UI_TerminDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_TerminDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_TipeTransaksi.Designer.vb">
+      <DependentUpon>UI_TipeTransaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_TipeTransaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_TipeTransaksiDialog.Designer.vb">
+      <DependentUpon>UI_TipeTransaksiDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_TipeTransaksiDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Uom.Designer.vb">
+      <DependentUpon>UI_Uom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Uom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Via.Designer.vb">
+      <DependentUpon>UI_Via.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Via.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UILayer\Master\UI_Akun.resx">
+      <DependentUpon>UI_Akun.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_AkunDialog.resx">
+      <DependentUpon>UI_AkunDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_AkunZ.resx">
+      <DependentUpon>UI_AkunZ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_AkunZDialog.resx">
+      <DependentUpon>UI_AkunZDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Barang.resx">
+      <DependentUpon>UI_Barang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_BarangDialog.resx">
+      <DependentUpon>UI_BarangDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Cost.resx">
+      <DependentUpon>UI_Cost.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Gudang.resx">
+      <DependentUpon>UI_Gudang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Kategori.resx">
+      <DependentUpon>UI_Kategori.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Merk.resx">
+      <DependentUpon>UI_Merk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Pajak.resx">
+      <DependentUpon>UI_Pajak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_ProyekSub.resx">
+      <DependentUpon>UI_ProyekSub.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Aktiva.resx">
+      <DependentUpon>UI_Aktiva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_AktivaDialog.resx">
+      <DependentUpon>UI_AktivaDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_AktivaKelompok.resx">
+      <DependentUpon>UI_AktivaKelompok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_AktivaKelompokDialog.resx">
+      <DependentUpon>UI_AktivaKelompokDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_KategoriKontak.resx">
+      <DependentUpon>UI_KategoriKontak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Bank.resx">
+      <DependentUpon>UI_Bank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Kontak.resx">
+      <DependentUpon>UI_Kontak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_KontakDialog.resx">
+      <DependentUpon>UI_KontakDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_MataUangDialog.resx">
+      <DependentUpon>UI_MataUangDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Proyek.resx">
+      <DependentUpon>UI_Proyek.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_ProyekDialog.resx">
+      <DependentUpon>UI_ProyekDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_MataUang.resx">
+      <DependentUpon>UI_MataUang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_SubKategori.resx">
+      <DependentUpon>UI_SubKategori.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Termin.resx">
+      <DependentUpon>UI_Termin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_TerminDialog.resx">
+      <DependentUpon>UI_TerminDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_TipeTransaksi.resx">
+      <DependentUpon>UI_TipeTransaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_TipeTransaksiDialog.resx">
+      <DependentUpon>UI_TipeTransaksiDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Uom.resx">
+      <DependentUpon>UI_Uom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Via.resx">
+      <DependentUpon>UI_Via.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account_balances_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account_balances_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cellsautoheight-_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cellsautoheight-_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UILayer\Data\" />
+    <Folder Include="UILayer\FilterForm\" />
+    <Folder Include="UILayer\Setting\" />
+    <Folder Include="UILayer\Transaksi\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

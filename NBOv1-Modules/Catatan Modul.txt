@@ -1,0 +1,9 @@
+1 akunting
+
+4 inventory
+
+5 pembelian
+
+6 penjualan
+
+8 master data

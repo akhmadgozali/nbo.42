@@ -1,0 +1,421 @@
+/// <XRTypeInfo>
+///   <AssemblyFullName>DevExpress.XtraReports.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</AssemblyFullName>
+///   <AssemblyLocation>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraReports.v13.2\v4.0_13.2.13.0__b88d1754d700e49a\DevExpress.XtraReports.v13.2.dll</AssemblyLocation>
+///   <TypeName>DevExpress.XtraReports.UI.XtraReport</TypeName>
+///   <Localization>en-US</Localization>
+///   <Version>13.2.13</Version>
+///   <Resources>
+///     <Resource Name="XtraReportSerialization.KwitansiPelanggan2">
+/// zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAA</Resource>
+///   </Resources>
+/// </XRTypeInfo>
+namespace XtraReportSerialization {
+    
+    public class KwitansiPelanggan2 : DevExpress.XtraReports.UI.XtraReport {
+        private DevExpress.XtraReports.UI.TopMarginBand TopMargin;
+        private DevExpress.XtraReports.UI.DetailBand Detail;
+        private DevExpress.XtraReports.UI.XRLabel label20;
+        private DevExpress.XtraReports.UI.XRLabel label18;
+        private DevExpress.XtraReports.UI.XRLabel label17;
+        private DevExpress.XtraReports.UI.XRLabel label14;
+        private DevExpress.XtraReports.UI.XRLabel label12;
+        private DevExpress.XtraReports.UI.XRLabel label11;
+        private DevExpress.XtraReports.UI.FormattingRule HargaNol;
+        private DevExpress.XtraReports.UI.XRLabel label10;
+        private DevExpress.XtraReports.UI.XRLabel label8;
+        private DevExpress.XtraReports.UI.XRLabel label7;
+        private DevExpress.XtraReports.UI.XRLabel label4;
+        private DevExpress.XtraReports.UI.XRLabel label1;
+        private DevExpress.XtraReports.UI.XRLabel label5;
+        private DevExpress.XtraReports.UI.XRLabel label2;
+        private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
+        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader1;
+        private DevExpress.XtraReports.UI.CalculatedField Terbilang;
+        private DevExpress.XtraReports.Parameters.Parameter UserX;
+        private DevExpress.XtraReports.Parameters.Parameter Periode;
+        private DevExpress.XtraReports.Parameters.Parameter NamaPerusahaan;
+        private DevExpress.XtraReports.Parameters.Parameter NamaAlias;
+        private DevExpress.XtraReports.Parameters.Parameter Slogan;
+        private DevExpress.XtraReports.Parameters.Parameter Alamat1;
+        private DevExpress.XtraReports.Parameters.Parameter Alamat2;
+        private DevExpress.XtraReports.Parameters.Parameter AlamatPerusahaan;
+        private DevExpress.XtraReports.Parameters.Parameter NoTelp;
+        private DevExpress.XtraReports.Parameters.Parameter NoFax;
+        private DevExpress.XtraReports.Parameters.Parameter PerTanggal;
+        private System.Resources.ResourceManager _resources;
+        private string _resourceString;
+        public KwitansiPelanggan2() {
+            this._resourceString = DevExpress.XtraReports.Serialization.XRResourceManager.GetResourceFor("XtraReportSerialization.KwitansiPelanggan2");
+            this.InitializeComponent();
+        }
+        private System.Resources.ResourceManager resources {
+            get {
+                if (_resources == null) {
+                    this._resources = new DevExpress.XtraReports.Serialization.XRResourceManager(this._resourceString);
+                }
+                return this._resources;
+            }
+        }
+        private void InitializeComponent() {
+            this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.GroupHeader1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
+            this.label20 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label18 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label17 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label14 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label12 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label11 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label10 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label8 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label7 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label4 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label5 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.HargaNol = new DevExpress.XtraReports.UI.FormattingRule();
+            this.Terbilang = new DevExpress.XtraReports.UI.CalculatedField();
+            this.UserX = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Periode = new DevExpress.XtraReports.Parameters.Parameter();
+            this.NamaPerusahaan = new DevExpress.XtraReports.Parameters.Parameter();
+            this.NamaAlias = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Slogan = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Alamat1 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.Alamat2 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.AlamatPerusahaan = new DevExpress.XtraReports.Parameters.Parameter();
+            this.NoTelp = new DevExpress.XtraReports.Parameters.Parameter();
+            this.NoFax = new DevExpress.XtraReports.Parameters.Parameter();
+            this.PerTanggal = new DevExpress.XtraReports.Parameters.Parameter();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            // 
+            // TopMargin
+            // 
+            this.TopMargin.Dpi = 254F;
+            this.TopMargin.HeightF = 20F;
+            this.TopMargin.Name = "TopMargin";
+            // 
+            // Detail
+            // 
+            this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.label20,
+                        this.label18,
+                        this.label17,
+                        this.label14,
+                        this.label12,
+                        this.label11,
+                        this.label10,
+                        this.label8,
+                        this.label7,
+                        this.label4,
+                        this.label1,
+                        this.label5,
+                        this.label2});
+            this.Detail.Dpi = 254F;
+            this.Detail.Font = new System.Drawing.Font("Calibri", 9F);
+            this.Detail.HeightF = 688F;
+            this.Detail.Name = "Detail";
+            this.Detail.SnapLinePadding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
+            this.Detail.StylePriority.UseFont = false;
+            // 
+            // BottomMargin
+            // 
+            this.BottomMargin.Dpi = 254F;
+            this.BottomMargin.HeightF = 0F;
+            this.BottomMargin.Name = "BottomMargin";
+            // 
+            // GroupHeader1
+            // 
+            this.GroupHeader1.Dpi = 254F;
+            this.GroupHeader1.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
+                        new DevExpress.XtraReports.UI.GroupField("Id", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+            this.GroupHeader1.HeightF = 0F;
+            this.GroupHeader1.Name = "GroupHeader1";
+            this.GroupHeader1.PageBreak = DevExpress.XtraReports.UI.PageBreak.BeforeBand;
+            // 
+            // label20
+            // 
+            this.label20.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Pelanggan.Kode")});
+            this.label20.Dpi = 254F;
+            this.label20.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.LocationFloat = new DevExpress.Utils.PointFloat(1109.146F, 596.2514F);
+            this.label20.Name = "label20";
+            this.label20.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.label20.SizeF = new System.Drawing.SizeF(876.9172F, 47.83643F);
+            this.label20.StylePriority.UseFont = false;
+            // 
+            // label18
+            // 
+            this.label18.CanGrow = false;
+            this.label18.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Pelanggan.Alamat")});
+            this.label18.Dpi = 254F;
+            this.label18.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.LocationFloat = new DevExpress.Utils.PointFloat(900.7706F, 223.1251F);
+            this.label18.Name = "label18";
+            this.label18.Padding = new DevExpress.XtraPrinting.PaddingInfo(25, 5, 0, 0, 254F);
+            this.label18.SizeF = new System.Drawing.SizeF(1169.959F, 68.79163F);
+            this.label18.StylePriority.UseFont = false;
+            this.label18.StylePriority.UsePadding = false;
+            // 
+            // label17
+            // 
+            this.label17.CanGrow = false;
+            this.label17.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Pelanggan.Alamat")});
+            this.label17.Dpi = 254F;
+            this.label17.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.LocationFloat = new DevExpress.Utils.PointFloat(50.27083F, 223.1251F);
+            this.label17.Name = "label17";
+            this.label17.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.label17.SizeF = new System.Drawing.SizeF(850.4998F, 68.79168F);
+            this.label17.StylePriority.UseFont = false;
+            // 
+            // label14
+            // 
+            this.label14.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Pelanggan.Kode")});
+            this.label14.Dpi = 254F;
+            this.label14.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.LocationFloat = new DevExpress.Utils.PointFloat(277.8125F, 596.2514F);
+            this.label14.Name = "label14";
+            this.label14.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.label14.SizeF = new System.Drawing.SizeF(622.9581F, 47.83649F);
+            this.label14.StylePriority.UseFont = false;
+            // 
+            // label12
+            // 
+            this.label12.Dpi = 254F;
+            this.label12.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.LocationFloat = new DevExpress.Utils.PointFloat(1602.458F, 489.4984F);
+            this.label12.Name = "label12";
+            this.label12.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.label12.SizeF = new System.Drawing.SizeF(383.605F, 82.23212F);
+            this.label12.StylePriority.UseFont = false;
+            this.label12.Text = "[Parameters.PerTanggal!dd MMM yyyy]";
+            // 
+            // label11
+            // 
+            this.label11.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Harga", "{0:n0}")});
+            this.label11.Dpi = 254F;
+            this.label11.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.FormattingRules.Add(this.HargaNol);
+            this.label11.LocationFloat = new DevExpress.Utils.PointFloat(1077.396F, 530.5399F);
+            this.label11.Name = "label11";
+            this.label11.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.label11.Scripts.OnBeforePrint = "label11_BeforePrint";
+            this.label11.SizeF = new System.Drawing.SizeF(511.833F, 63.71155F);
+            this.label11.StylePriority.UseFont = false;
+            // 
+            // label10
+            // 
+            this.label10.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Harga", "{0:n0}")});
+            this.label10.Dpi = 254F;
+            this.label10.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.FormattingRules.Add(this.HargaNol);
+            this.label10.LocationFloat = new DevExpress.Utils.PointFloat(238.125F, 530.5399F);
+            this.label10.Name = "label10";
+            this.label10.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.label10.Scripts.OnBeforePrint = "label10_BeforePrint";
+            this.label10.SizeF = new System.Drawing.SizeF(662.6456F, 63.71155F);
+            this.label10.StylePriority.UseFont = false;
+            // 
+            // label8
+            // 
+            this.label8.Dpi = 254F;
+            this.label8.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.LocationFloat = new DevExpress.Utils.PointFloat(1214.979F, 447.5452F);
+            this.label8.Name = "label8";
+            this.label8.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.label8.SizeF = new System.Drawing.SizeF(374.2494F, 71.99472F);
+            this.label8.StylePriority.UseFont = false;
+            this.label8.Text = "[Parameters.Periode!MMMM yyyy]";
+            // 
+            // label7
+            // 
+            this.label7.Dpi = 254F;
+            this.label7.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.LocationFloat = new DevExpress.Utils.PointFloat(367.7708F, 447.5452F);
+            this.label7.Name = "label7";
+            this.label7.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.label7.SizeF = new System.Drawing.SizeF(532.9999F, 71.99475F);
+            this.label7.StylePriority.UseFont = false;
+            this.label7.Text = "[Parameters.Periode!MMMM yyyy]";
+            // 
+            // label4
+            // 
+            this.label4.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Terbilang")});
+            this.label4.Dpi = 254F;
+            this.label4.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.FormattingRules.Add(this.HargaNol);
+            this.label4.LocationFloat = new DevExpress.Utils.PointFloat(50.27083F, 314.9167F);
+            this.label4.Name = "label4";
+            this.label4.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.label4.SizeF = new System.Drawing.SizeF(850.4999F, 116.6284F);
+            this.label4.StylePriority.UseFont = false;
+            // 
+            // label1
+            // 
+            this.label1.CanGrow = false;
+            this.label1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Pelanggan.Nama")});
+            this.label1.Dpi = 254F;
+            this.label1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(50.27083F, 180.58F);
+            this.label1.Name = "label1";
+            this.label1.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.label1.SizeF = new System.Drawing.SizeF(850.4999F, 42.54512F);
+            this.label1.StylePriority.UseFont = false;
+            // 
+            // label5
+            // 
+            this.label5.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Terbilang")});
+            this.label5.Dpi = 254F;
+            this.label5.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.FormattingRules.Add(this.HargaNol);
+            this.label5.LocationFloat = new DevExpress.Utils.PointFloat(900.7706F, 314.9167F);
+            this.label5.Name = "label5";
+            this.label5.Padding = new DevExpress.XtraPrinting.PaddingInfo(25, 5, 0, 0, 254F);
+            this.label5.SizeF = new System.Drawing.SizeF(1169.959F, 116.6284F);
+            this.label5.StylePriority.UseFont = false;
+            this.label5.StylePriority.UsePadding = false;
+            // 
+            // label2
+            // 
+            this.label2.CanGrow = false;
+            this.label2.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "Pelanggan.Nama")});
+            this.label2.Dpi = 254F;
+            this.label2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.LocationFloat = new DevExpress.Utils.PointFloat(900.7706F, 180.58F);
+            this.label2.Name = "label2";
+            this.label2.Padding = new DevExpress.XtraPrinting.PaddingInfo(25, 5, 0, 0, 254F);
+            this.label2.SizeF = new System.Drawing.SizeF(1169.959F, 42.54512F);
+            this.label2.StylePriority.UseFont = false;
+            this.label2.StylePriority.UsePadding = false;
+            // 
+            // HargaNol
+            // 
+            this.HargaNol.Condition = "[Agen.HargaPelanggan] == 0";
+            // 
+            // 
+            // 
+            this.HargaNol.Formatting.Visible = DevExpress.Utils.DefaultBoolean.False;
+            this.HargaNol.Name = "HargaNol";
+            // 
+            // Terbilang
+            // 
+            this.Terbilang.DataMember = "dtKwitansiPelanggan";
+            this.Terbilang.Name = "Terbilang";
+            this.Terbilang.Scripts.OnGetValue = "Terbilang_GetValue";
+            // 
+            // UserX
+            // 
+            this.UserX.Name = "UserX";
+            this.UserX.ValueInfo = "NuSoft - NuSoft Administrator";
+            this.UserX.Visible = false;
+            // 
+            // Periode
+            // 
+            this.Periode.Name = "Periode";
+            this.Periode.Type = typeof(System.DateTime);
+            this.Periode.ValueInfo = "2020-09-30";
+            this.Periode.Visible = false;
+            // 
+            // NamaPerusahaan
+            // 
+            this.NamaPerusahaan.Name = "NamaPerusahaan";
+            this.NamaPerusahaan.ValueInfo = "PT.  DUTA KALIMANTAN PRESS";
+            this.NamaPerusahaan.Visible = false;
+            // 
+            // NamaAlias
+            // 
+            this.NamaAlias.Name = "NamaAlias";
+            this.NamaAlias.ValueInfo = "BERAU";
+            this.NamaAlias.Visible = false;
+            // 
+            // Slogan
+            // 
+            this.Slogan.Name = "Slogan";
+            this.Slogan.ValueInfo = "SELALU TAMPIL BEDA";
+            this.Slogan.Visible = false;
+            // 
+            // Alamat1
+            // 
+            this.Alamat1.Name = "Alamat1";
+            this.Alamat1.ValueInfo = "Jl. Durian III No.40, Tanjung Redeb";
+            this.Alamat1.Visible = false;
+            // 
+            // Alamat2
+            // 
+            this.Alamat2.Name = "Alamat2";
+            this.Alamat2.ValueInfo = "Berau, Kalimantan Timur";
+            this.Alamat2.Visible = false;
+            // 
+            // AlamatPerusahaan
+            // 
+            this.AlamatPerusahaan.Name = "AlamatPerusahaan";
+            this.AlamatPerusahaan.ValueInfo = "Jl. Durian III No.40, Tanjung Redeb Berau, Kalimantan Timur";
+            this.AlamatPerusahaan.Visible = false;
+            // 
+            // NoTelp
+            // 
+            this.NoTelp.Name = "NoTelp";
+            this.NoTelp.ValueInfo = "(0554) 02038544";
+            this.NoTelp.Visible = false;
+            // 
+            // NoFax
+            // 
+            this.NoFax.Name = "NoFax";
+            this.NoFax.Visible = false;
+            // 
+            // PerTanggal
+            // 
+            this.PerTanggal.Name = "PerTanggal";
+            this.PerTanggal.Type = typeof(System.DateTime);
+            this.PerTanggal.ValueInfo = "2020-09-01";
+            this.PerTanggal.Visible = false;
+            // 
+            // KwitansiPelanggan2
+            // 
+            this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
+                        this.TopMargin,
+                        this.Detail,
+                        this.BottomMargin,
+                        this.GroupHeader1});
+            this.CalculatedFields.AddRange(new DevExpress.XtraReports.UI.CalculatedField[] {
+                        this.Terbilang});
+            this.Dpi = 254F;
+            this.FormattingRuleSheet.AddRange(new DevExpress.XtraReports.UI.FormattingRule[] {
+                        this.HargaNol});
+            this.Margins = new System.Drawing.Printing.Margins(20, 20, 20, 0);
+            this.Name = "KwitansiPelanggan2";
+            this.PageHeight = 698;
+            this.PageWidth = 2159;
+            this.PaperKind = System.Drawing.Printing.PaperKind.Custom;
+            this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
+                        this.UserX,
+                        this.Periode,
+                        this.NamaPerusahaan,
+                        this.NamaAlias,
+                        this.Slogan,
+                        this.Alamat1,
+                        this.Alamat2,
+                        this.AlamatPerusahaan,
+                        this.NoTelp,
+                        this.NoFax,
+                        this.PerTanggal});
+            this.ReportUnit = DevExpress.XtraReports.UI.ReportUnit.TenthsOfAMillimeter;
+            this.ScriptLanguage = DevExpress.XtraReports.ScriptLanguage.VisualBasic;
+            this.ShowPrintMarginsWarning = false;
+            this.SnapGridSize = 31.75F;
+            this.Version = "14.2";
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+        }
+    }
+}

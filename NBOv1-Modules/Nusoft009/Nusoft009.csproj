@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FEDB70AA-9FFD-4FC3-94F3-C28B23DD195A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NuSoft.NUI.Win.Forms.Modules.NuSoft009</RootNamespace>
+    <AssemblyName>Nusoft009</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Release\Modules\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.Charts.v13.2.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.Data.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.Utils.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.Xpo.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraBars.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraCharts.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2.UI, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraCharts.v13.2.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraEditors.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraGrid.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraLayout.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraNavBar.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraPivotGrid.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraPrinting.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraTreeList.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Core">
+      <HintPath>..\..\Release\NuSoft.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Core.Win.Forms">
+      <HintPath>..\..\Release\NuSoft.Core.Win.Forms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Data">
+      <HintPath>..\..\Release\NuSoft.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.NPO">
+      <HintPath>..\..\Release\NuSoft.NPO.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Utils">
+      <HintPath>..\..\Release\NuSoft.Utils.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Utils.Cryptograph">
+      <HintPath>..\..\Release\NuSoft.Utils.Cryptograph.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LogicLayer\m09_Absensi.cs" />
+    <Compile Include="LogicLayer\m09_Cuti.cs" />
+    <Compile Include="LogicLayer\m09_Ijin.cs" />
+    <Compile Include="LogicLayer\m09_Karyawan.cs" />
+    <Compile Include="LogicLayer\m09_Lembur.cs" />
+    <Compile Include="LogicLayer\m09_LiburPengganti.cs" />
+    <Compile Include="LogicLayer\m09_MasterData.cs" />
+    <Compile Include="LogicLayer\m09_Pinjaman.cs" />
+    <Compile Include="LogicLayer\m09_PromosiKaryawan.cs" />
+    <Compile Include="LogicLayer\m09_JadwalProduksi.cs" />
+    <Compile Include="LogicLayer\m09_Resign.cs" />
+    <Compile Include="LogicLayer\m09_SuratPeringatan.cs" />
+    <Compile Include="MainClass.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\AbsensiServices.cs" />
+    <Compile Include="Services\IjinServices.cs" />
+    <Compile Include="Services\MasterDataServices.cs" />
+    <Compile Include="Services\MutasiKaryawanServices.cs" />
+    <Compile Include="Services\ResignServices.cs" />
+    <Compile Include="Services\ServiceBase.cs" />
+    <Compile Include="Services\SuratPeringatanServices.cs" />
+    <Compile Include="UILayer\Master\UI_Cuti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Cuti.Designer.cs">
+      <DependentUpon>UI_Cuti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Dayoff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Dayoff.Designer.cs">
+      <DependentUpon>UI_Dayoff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Divisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Divisi.Designer.cs">
+      <DependentUpon>UI_Divisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Jabatan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Jabatan.Designer.cs">
+      <DependentUpon>UI_Jabatan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_JadwalProduksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_JadwalProduksi.Designer.cs">
+      <DependentUpon>UI_JadwalProduksi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_JadwalWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_JadwalWarehouse.Designer.cs">
+      <DependentUpon>UI_JadwalWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Karyawan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Karyawan.Designer.cs">
+      <DependentUpon>UI_Karyawan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Permit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Permit.Designer.cs">
+      <DependentUpon>UI_Permit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Shift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Shift.Designer.cs">
+      <DependentUpon>UI_Shift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Tarif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Tarif.Designer.cs">
+      <DependentUpon>UI_Tarif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_Absensi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_Absensi.Designer.cs">
+      <DependentUpon>UI_Absensi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_AbsensiCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_AbsensiCreate.Designer.cs">
+      <DependentUpon>UI_AbsensiCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_AbsensiDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_AbsensiDialog.Designer.cs">
+      <DependentUpon>UI_AbsensiDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_FormCuti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_FormCuti.Designer.cs">
+      <DependentUpon>UI_FormCuti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_FormCutiDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_FormCutiDialog.Designer.cs">
+      <DependentUpon>UI_FormCutiDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_FormLembur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_FormLembur.Designer.cs">
+      <DependentUpon>UI_FormLembur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_FormLemburDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_FormLemburDialog.Designer.cs">
+      <DependentUpon>UI_FormLemburDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_Ijin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_Ijin.Designer.cs">
+      <DependentUpon>UI_Ijin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_IjinDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_IjinDialog.Designer.cs">
+      <DependentUpon>UI_IjinDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_LiburPengganti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_LiburPengganti.Designer.cs">
+      <DependentUpon>UI_LiburPengganti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_LiburPenggantiDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_LiburPenggantiDialog.Designer.cs">
+      <DependentUpon>UI_LiburPenggantiDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_MutasiKaryawan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_MutasiKaryawan.Designer.cs">
+      <DependentUpon>UI_MutasiKaryawan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_MutasiKaryawanDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_MutasiKaryawanDialog.Designer.cs">
+      <DependentUpon>UI_MutasiKaryawanDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_Penggajian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_Penggajian.Designer.cs">
+      <DependentUpon>UI_Penggajian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_Pinjaman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_Pinjaman.Designer.cs">
+      <DependentUpon>UI_Pinjaman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PinjamanDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PinjamanDialog.Designer.cs">
+      <DependentUpon>UI_PinjamanDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_RealisasiCuti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_RealisasiCuti.Designer.cs">
+      <DependentUpon>UI_RealisasiCuti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_RealisasiCutiDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_RealisasiCutiDialog.Designer.cs">
+      <DependentUpon>UI_RealisasiCutiDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_Resign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_Resign.Designer.cs">
+      <DependentUpon>UI_Resign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_ResignDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_ResignDialog.Designer.cs">
+      <DependentUpon>UI_ResignDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_SPKL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_SPKL.Designer.cs">
+      <DependentUpon>UI_SPKL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_SPKLDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_SPKLDialog.Designer.cs">
+      <DependentUpon>UI_SPKLDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_SuratPeringatan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_SuratPeringatan.Designer.cs">
+      <DependentUpon>UI_SuratPeringatan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_SuratPeringatanDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_SuratPeringatanDialog.Designer.cs">
+      <DependentUpon>UI_SuratPeringatanDialog.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Cuti.resx">
+      <DependentUpon>UI_Cuti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Dayoff.resx">
+      <DependentUpon>UI_Dayoff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Divisi.resx">
+      <DependentUpon>UI_Divisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Jabatan.resx">
+      <DependentUpon>UI_Jabatan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_JadwalProduksi.resx">
+      <DependentUpon>UI_JadwalProduksi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Karyawan.resx">
+      <DependentUpon>UI_Karyawan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Shift.resx">
+      <DependentUpon>UI_Shift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_Absensi.resx">
+      <DependentUpon>UI_Absensi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_AbsensiCreate.resx">
+      <DependentUpon>UI_AbsensiCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_AbsensiDialog.resx">
+      <DependentUpon>UI_AbsensiDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_FormCuti.resx">
+      <DependentUpon>UI_FormCuti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_FormCutiDialog.resx">
+      <DependentUpon>UI_FormCutiDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_FormLembur.resx">
+      <DependentUpon>UI_FormLembur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_FormLemburDialog.resx">
+      <DependentUpon>UI_FormLemburDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_Ijin.resx">
+      <DependentUpon>UI_Ijin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_IjinDialog.resx">
+      <DependentUpon>UI_IjinDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_LiburPengganti.resx">
+      <DependentUpon>UI_LiburPengganti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_LiburPenggantiDialog.resx">
+      <DependentUpon>UI_LiburPenggantiDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_MutasiKaryawan.resx">
+      <DependentUpon>UI_MutasiKaryawan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_MutasiKaryawanDialog.resx">
+      <DependentUpon>UI_MutasiKaryawanDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_Pinjaman.resx">
+      <DependentUpon>UI_Pinjaman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PinjamanDialog.resx">
+      <DependentUpon>UI_PinjamanDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_RealisasiCuti.resx">
+      <DependentUpon>UI_RealisasiCuti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_RealisasiCutiDialog.resx">
+      <DependentUpon>UI_RealisasiCutiDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_Resign.resx">
+      <DependentUpon>UI_Resign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_ResignDialog.resx">
+      <DependentUpon>UI_ResignDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_SPKL.resx">
+      <DependentUpon>UI_SPKL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_SPKLDialog.resx">
+      <DependentUpon>UI_SPKLDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_SuratPeringatan.resx">
+      <DependentUpon>UI_SuratPeringatan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_SuratPeringatanDialog.resx">
+      <DependentUpon>UI_SuratPeringatanDialog.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GaugeStyleHalfCircular_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GaugeStyleHalfCircular_32x32.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

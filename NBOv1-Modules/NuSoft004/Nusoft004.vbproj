@@ -1,0 +1,1580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E2139639-085E-4BD9-8383-8529757F0CBF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NuSoft.NUI.Win.Forms.Modules.NuSoft004</RootNamespace>
+    <AssemblyName>Nusoft004</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\Release\Modules\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.Charts.v13.2.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.Data.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.Office.v13.2.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.Spreadsheet.v13.2.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.Utils.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.Xpo.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraBars.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraCharts.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2.UI, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraCharts.v13.2.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraEditors.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraGrid.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraLayout.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraNavBar.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraPivotGrid.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraPrinting.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraScheduler.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraScheduler.v13.2.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraSpreadsheet.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraTreeList.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraVerticalGrid.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft">
+      <HintPath>..\..\Release\NuSoft.exe</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Core">
+      <HintPath>..\..\Release\NuSoft.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Core.Win.Forms">
+      <HintPath>..\..\Release\NuSoft.Core.Win.Forms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Data">
+      <HintPath>..\..\Release\NuSoft.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.NPO">
+      <HintPath>..\..\Release\NuSoft.NPO.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Utils">
+      <HintPath>..\..\Release\NuSoft.Utils.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Utils.Cryptograph">
+      <HintPath>..\..\Release\NuSoft.Utils.Cryptograph.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft001, Version=1.1.20.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\Modules\NuSoft001.dll</HintPath>
+    </Reference>
+    <Reference Include="NuSoft005, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\Modules\NuSoft005.dll</HintPath>
+    </Reference>
+    <Reference Include="NuSoftModSys">
+      <HintPath>..\..\Release\Modules\NuSoftModSys.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LogicLayer\m004_gl.vb" />
+    <Compile Include="LogicLayer\m004_logic.vb" />
+    <Compile Include="LogicLayer\m004_master.vb" />
+    <Compile Include="LogicLayer\m004_permintaanstock.vb" />
+    <Compile Include="LogicLayer\m004_report.vb" />
+    <Compile Include="LogicLayer\m004_stock.vb" />
+    <Compile Include="LogicLayer\m004_stockopname.vb" />
+    <Compile Include="LogicLayer\NumberClass.vb" />
+    <Compile Include="MainClass.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_BukuBesarStock.Designer.vb">
+      <DependentUpon>UI_BukuBesarStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_BukuBesarStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_CekStock.Designer.vb">
+      <DependentUpon>UI_CekStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_CekStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_CekStockHistory.Designer.vb">
+      <DependentUpon>UI_CekStockHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_CekStockHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_CekStockHPP.Designer.vb">
+      <DependentUpon>UI_CekStockHPP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_CekStockHPP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_DataStock.Designer.vb">
+      <DependentUpon>UI_DataStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_DataStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_ZLog.Designer.vb">
+      <DependentUpon>UI_ZLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_ZLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_BukuBesarStock.Designer.vb">
+      <DependentUpon>RF_BukuBesarStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_BukuBesarStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_DataDataTransaksi.Designer.vb">
+      <DependentUpon>RF_DataDataTransaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_DataDataTransaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Barang.Designer.vb">
+      <DependentUpon>UI_Barang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Barang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_BarangDialog.Designer.vb">
+      <DependentUpon>UI_BarangDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_BarangDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_BarangLokasi.Designer.vb">
+      <DependentUpon>UI_BarangLokasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_BarangLokasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Cost.Designer.vb">
+      <DependentUpon>UI_Cost.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Cost.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Gudang.Designer.vb">
+      <DependentUpon>UI_Gudang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Gudang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Kategori.Designer.vb">
+      <DependentUpon>UI_Kategori.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Kategori.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Merk.Designer.vb">
+      <DependentUpon>UI_Merk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Merk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Pajak.Designer.vb">
+      <DependentUpon>UI_Pajak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Pajak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_SubKategori.Designer.vb">
+      <DependentUpon>UI_SubKategori.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_SubKategori.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_TipeTransaksi.Designer.vb">
+      <DependentUpon>UI_TipeTransaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_TipeTransaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_TipeTransaksiDialog.Designer.vb">
+      <DependentUpon>UI_TipeTransaksiDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_TipeTransaksiDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Uom.Designer.vb">
+      <DependentUpon>UI_Uom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Uom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Setting\UI_MessageForm.Designer.vb">
+      <DependentUpon>UI_MessageForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Setting\UI_MessageForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Setting\UI_Setting.Designer.vb">
+      <DependentUpon>UI_Setting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Setting\UI_Setting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Setting\UI_SettingItem.Designer.vb">
+      <DependentUpon>UI_SettingItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Setting\UI_SettingItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_MutasiStock.Designer.vb">
+      <DependentUpon>UI_MutasiStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_MutasiStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_MutasiStockDialog.Designer.vb">
+      <DependentUpon>UI_MutasiStockDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_MutasiStockDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_zPemakaianStockDialog.Designer.vb">
+      <DependentUpon>UI_zPemakaianStockDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_zPemakaianStockDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_zPemakaianStock.Designer.vb">
+      <DependentUpon>UI_zPemakaianStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_zPemakaianStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PemakaianStock.Designer.vb">
+      <DependentUpon>UI_PemakaianStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PemakaianStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PemakaianStockDialog.Designer.vb">
+      <DependentUpon>UI_PemakaianStockDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PemakaianStockDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PenyesuaianStock.Designer.vb">
+      <DependentUpon>UI_PenyesuaianStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PenyesuaianStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PenyesuaianStockDialog.Designer.vb">
+      <DependentUpon>UI_PenyesuaianStockDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PenyesuaianStockDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PermintaanStock.Designer.vb">
+      <DependentUpon>UI_PermintaanStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PermintaanStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PermintaanStockDialog.Designer.vb">
+      <DependentUpon>UI_PermintaanStockDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PermintaanStockDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_Produksi.Designer.vb">
+      <DependentUpon>UI_Produksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_Produksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_ProduksiDialog.Designer.vb">
+      <DependentUpon>UI_ProduksiDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_ProduksiDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_ProduksiDialogTemplate.Designer.vb">
+      <DependentUpon>UI_ProduksiDialogTemplate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_ProduksiDialogTemplate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_SaldoAwal.Designer.vb">
+      <DependentUpon>UI_SaldoAwal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_SaldoAwal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_SaldoAwalDialog.Designer.vb">
+      <DependentUpon>UI_SaldoAwalDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_SaldoAwalDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_StockOpname.Designer.vb">
+      <DependentUpon>UI_StockOpname.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_StockOpname.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_StockOpnameDialog.Designer.vb">
+      <DependentUpon>UI_StockOpnameDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_StockOpnameDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_StockOpnameProses.Designer.vb">
+      <DependentUpon>UI_StockOpnameProses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_StockOpnameProses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\DiptaTitisari\Persistent.vb" />
+    <Compile Include="xCustomize\DiptaTitisari\UI_BarangOutbond.Designer.vb">
+      <DependentUpon>UI_BarangOutbond.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\DiptaTitisari\UI_BarangOutbond.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\DiptaTitisari\UI_BarangOutbondDialog.Designer.vb">
+      <DependentUpon>UI_BarangOutbondDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\DiptaTitisari\UI_BarangOutbondDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\DiptaTitisari\UI_Inbound.Designer.vb">
+      <DependentUpon>UI_Inbound.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\DiptaTitisari\UI_Inbound.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\DiptaTitisari\UI_InboundDialog.Designer.vb">
+      <DependentUpon>UI_InboundDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\DiptaTitisari\UI_InboundDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\DiptaTitisari\UI_MasterLokasi.Designer.vb">
+      <DependentUpon>UI_MasterLokasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\DiptaTitisari\UI_MasterLokasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\Fusoh_m05.vb" />
+    <Compile Include="xCustomize\Fusoh\Fusoh_m06.vb" />
+    <Compile Include="xCustomize\Fusoh\Fusoh_OrderProduksi.vb" />
+    <Compile Include="xCustomize\Fusoh\Fusoh_Services.vb" />
+    <Compile Include="xCustomize\Fusoh\Fusoh_Stock.vb" />
+    <Compile Include="xCustomize\Fusoh\Item.vb" />
+    <Compile Include="xCustomize\Fusoh\RF_FusohDetailStokBahanBaku.Designer.vb">
+      <DependentUpon>RF_FusohDetailStokBahanBaku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\RF_FusohDetailStokBahanBaku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\RF_FusohRekapDailyProcess.Designer.vb">
+      <DependentUpon>RF_FusohRekapDailyProcess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\RF_FusohRekapDailyProcess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\RF_FusohRekapSerial.Designer.vb">
+      <DependentUpon>RF_FusohRekapSerial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\RF_FusohRekapSerial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\RF_FusohStockBalance.Designer.vb">
+      <DependentUpon>RF_FusohStockBalance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\RF_FusohStockBalance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\RF_FusohRekapDempyou.Designer.vb">
+      <DependentUpon>RF_FusohRekapDempyou.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\RF_FusohRekapDempyou.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\RF_FusohRekapTransaksi.Designer.vb">
+      <DependentUpon>RF_FusohRekapTransaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\RF_FusohRekapTransaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\RF_FusohVoucher.Designer.vb">
+      <DependentUpon>RF_FusohVoucher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\RF_FusohVoucher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohAdjusmentRM.Designer.vb">
+      <DependentUpon>UI_FusohAdjusmentRM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohAdjusmentRM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohAdjusmentRMDialog.Designer.vb">
+      <DependentUpon>UI_FusohAdjusmentRMDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohAdjusmentRMDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohAdjustmentRMScrap.Designer.vb">
+      <DependentUpon>UI_FusohAdjustmentRMScrap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohAdjustmentRMScrap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohAdjustmentRMSerial.Designer.vb">
+      <DependentUpon>UI_FusohAdjustmentRMSerial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohAdjustmentRMSerial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohDailyProsesWIP.Designer.vb">
+      <DependentUpon>UI_FusohDailyProsesWIP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohDailyProsesWIP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohDailyProses.Designer.vb">
+      <DependentUpon>UI_FusohDailyProses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohDailyProses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohDailyProsesWIPDialog.Designer.vb">
+      <DependentUpon>UI_FusohDailyProsesWIPDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohDailyProsesWIPDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohDempyou.Designer.vb">
+      <DependentUpon>UI_FusohDempyou.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohDempyou.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohMasterProcessCutting.Designer.vb">
+      <DependentUpon>UI_FusohMasterProcessCutting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohMasterProcessCutting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohMasterProcessCuttingDialog.Designer.vb">
+      <DependentUpon>UI_FusohMasterProcessCuttingDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohMasterProcessCuttingDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohMesin.Designer.vb">
+      <DependentUpon>UI_FusohMesin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohMesin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohMesinDialog.Designer.vb">
+      <DependentUpon>UI_FusohMesinDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohMesinDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohCekData.Designer.vb">
+      <DependentUpon>UI_FusohCekData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohCekData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohCekStockHPPSerial.Designer.vb">
+      <DependentUpon>UI_FusohCekStockHPPSerial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohCekStockHPPSerial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohDailyProsesDialog.Designer.vb">
+      <DependentUpon>UI_FusohDailyProsesDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohDailyProsesDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohDataDempyou.Designer.vb">
+      <DependentUpon>UI_FusohDataDempyou.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohDataDempyou.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohDataProduksi.Designer.vb">
+      <DependentUpon>UI_FusohDataProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohDataProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohDataProduksiSJ.Designer.vb">
+      <DependentUpon>UI_FusohDataProduksiSJ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohDataProduksiSJ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohDataStock.Designer.vb">
+      <DependentUpon>UI_FusohDataStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohDataStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohCuttingWIP.Designer.vb">
+      <DependentUpon>UI_FusohCuttingWIP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohCuttingWIP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohCuttingWIPDialog.Designer.vb">
+      <DependentUpon>UI_FusohCuttingWIPDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohCuttingWIPDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohBreakdownWIP.Designer.vb">
+      <DependentUpon>UI_FusohBreakdownWIP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohBreakdownWIP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohProduksiResetAll.Designer.vb">
+      <DependentUpon>UI_FusohProduksiResetAll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohProduksiResetAll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohProductionPlan.Designer.vb">
+      <DependentUpon>UI_FusohProductionPlan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohProductionPlan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohStockTacking.Designer.vb">
+      <DependentUpon>UI_FusohStockTacking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohStockTacking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohTransferStockDialog.Designer.vb">
+      <DependentUpon>UI_FusohTransferStockDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohTransferStockDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohCekSerialHistory.Designer.vb">
+      <DependentUpon>UI_FusohCekSerialHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohCekSerialHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohCekStockHistorySerial.Designer.vb">
+      <DependentUpon>UI_FusohCekStockHistorySerial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohCekStockHistorySerial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohProduksiHistory.Designer.vb">
+      <DependentUpon>UI_FusohProduksiHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohProduksiHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohCekStockHistory.Designer.vb">
+      <DependentUpon>UI_FusohCekStockHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohCekStockHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohBarang.Designer.vb">
+      <DependentUpon>UI_FusohBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohBarangDialog.Designer.vb">
+      <DependentUpon>UI_FusohBarangDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohBarangDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohCekSerial.Designer.vb">
+      <DependentUpon>UI_FusohCekSerial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohCekSerial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohCekStock.Designer.vb">
+      <DependentUpon>UI_FusohCekStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohCekStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohBackToMaterial.Designer.vb">
+      <DependentUpon>UI_FusohBackToMaterial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohBackToMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohBackToMaterialDialog.Designer.vb">
+      <DependentUpon>UI_FusohBackToMaterialDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohBackToMaterialDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohDataSerial2.Designer.vb">
+      <DependentUpon>UI_FusohDataSerial2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohDataSerial2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohTransferStock.Designer.vb">
+      <DependentUpon>UI_FusohTransferStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohTransferStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohSerialDialog2.designer.vb">
+      <DependentUpon>UI_FusohSerialDialog2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohSerialDialog2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohSerialDialog1.designer.vb">
+      <DependentUpon>UI_FusohSerialDialog1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohSerialDialog1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohSerialDialog.designer.vb">
+      <DependentUpon>UI_FusohSerialDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohSerialDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohProduksiDialog.Designer.vb">
+      <DependentUpon>UI_FusohProduksiDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohProduksiDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohProduksi.Designer.vb">
+      <DependentUpon>UI_FusohProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohOrderProduksi.Designer.vb">
+      <DependentUpon>UI_FusohOrderProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohOrderProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohOrderProduksiDialog.Designer.vb">
+      <DependentUpon>UI_FusohOrderProduksiDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohOrderProduksiDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohOrderProduksiSerial.Designer.vb">
+      <DependentUpon>UI_FusohOrderProduksiSerial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohOrderProduksiSerial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohSaldoAwal.Designer.vb">
+      <DependentUpon>UI_FusohSaldoAwal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohSaldoAwal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohSaldoAwalDialog.Designer.vb">
+      <DependentUpon>UI_FusohSaldoAwalDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohSaldoAwalDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohDataSerial.Designer.vb">
+      <DependentUpon>UI_FusohDataSerial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohDataSerial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohAdjusmentFG.Designer.vb">
+      <DependentUpon>UI_FusohAdjusmentFG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohAdjusmentFG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohAdjusmentFGDialog.Designer.vb">
+      <DependentUpon>UI_FusohAdjusmentFGDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_FusohAdjusmentFGDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_SettingWIP.Designer.vb">
+      <DependentUpon>UI_SettingWIP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Fusoh\UI_SettingWIP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\DB.vb" />
+    <Compile Include="xCustomize\Nishi\RF_NishiKartuStock.Designer.vb">
+      <DependentUpon>RF_NishiKartuStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\RF_NishiKartuStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\RF_NishiVoucher.Designer.vb">
+      <DependentUpon>RF_NishiVoucher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\RF_NishiVoucher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiCekStockCase.Designer.vb">
+      <DependentUpon>UI_NishiCekStockCase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiCekStockCase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiCekStockHistory.Designer.vb">
+      <DependentUpon>UI_NishiCekStockHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiCekStockHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiCekStock.Designer.vb">
+      <DependentUpon>UI_NishiCekStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiCekStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiBarang.Designer.vb">
+      <DependentUpon>UI_NishiBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiBarangDialog.Designer.vb">
+      <DependentUpon>UI_NishiBarangDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiBarangDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiStockIN.Designer.vb">
+      <DependentUpon>UI_NishiStockIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiStockIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiStockINDialog.Designer.vb">
+      <DependentUpon>UI_NishiStockINDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiStockINDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiPermintaanStockOut.Designer.vb">
+      <DependentUpon>UI_NishiPermintaanStockOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiPermintaanStockOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiPermintaanStockOutDialog.Designer.vb">
+      <DependentUpon>UI_NishiPermintaanStockOutDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiPermintaanStockOutDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiStockINImpor.Designer.vb">
+      <DependentUpon>UI_NishiStockINImpor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiStockINImpor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiStockOut.Designer.vb">
+      <DependentUpon>UI_NishiStockOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiStockOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiStockOutDialog.Designer.vb">
+      <DependentUpon>UI_NishiStockOutDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiStockOutDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiStockOutDialog2.Designer.vb">
+      <DependentUpon>UI_NishiStockOutDialog2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiStockOutDialog2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiStockOutDialogFindSI.Designer.vb">
+      <DependentUpon>UI_NishiStockOutDialogFindSI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Nishi\UI_NishiStockOutDialogFindSI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\Db.vb" />
+    <Compile Include="xCustomize\SanYu\RF_SanyuVoucher.Designer.vb">
+      <DependentUpon>RF_SanyuVoucher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\RF_SanyuVoucher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\RF_SanYuVoucherProduksi.Designer.vb">
+      <DependentUpon>RF_SanYuVoucherProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\RF_SanYuVoucherProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\RF_SanYuRekapProduksi.Designer.vb">
+      <DependentUpon>RF_SanYuRekapProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\RF_SanYuRekapProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\RF_SanyuVoucherRencanaProduksi.Designer.vb">
+      <DependentUpon>RF_SanyuVoucherRencanaProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\RF_SanyuVoucherRencanaProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanYuMutasiStock.Designer.vb">
+      <DependentUpon>UI_SanYuMutasiStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanYuMutasiStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanYuMutasiStockDialog.Designer.vb">
+      <DependentUpon>UI_SanYuMutasiStockDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanYuMutasiStockDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanyuBarangImpor.Designer.vb">
+      <DependentUpon>UI_SanyuBarangImpor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanyuBarangImpor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanyuCekStockHistory.Designer.vb">
+      <DependentUpon>UI_SanyuCekStockHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanyuCekStockHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanYuDataProduksi.Designer.vb">
+      <DependentUpon>UI_SanYuDataProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanYuDataProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanyuDataProduksi2.Designer.vb">
+      <DependentUpon>UI_SanyuDataProduksi2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanyuDataProduksi2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanYuDataStock.Designer.vb">
+      <DependentUpon>UI_SanYuDataStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanYuDataStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanYuCekStock.Designer.vb">
+      <DependentUpon>UI_SanYuCekStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanYuCekStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanyuProduksiGR.Designer.vb">
+      <DependentUpon>UI_SanyuProduksiGR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanyuProduksiGR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanyuProduksiDialog.Designer.vb">
+      <DependentUpon>UI_SanyuProduksiDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanyuProduksiDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanYuProduksi.Designer.vb">
+      <DependentUpon>UI_SanYuProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanYuProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanYuRencanaProduksiDialog.Designer.vb">
+      <DependentUpon>UI_SanYuRencanaProduksiDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanYuRencanaProduksiDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanYuRencanaProduksi.Designer.vb">
+      <DependentUpon>UI_SanYuRencanaProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanYuRencanaProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanYuBarang.Designer.vb">
+      <DependentUpon>UI_SanYuBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanYuBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanYuBarangDialog.Designer.vb">
+      <DependentUpon>UI_SanYuBarangDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\SanYu\UI_SanYuBarangDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Travel\UI_TravelPenyerahanBarang.Designer.vb">
+      <DependentUpon>UI_TravelPenyerahanBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Travel\UI_TravelPenyerahanBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Travel\UI_TravelPenyerahanBarangDialog.Designer.vb">
+      <DependentUpon>UI_TravelPenyerahanBarangDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Travel\UI_TravelPenyerahanBarangDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Travel\UI_TravelMasterItem.Designer.vb">
+      <DependentUpon>UI_TravelMasterItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Travel\UI_TravelMasterItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Travel\UI_TravelMasterItemDialog.Designer.vb">
+      <DependentUpon>UI_TravelMasterItemDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Travel\UI_TravelMasterItemDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Data\UI_BukuBesarStock.resx">
+      <DependentUpon>UI_BukuBesarStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Data\UI_CekStock.resx">
+      <DependentUpon>UI_CekStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Data\UI_CekStockHistory.resx">
+      <DependentUpon>UI_CekStockHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Data\UI_CekStockHPP.resx">
+      <DependentUpon>UI_CekStockHPP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Data\UI_DataStock.resx">
+      <DependentUpon>UI_DataStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Data\UI_ZLog.resx">
+      <DependentUpon>UI_ZLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_BukuBesarStock.resx">
+      <DependentUpon>RF_BukuBesarStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_DataDataTransaksi.resx">
+      <DependentUpon>RF_DataDataTransaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Barang.resx">
+      <DependentUpon>UI_Barang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_BarangDialog.resx">
+      <DependentUpon>UI_BarangDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_BarangLokasi.resx">
+      <DependentUpon>UI_BarangLokasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Cost.resx">
+      <DependentUpon>UI_Cost.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Gudang.resx">
+      <DependentUpon>UI_Gudang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Kategori.resx">
+      <DependentUpon>UI_Kategori.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Merk.resx">
+      <DependentUpon>UI_Merk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Pajak.resx">
+      <DependentUpon>UI_Pajak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_SubKategori.resx">
+      <DependentUpon>UI_SubKategori.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_TipeTransaksi.resx">
+      <DependentUpon>UI_TipeTransaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_TipeTransaksiDialog.resx">
+      <DependentUpon>UI_TipeTransaksiDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Uom.resx">
+      <DependentUpon>UI_Uom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Setting\UI_MessageForm.resx">
+      <DependentUpon>UI_MessageForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Setting\UI_Setting.resx">
+      <DependentUpon>UI_Setting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Setting\UI_SettingItem.resx">
+      <DependentUpon>UI_SettingItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_MutasiStock.resx">
+      <DependentUpon>UI_MutasiStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_MutasiStockDialog.resx">
+      <DependentUpon>UI_MutasiStockDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_zPemakaianStockDialog.resx">
+      <DependentUpon>UI_zPemakaianStockDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_zPemakaianStock.resx">
+      <DependentUpon>UI_zPemakaianStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PemakaianStock.resx">
+      <DependentUpon>UI_PemakaianStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PemakaianStockDialog.resx">
+      <DependentUpon>UI_PemakaianStockDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PenyesuaianStock.resx">
+      <DependentUpon>UI_PenyesuaianStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PenyesuaianStockDialog.resx">
+      <DependentUpon>UI_PenyesuaianStockDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PermintaanStock.resx">
+      <DependentUpon>UI_PermintaanStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PermintaanStockDialog.resx">
+      <DependentUpon>UI_PermintaanStockDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_Produksi.resx">
+      <DependentUpon>UI_Produksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_ProduksiDialog.resx">
+      <DependentUpon>UI_ProduksiDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_ProduksiDialogTemplate.resx">
+      <DependentUpon>UI_ProduksiDialogTemplate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_SaldoAwal.resx">
+      <DependentUpon>UI_SaldoAwal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_SaldoAwalDialog.resx">
+      <DependentUpon>UI_SaldoAwalDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_StockOpname.resx">
+      <DependentUpon>UI_StockOpname.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_StockOpnameDialog.resx">
+      <DependentUpon>UI_StockOpnameDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_StockOpnameProses.resx">
+      <DependentUpon>UI_StockOpnameProses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\DiptaTitisari\UI_BarangOutbond.resx">
+      <DependentUpon>UI_BarangOutbond.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\DiptaTitisari\UI_BarangOutbondDialog.resx">
+      <DependentUpon>UI_BarangOutbondDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\DiptaTitisari\UI_Inbound.resx">
+      <DependentUpon>UI_Inbound.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\DiptaTitisari\UI_InboundDialog.resx">
+      <DependentUpon>UI_InboundDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\DiptaTitisari\UI_MasterLokasi.resx">
+      <DependentUpon>UI_MasterLokasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\RF_FusohDetailStokBahanBaku.resx">
+      <DependentUpon>RF_FusohDetailStokBahanBaku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\RF_FusohRekapDailyProcess.resx">
+      <DependentUpon>RF_FusohRekapDailyProcess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\RF_FusohRekapSerial.resx">
+      <DependentUpon>RF_FusohRekapSerial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\RF_FusohStockBalance.resx">
+      <DependentUpon>RF_FusohStockBalance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\RF_FusohRekapDempyou.resx">
+      <DependentUpon>RF_FusohRekapDempyou.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\RF_FusohRekapTransaksi.resx">
+      <DependentUpon>RF_FusohRekapTransaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\RF_FusohVoucher.resx">
+      <DependentUpon>RF_FusohVoucher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohAdjusmentRM.resx">
+      <DependentUpon>UI_FusohAdjusmentRM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohAdjusmentRMDialog.resx">
+      <DependentUpon>UI_FusohAdjusmentRMDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohAdjustmentRMScrap.resx">
+      <DependentUpon>UI_FusohAdjustmentRMScrap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohAdjustmentRMSerial.resx">
+      <DependentUpon>UI_FusohAdjustmentRMSerial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohDailyProsesWIP.resx">
+      <DependentUpon>UI_FusohDailyProsesWIP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohDailyProses.resx">
+      <DependentUpon>UI_FusohDailyProses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohDailyProsesWIPDialog.resx">
+      <DependentUpon>UI_FusohDailyProsesWIPDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohDempyou.resx">
+      <DependentUpon>UI_FusohDempyou.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohMasterProcessCutting.resx">
+      <DependentUpon>UI_FusohMasterProcessCutting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohMasterProcessCuttingDialog.resx">
+      <DependentUpon>UI_FusohMasterProcessCuttingDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohMesin.resx">
+      <DependentUpon>UI_FusohMesin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohMesinDialog.resx">
+      <DependentUpon>UI_FusohMesinDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohCekData.resx">
+      <DependentUpon>UI_FusohCekData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohCekStockHPPSerial.resx">
+      <DependentUpon>UI_FusohCekStockHPPSerial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohDailyProsesDialog.resx">
+      <DependentUpon>UI_FusohDailyProsesDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohDataDempyou.resx">
+      <DependentUpon>UI_FusohDataDempyou.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohDataProduksi.resx">
+      <DependentUpon>UI_FusohDataProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohDataProduksiSJ.resx">
+      <DependentUpon>UI_FusohDataProduksiSJ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohDataStock.resx">
+      <DependentUpon>UI_FusohDataStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohCuttingWIP.resx">
+      <DependentUpon>UI_FusohCuttingWIP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohCuttingWIPDialog.resx">
+      <DependentUpon>UI_FusohCuttingWIPDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohBreakdownWIP.resx">
+      <DependentUpon>UI_FusohBreakdownWIP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohProduksiResetAll.resx">
+      <DependentUpon>UI_FusohProduksiResetAll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohProductionPlan.resx">
+      <DependentUpon>UI_FusohProductionPlan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohStockTacking.resx">
+      <DependentUpon>UI_FusohStockTacking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohTransferStockDialog.resx">
+      <DependentUpon>UI_FusohTransferStockDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohCekSerialHistory.resx">
+      <DependentUpon>UI_FusohCekSerialHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohCekStockHistorySerial.resx">
+      <DependentUpon>UI_FusohCekStockHistorySerial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohProduksiHistory.resx">
+      <DependentUpon>UI_FusohProduksiHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohCekStockHistory.resx">
+      <DependentUpon>UI_FusohCekStockHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohBarang.resx">
+      <DependentUpon>UI_FusohBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohBarangDialog.resx">
+      <DependentUpon>UI_FusohBarangDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohCekSerial.resx">
+      <DependentUpon>UI_FusohCekSerial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohCekStock.resx">
+      <DependentUpon>UI_FusohCekStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohBackToMaterial.resx">
+      <DependentUpon>UI_FusohBackToMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohBackToMaterialDialog.resx">
+      <DependentUpon>UI_FusohBackToMaterialDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohDataSerial2.resx">
+      <DependentUpon>UI_FusohDataSerial2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohTransferStock.resx">
+      <DependentUpon>UI_FusohTransferStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohSerialDialog2.resx">
+      <DependentUpon>UI_FusohSerialDialog2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohSerialDialog1.resx">
+      <DependentUpon>UI_FusohSerialDialog1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohSerialDialog.resx">
+      <DependentUpon>UI_FusohSerialDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohProduksiDialog.resx">
+      <DependentUpon>UI_FusohProduksiDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohProduksi.resx">
+      <DependentUpon>UI_FusohProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohOrderProduksi.resx">
+      <DependentUpon>UI_FusohOrderProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohOrderProduksiDialog.resx">
+      <DependentUpon>UI_FusohOrderProduksiDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohOrderProduksiSerial.resx">
+      <DependentUpon>UI_FusohOrderProduksiSerial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohSaldoAwal.resx">
+      <DependentUpon>UI_FusohSaldoAwal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohSaldoAwalDialog.resx">
+      <DependentUpon>UI_FusohSaldoAwalDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohDataSerial.resx">
+      <DependentUpon>UI_FusohDataSerial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohAdjusmentFG.resx">
+      <DependentUpon>UI_FusohAdjusmentFG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_FusohAdjusmentFGDialog.resx">
+      <DependentUpon>UI_FusohAdjusmentFGDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Fusoh\UI_SettingWIP.resx">
+      <DependentUpon>UI_SettingWIP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Nishi\RF_NishiKartuStock.resx">
+      <DependentUpon>RF_NishiKartuStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Nishi\RF_NishiVoucher.resx">
+      <DependentUpon>RF_NishiVoucher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Nishi\UI_NishiCekStockCase.resx">
+      <DependentUpon>UI_NishiCekStockCase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Nishi\UI_NishiCekStockHistory.resx">
+      <DependentUpon>UI_NishiCekStockHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Nishi\UI_NishiCekStock.resx">
+      <DependentUpon>UI_NishiCekStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Nishi\UI_NishiBarang.resx">
+      <DependentUpon>UI_NishiBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Nishi\UI_NishiBarangDialog.resx">
+      <DependentUpon>UI_NishiBarangDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Nishi\UI_NishiStockIN.resx">
+      <DependentUpon>UI_NishiStockIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Nishi\UI_NishiStockINDialog.resx">
+      <DependentUpon>UI_NishiStockINDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Nishi\UI_NishiPermintaanStockOut.resx">
+      <DependentUpon>UI_NishiPermintaanStockOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Nishi\UI_NishiPermintaanStockOutDialog.resx">
+      <DependentUpon>UI_NishiPermintaanStockOutDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Nishi\UI_NishiStockINImpor.resx">
+      <DependentUpon>UI_NishiStockINImpor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Nishi\UI_NishiStockOut.resx">
+      <DependentUpon>UI_NishiStockOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Nishi\UI_NishiStockOutDialog.resx">
+      <DependentUpon>UI_NishiStockOutDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Nishi\UI_NishiStockOutDialog2.resx">
+      <DependentUpon>UI_NishiStockOutDialog2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Nishi\UI_NishiStockOutDialogFindSI.resx">
+      <DependentUpon>UI_NishiStockOutDialogFindSI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\SanYu\RF_SanyuVoucher.resx">
+      <DependentUpon>RF_SanyuVoucher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\SanYu\RF_SanYuVoucherProduksi.resx">
+      <DependentUpon>RF_SanYuVoucherProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\SanYu\RF_SanYuRekapProduksi.resx">
+      <DependentUpon>RF_SanYuRekapProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\SanYu\RF_SanyuVoucherRencanaProduksi.resx">
+      <DependentUpon>RF_SanyuVoucherRencanaProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\SanYu\UI_SanYuMutasiStock.resx">
+      <DependentUpon>UI_SanYuMutasiStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\SanYu\UI_SanYuMutasiStockDialog.resx">
+      <DependentUpon>UI_SanYuMutasiStockDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\SanYu\UI_SanyuBarangImpor.resx">
+      <DependentUpon>UI_SanyuBarangImpor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\SanYu\UI_SanyuCekStockHistory.resx">
+      <DependentUpon>UI_SanyuCekStockHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\SanYu\UI_SanYuDataProduksi.resx">
+      <DependentUpon>UI_SanYuDataProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\SanYu\UI_SanyuDataProduksi2.resx">
+      <DependentUpon>UI_SanyuDataProduksi2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\SanYu\UI_SanYuDataStock.resx">
+      <DependentUpon>UI_SanYuDataStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\SanYu\UI_SanYuCekStock.resx">
+      <DependentUpon>UI_SanYuCekStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\SanYu\UI_SanyuProduksiGR.resx">
+      <DependentUpon>UI_SanyuProduksiGR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\SanYu\UI_SanyuProduksiDialog.resx">
+      <DependentUpon>UI_SanyuProduksiDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\SanYu\UI_SanYuProduksi.resx">
+      <DependentUpon>UI_SanYuProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\SanYu\UI_SanYuRencanaProduksiDialog.resx">
+      <DependentUpon>UI_SanYuRencanaProduksiDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\SanYu\UI_SanYuRencanaProduksi.resx">
+      <DependentUpon>UI_SanYuRencanaProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\SanYu\UI_SanYuBarang.resx">
+      <DependentUpon>UI_SanYuBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\SanYu\UI_SanYuBarangDialog.resx">
+      <DependentUpon>UI_SanYuBarangDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Travel\UI_TravelPenyerahanBarang.resx">
+      <DependentUpon>UI_TravelPenyerahanBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Travel\UI_TravelPenyerahanBarangDialog.resx">
+      <DependentUpon>UI_TravelPenyerahanBarangDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Travel\UI_TravelMasterItem.resx">
+      <DependentUpon>UI_TravelMasterItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Travel\UI_TravelMasterItemDialog.resx">
+      <DependentUpon>UI_TravelMasterItemDialog.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\account_balances_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account_balances_24.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

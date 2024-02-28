@@ -1,0 +1,67 @@
++++++ Start 03-05-2014 22:45 +++++ ##sbm
+- Modified Class PrepaidExpense Add ReadOnly Property
+- Modified Class UI_PrepaidExpense,UI_PrepaidExpenseDialog
+
++++++ Start 27-04-2014 21:29 +++++ ##sbm
+- Modified Class UI_TransaksiGL, UI_TransaksiGLDialogNew
+- Modified Class RF_BuktiHarian
+- Modified Class GlGiro Add Property TransaksiCair
+- Modified Class Remove Property CekgiroNomor,CekgiroAC,CekgiroBank,CekgiroAkun,CekgiroJatuhTempo
+
++++++ Start 18-04-2014 17:19 +++++ ##sbm
+#### m01 - FINA ####
+- Modified Enum StatusTransaksiEnum, Class StatusTransaksiCol (m001_master)
+- Remove Class StatusTransaksiCol (m001_master)
+- Modified Enum KasBankKeluarTipe,BankCaraBayar, Class GlMain (m001_gl)
+- Remove Class KasBankKeluarTipeCollection,BankCaraBayarCollection (m001_gl)
+- Modified Class PengajuanDana (m001_paymentrequest)
+- Modified Class UI_PengajuanDanaDialog
+- Modified Class BukuBesar (m001_report)
+- Modified Class FinaSetting (m001_setting)
+- Modified Class Pinjaman, PinjamanDetail (m001_loanadministration)
+- Modified Class PrepaidExpense, PrepaidDetail (m001_prepaidexpense)
+- Modified Class RevaluasiValas, RevalDetail, RevalUang, RevalCoa (m001_revaluasivalas)
+- Modified Class UI_SaldoAwal, UI_SaldoAwalDialog
+- Modified Class UI_Pinjaman, UI_PinjamanDialog
+- Modified Class UI_RevaluasiValasDialog
+- Modified Class UI_TransaksiGL, UI_TransaksiGLDialogNew
+
+#### Mod_Sys ####
+- Remove SumberData & Number to Framework
+
++++++ Start 16-04-2014 23:09 +++++ ##sbm
+#### m01 - FINA ####
+- Remove Class Persistent.SumberData, Persistent.SumberDataCollection, Enum SumberDataJenis (m001_setting)
+- Add Class Persistent.SumberDataCollection, Class Persistent.SumberDataJenis,Logic.Const (NumberClass)
+- Modified Class Persistent.TransactionMain (NumberClass)
+- Remove Class Persistent.EnumCollection(Of T) (NumberClass)
+- Modified Class UI_SettingGL
+
+#### Mod_Sys ####
+- Remove Enum SumberDataCollection.SumberDataJenis, Persistent.SumberDataCollection
+- Modified Class Persistent.SumberData
+- Add Class Persistent.SumberDataCollection(Of T) [NEED TO UPDATE FRAMEWORK !!!!!!]
+
++++++ Start 15-04-2014 3:03 +++++ ##sbm
+#### Mod_Sys ####
+- Add class LogicLayer.[Const], LogicLayer.NumberResult, ,LogicLayer.NumberFormat,
+  LogicLayer.NumberClass, Persistent.TransactionBase (NumberClass.vb)
+
++++++ Start 14-04-2014 0:03 +++++ ##sbm
+#### Mod_Sys ####
+- Add class Persistent.SumberData, Persistent.SumberDataCollection (NumberClass.vb)
+
++++++ Start 11-04-2014 21:53 +++++ ##sbm
+#### m01 - FINA ####
+- Set GlMain.ModuleId = Nothing pada KM,KK,BM,BK,JA,JU (UI_TransaksiGLDialogNew).
+- Perubahan Aturan
+  Apabila Input GL dari TransaksiGL Set GlMain.ModuleId = Nothing
+  Apabila Input GL selain dari TransaksiGL Set GlMain.ModuleId = Fina (misal Amortisasi)
+- Delete class Persistent.PrepaidExpenseMain (NumberClass)
+- Rombak total XPO untuk Amortisasi
+- Alur Amortisasi
+  1. Tambah Data --> Simpan di m01cprepaidmain dan m01dprepaidamortization
+                     Auto Jurnal BK : Kas/Bank(K) --> Biaya Dibayar Dimuka(D)
+  2. Amortisasi Tiap Bulan --> Update field fk_gl di m01dprepaidamortization
+                               Auto Jurnal JU : Biaya Dibayar Dimuka(K) --> Biaya Opr(D)
+- Rubah kode XPO Persistent.PrepaidExpense dan Persistent.PrepaidDetail (m001_prepaidexpense)

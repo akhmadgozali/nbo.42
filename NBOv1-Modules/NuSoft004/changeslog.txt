@@ -1,0 +1,22 @@
++++++ Start 10-05-2014+++++ ##tmkm
+#### m04 - INVENTORY ####
+-Benahi layout Form
+-Benahi lebar kolom untuk combo
++++++  End 10-05-2014+++++
+
+
++++++ Start 13-04-2014+++++ ##agn
+#### m04 - INVENTORY ####
+-Tambah XPO Kartu Stock
+-Benahi Form Saldo Awal Stock
+-Tambah data "Cari Stock"
++++++  End 13-04-2014+++++
+
+
++++++ Start 22-04-2014+++++ ##agn
+#### m04 - INVENTORY ####
+-Rubah Persistent, ada perubahan di ENUM
+-Rubah untuk Code Nomor Transaksi di semua Form
+
+
++++++  End 22-04-2014+++++

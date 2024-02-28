@@ -1,0 +1,1221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{04F93D2A-B4B9-4B20-B912-5166CF8AAFC7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NuSoft.NUI.Win.Forms.Modules.NuSoft005</RootNamespace>
+    <AssemblyName>NuSoft005</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\release\Modules\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.Charts.v13.2.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.Data.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.Office.v13.2.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.Spreadsheet.v13.2.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.Utils.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.Xpo.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraBars.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraCharts.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2.UI, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraCharts.v13.2.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraEditors.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraGrid.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraLayout.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraNavBar.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraPivotGrid.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraPrinting.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraScheduler.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraScheduler.v13.2.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraTreeList.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraVerticalGrid.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft">
+      <HintPath>..\..\Release\NuSoft.exe</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Core">
+      <HintPath>..\..\Release\NuSoft.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Core.Win.Forms">
+      <HintPath>..\..\Release\NuSoft.Core.Win.Forms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Data">
+      <HintPath>..\..\Release\NuSoft.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.NPO">
+      <HintPath>..\..\Release\NuSoft.NPO.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Utils">
+      <HintPath>..\..\Release\NuSoft.Utils.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft001, Version=1.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\Modules\NuSoft001.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Nusoft004, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\Modules\Nusoft004.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft006, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\Modules\NuSoft006.dll</HintPath>
+    </Reference>
+    <Reference Include="NuSoftModSys">
+      <HintPath>..\..\Release\Modules\NuSoftModSys.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LogicLayer\m005_aLogic.vb" />
+    <Compile Include="LogicLayer\m005_dppembelian.vb" />
+    <Compile Include="LogicLayer\m005_gl.vb" />
+    <Compile Include="LogicLayer\m005_master.vb" />
+    <Compile Include="LogicLayer\m005_orderpembelian.vb" />
+    <Compile Include="LogicLayer\m005_pembayaranhutang.vb" />
+    <Compile Include="LogicLayer\m005_pembeliancash.vb" />
+    <Compile Include="LogicLayer\m005_penawaran.vb" />
+    <Compile Include="LogicLayer\m005_penerimaanbarang.vb" />
+    <Compile Include="LogicLayer\m005_penerimaaninvoice.vb" />
+    <Compile Include="LogicLayer\m005_permintaanpembelian.vb" />
+    <Compile Include="LogicLayer\m005_transaksi.vb" />
+    <Compile Include="LogicLayer\m05_zlainnya.vb" />
+    <Compile Include="LogicLayer\NumberClass.vb" />
+    <Compile Include="LogicLayer\m005_returpembelian.vb" />
+    <Compile Include="MainClass.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Services\ServiceBase.vb" />
+    <Compile Include="UILayer\Data\UI_ZLog.Designer.vb">
+      <DependentUpon>UI_ZLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_ZLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Setting\UI_MessageForm.designer.vb">
+      <DependentUpon>UI_MessageForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Setting\UI_MessageForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_HistoryGR.Designer.vb">
+      <DependentUpon>UI_HistoryGR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_HistoryGR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_HistoryHarga.Designer.vb">
+      <DependentUpon>UI_HistoryHarga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_HistoryHarga.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_OrderPembelianHistory.Designer.vb">
+      <DependentUpon>UI_OrderPembelianHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_OrderPembelianHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PenerimaanInvoiceHistory.Designer.vb">
+      <DependentUpon>UI_PenerimaanInvoiceHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PenerimaanInvoiceHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\Fusoh_Forecast.vb" />
+    <Compile Include="zCustomize\Fusoh\Fusoh_Logic.vb" />
+    <Compile Include="zCustomize\Fusoh\Fusoh_Persistent\Persistent_FusohExim.vb" />
+    <Compile Include="zCustomize\Fusoh\Fusoh_Persistent\Persistent_FusohInvoicePembelian.vb" />
+    <Compile Include="zCustomize\Fusoh\Fusoh_Persistent\Persistent_FusohKuotaImpor.vb" />
+    <Compile Include="zCustomize\Fusoh\Fusoh_Persistent\Persistent_FusohPO.vb" />
+    <Compile Include="zCustomize\Fusoh\Fusoh_ResetKurs.vb" />
+    <Compile Include="zCustomize\Fusoh\Fusoh_Service\Service_FusohPO.vb" />
+    <Compile Include="zCustomize\Fusoh\Fusoh_Service\Service_FusohInvoice.vb" />
+    <Compile Include="zCustomize\Fusoh\Fusoh_Service\Service_FusohExim.vb" />
+    <Compile Include="zCustomize\Fusoh\Log_FusohData.Designer.vb">
+      <DependentUpon>Log_FusohData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\Log_FusohData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\RF_FusohRekapQuotaImport.Designer.vb">
+      <DependentUpon>RF_FusohRekapQuotaImport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\RF_FusohRekapQuotaImport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\RF_FusohRekap.Designer.vb">
+      <DependentUpon>RF_FusohRekap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\RF_FusohRekap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\RF_FusohVoucherBaru.Designer.vb">
+      <DependentUpon>RF_FusohVoucherBaru.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\RF_FusohVoucherBaru.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohCekData.Designer.vb">
+      <DependentUpon>UI_FusohCekData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohCekData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_CekData.Designer.vb">
+      <DependentUpon>UI_CekData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_CekData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_SaldoHutang.Designer.vb">
+      <DependentUpon>UI_SaldoHutang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_SaldoHutang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_SaldoHutangUmur.Designer.vb">
+      <DependentUpon>UI_SaldoHutangUmur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_SaldoHutangUmur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_Statistik.Designer.vb">
+      <DependentUpon>UI_Statistik.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_Statistik.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohCekDempyou.Designer.vb">
+      <DependentUpon>UI_FusohCekDempyou.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohCekDempyou.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohCostSheetResetSingle.designer.vb">
+      <DependentUpon>UI_FusohCostSheetResetSingle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohCostSheetResetSingle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohDataCostSheet.Designer.vb">
+      <DependentUpon>UI_FusohDataCostSheet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohDataCostSheet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohDataOrderPembelian.Designer.vb">
+      <DependentUpon>UI_FusohDataOrderPembelian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohDataOrderPembelian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohEximDialogRev01.Designer.vb">
+      <DependentUpon>UI_FusohEximDialogRev01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohEximDialogRev01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohEximRev01.Designer.vb">
+      <DependentUpon>UI_FusohEximRev01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohEximRev01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohForecast.Designer.vb">
+      <DependentUpon>UI_FusohForecast.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohForecast.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohForecastDialog.Designer.vb">
+      <DependentUpon>UI_FusohForecastDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohForecastDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohMessage.Designer.vb">
+      <DependentUpon>UI_FusohMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohOrderPembelianDialogImpor.Designer.vb">
+      <DependentUpon>UI_FusohOrderPembelianDialogImpor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohOrderPembelianDialogImpor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohPenerimaanInvoiceDialogRev01AddItem.Designer.vb">
+      <DependentUpon>UI_FusohPenerimaanInvoiceDialogRev01AddItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohPenerimaanInvoiceDialogRev01AddItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohOrderPembelianDialogRevisiLength.Designer.vb">
+      <DependentUpon>UI_FusohOrderPembelianDialogRevisiLength.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohOrderPembelianDialogRevisiLength.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohPenerimaanBarangDialogRev01.Designer.vb">
+      <DependentUpon>UI_FusohPenerimaanBarangDialogRev01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohPenerimaanBarangDialogRev01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohPenerimaanBarangRev01.Designer.vb">
+      <DependentUpon>UI_FusohPenerimaanBarangRev01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohPenerimaanBarangRev01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohPenerimaanInvoiceRev01.Designer.vb">
+      <DependentUpon>UI_FusohPenerimaanInvoiceRev01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohPenerimaanInvoiceRev01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohPenerimaanInvoiceDialogRev01.Designer.vb">
+      <DependentUpon>UI_FusohPenerimaanInvoiceDialogRev01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohPenerimaanInvoiceDialogRev01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohResetKursDialog.Designer.vb">
+      <DependentUpon>UI_FusohResetKursDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohResetKursDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohResetKurs.Designer.vb">
+      <DependentUpon>UI_FusohResetKurs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohResetKurs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohPembayaran.Designer.vb">
+      <DependentUpon>UI_FusohPembayaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohPembayaran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohPembayaranDialog.Designer.vb">
+      <DependentUpon>UI_FusohPembayaranDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohPembayaranDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\Fusoh_PembayaranHutang.vb" />
+    <Compile Include="zCustomize\Fusoh\UI_FusohCostSheet.Designer.vb">
+      <DependentUpon>UI_FusohCostSheet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohCostSheet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohCostSheetDialog.Designer.vb">
+      <DependentUpon>UI_FusohCostSheetDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohCostSheetDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\Fusoh_Exim.vb" />
+    <Compile Include="zCustomize\Fusoh\Fusoh_PenerimaanBarang.vb" />
+    <Compile Include="zCustomize\Fusoh\Fusoh_PenerimaanInvoice.vb" />
+    <Compile Include="zCustomize\Fusoh\RF_FusohVoucher.Designer.vb">
+      <DependentUpon>RF_FusohVoucher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\RF_FusohVoucher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_DataDataTransaksi.Designer.vb">
+      <DependentUpon>RF_DataDataTransaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_DataDataTransaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_Hutang.Designer.vb">
+      <DependentUpon>RF_Hutang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_Hutang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_Item.Designer.vb">
+      <DependentUpon>RF_Item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_Item.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_Rekap.Designer.vb">
+      <DependentUpon>RF_Rekap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_Rekap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Termin.Designer.vb">
+      <DependentUpon>UI_Termin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Termin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_TerminDialog.Designer.vb">
+      <DependentUpon>UI_TerminDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_TerminDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Via.Designer.vb">
+      <DependentUpon>UI_Via.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Via.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Setting\UI_Setting.Designer.vb">
+      <DependentUpon>UI_Setting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Setting\UI_Setting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohPenerimaanBarangDialogSerial.Designer.vb">
+      <DependentUpon>UI_FusohPenerimaanBarangDialogSerial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohPenerimaanBarangDialogSerial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohEximDialogSerial.Designer.vb">
+      <DependentUpon>UI_FusohEximDialogSerial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohEximDialogSerial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohOrderPembelian.Designer.vb">
+      <DependentUpon>UI_FusohOrderPembelian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohOrderPembelian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_OrderPembelianApprove.Designer.vb">
+      <DependentUpon>UI_OrderPembelianApprove.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_OrderPembelianApprove.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_OrderPembelianApproveDialog.Designer.vb">
+      <DependentUpon>UI_OrderPembelianApproveDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_OrderPembelianApproveDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohOrderPembelianDialog.Designer.vb">
+      <DependentUpon>UI_FusohOrderPembelianDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohOrderPembelianDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_OrderPembelianDialog.Designer.vb">
+      <DependentUpon>UI_OrderPembelianDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_OrderPembelianDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_OrderPembelianDialogPR.Designer.vb">
+      <DependentUpon>UI_OrderPembelianDialogPR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_OrderPembelianDialogPR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PembelianCash.Designer.vb">
+      <DependentUpon>UI_PembelianCash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PembelianCash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PembelianCashDialog.Designer.vb">
+      <DependentUpon>UI_PembelianCashDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PembelianCashDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PenerimaanBarang.Designer.vb">
+      <DependentUpon>UI_PenerimaanBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PenerimaanBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PenerimaanBarangDialogS.Designer.vb">
+      <DependentUpon>UI_PenerimaanBarangDialogS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PenerimaanBarangDialogS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PenerimaanBarangDialog.Designer.vb">
+      <DependentUpon>UI_PenerimaanBarangDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PenerimaanBarangDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PenerimaanBarangDialogSerial.Designer.vb">
+      <DependentUpon>UI_PenerimaanBarangDialogSerial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PenerimaanBarangDialogSerial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PengirimanRetur.Designer.vb">
+      <DependentUpon>UI_PengirimanRetur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PengirimanRetur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PengirimanReturDialog.Designer.vb">
+      <DependentUpon>UI_PengirimanReturDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PengirimanReturDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_SaldoAwalHutangDialog.Designer.vb">
+      <DependentUpon>UI_SaldoAwalHutangDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_SaldoAwalHutangDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_DPPembelian.Designer.vb">
+      <DependentUpon>UI_DPPembelian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_DPPembelian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_DPPembelianDialog.Designer.vb">
+      <DependentUpon>UI_DPPembelianDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_DPPembelianDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_OrderPembelian.Designer.vb">
+      <DependentUpon>UI_OrderPembelian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_OrderPembelian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_Pembayaran.Designer.vb">
+      <DependentUpon>UI_Pembayaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_Pembayaran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PembayaranDialog.Designer.vb">
+      <DependentUpon>UI_PembayaranDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PembayaranDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_Penawaran.Designer.vb">
+      <DependentUpon>UI_Penawaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_Penawaran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PenawaranDialog.Designer.vb">
+      <DependentUpon>UI_PenawaranDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PenawaranDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PenerimaanInvoice.Designer.vb">
+      <DependentUpon>UI_PenerimaanInvoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PenerimaanInvoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PenerimaanInvoiceDialog.Designer.vb">
+      <DependentUpon>UI_PenerimaanInvoiceDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PenerimaanInvoiceDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_SaldoAwalHutang.Designer.vb">
+      <DependentUpon>UI_SaldoAwalHutang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_SaldoAwalHutang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\Fusoh_KuotaImpor.vb" />
+    <Compile Include="zCustomize\Fusoh\Fusoh_PurchaseOrder.vb" />
+    <Compile Include="zCustomize\Fusoh\UI_FusohKuotaImpor.Designer.vb">
+      <DependentUpon>UI_FusohKuotaImpor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohKuotaImpor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohKuotaImporDialog.Designer.vb">
+      <DependentUpon>UI_FusohKuotaImporDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohKuotaImporDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohCostSheetResetAll.designer.vb">
+      <DependentUpon>UI_FusohCostSheetResetAll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Fusoh\UI_FusohCostSheetResetAll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Nishi\DB.vb" />
+    <Compile Include="zCustomize\Nishi\RF_NishiVoucher.Designer.vb">
+      <DependentUpon>RF_NishiVoucher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Nishi\RF_NishiVoucher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Nishi\UI_NishiPembayaranAPP.Designer.vb">
+      <DependentUpon>UI_NishiPembayaranAPP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Nishi\UI_NishiPembayaranAPP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Nishi\UI_NishiPembayaran.Designer.vb">
+      <DependentUpon>UI_NishiPembayaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Nishi\UI_NishiPembayaran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Nishi\UI_NishiPembayaranDialog.Designer.vb">
+      <DependentUpon>UI_NishiPembayaranDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Nishi\UI_NishiPembayaranDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Nishi\UI_NishiPenerimaanInvoice.Designer.vb">
+      <DependentUpon>UI_NishiPenerimaanInvoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Nishi\UI_NishiPenerimaanInvoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\Nishi\UI_NishiPenerimaanInvoiceDialog.Designer.vb">
+      <DependentUpon>UI_NishiPenerimaanInvoiceDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\Nishi\UI_NishiPenerimaanInvoiceDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\RF_SanYuRekapPenerimaan.Designer.vb">
+      <DependentUpon>RF_SanYuRekapPenerimaan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\RF_SanYuRekapPenerimaan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\RF_SanYuVoucher.Designer.vb">
+      <DependentUpon>RF_SanYuVoucher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\RF_SanYuVoucher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\RF_SanYuRekapPIB.Designer.vb">
+      <DependentUpon>RF_SanYuRekapPIB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\RF_SanYuRekapPIB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\SanyuDBMod4.vb" />
+    <Compile Include="zCustomize\zSanYu\UI_SanYuCekStockPIB.Designer.vb">
+      <DependentUpon>UI_SanYuCekStockPIB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuCekStockPIB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanyuPembayaran.Designer.vb">
+      <DependentUpon>UI_SanyuPembayaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanyuPembayaran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuPembayaranDialog.Designer.vb">
+      <DependentUpon>UI_SanYuPembayaranDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuPembayaranDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuPenerimaanBarangLokal.Designer.vb">
+      <DependentUpon>UI_SanYuPenerimaanBarangLokal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuPenerimaanBarangLokal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuPenerimaanBarangImpor.Designer.vb">
+      <DependentUpon>UI_SanYuPenerimaanBarangImpor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuPenerimaanBarangImpor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuPenerimaanInvoiceGR.Designer.vb">
+      <DependentUpon>UI_SanYuPenerimaanInvoiceGR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuPenerimaanInvoiceGR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuPenerimaanInvoicePO.Designer.vb">
+      <DependentUpon>UI_SanYuPenerimaanInvoicePO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuPenerimaanInvoicePO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuPenerimaanInvoice.Designer.vb">
+      <DependentUpon>UI_SanYuPenerimaanInvoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuPenerimaanInvoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuPenerimaanInvoiceDialog.Designer.vb">
+      <DependentUpon>UI_SanYuPenerimaanInvoiceDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuPenerimaanInvoiceDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuPIBDialog.Designer.vb">
+      <DependentUpon>UI_SanYuPIBDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuPIBDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuPIB.Designer.vb">
+      <DependentUpon>UI_SanYuPIB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuPIB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuPenerimaanBarangDialog.Designer.vb">
+      <DependentUpon>UI_SanYuPenerimaanBarangDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuPenerimaanBarangDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuPenerimaanBarang.Designer.vb">
+      <DependentUpon>UI_SanYuPenerimaanBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuPenerimaanBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuKuotaImpor.Designer.vb">
+      <DependentUpon>UI_SanYuKuotaImpor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuKuotaImpor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuKuotaImporDialog.Designer.vb">
+      <DependentUpon>UI_SanYuKuotaImporDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuKuotaImporDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuOrderPembelian.Designer.vb">
+      <DependentUpon>UI_SanYuOrderPembelian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuOrderPembelian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuOrderPembelianDialog.Designer.vb">
+      <DependentUpon>UI_SanYuOrderPembelianDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\UI_SanYuOrderPembelianDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zCustomize\zSanYu\SanYuDB.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Data\UI_ZLog.resx">
+      <DependentUpon>UI_ZLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Setting\UI_MessageForm.resx">
+      <DependentUpon>UI_MessageForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_HistoryGR.resx">
+      <DependentUpon>UI_HistoryGR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_HistoryHarga.resx">
+      <DependentUpon>UI_HistoryHarga.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_OrderPembelianHistory.resx">
+      <DependentUpon>UI_OrderPembelianHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PenerimaanInvoiceHistory.resx">
+      <DependentUpon>UI_PenerimaanInvoiceHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\Log_FusohData.resx">
+      <DependentUpon>Log_FusohData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\RF_FusohRekapQuotaImport.resx">
+      <DependentUpon>RF_FusohRekapQuotaImport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\RF_FusohRekap.resx">
+      <DependentUpon>RF_FusohRekap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\RF_FusohVoucherBaru.resx">
+      <DependentUpon>RF_FusohVoucherBaru.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohCekData.resx">
+      <DependentUpon>UI_FusohCekData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Data\UI_CekData.resx">
+      <DependentUpon>UI_CekData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Data\UI_SaldoHutang.resx">
+      <DependentUpon>UI_SaldoHutang.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Data\UI_SaldoHutangUmur.resx">
+      <DependentUpon>UI_SaldoHutangUmur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Data\UI_Statistik.resx">
+      <DependentUpon>UI_Statistik.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohCekDempyou.resx">
+      <DependentUpon>UI_FusohCekDempyou.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohCostSheetResetSingle.resx">
+      <DependentUpon>UI_FusohCostSheetResetSingle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohDataCostSheet.resx">
+      <DependentUpon>UI_FusohDataCostSheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohDataOrderPembelian.resx">
+      <DependentUpon>UI_FusohDataOrderPembelian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohEximDialogRev01.resx">
+      <DependentUpon>UI_FusohEximDialogRev01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohEximRev01.resx">
+      <DependentUpon>UI_FusohEximRev01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohForecast.resx">
+      <DependentUpon>UI_FusohForecast.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohForecastDialog.resx">
+      <DependentUpon>UI_FusohForecastDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohMessage.resx">
+      <DependentUpon>UI_FusohMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohOrderPembelianDialogImpor.resx">
+      <DependentUpon>UI_FusohOrderPembelianDialogImpor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohPenerimaanInvoiceDialogRev01AddItem.resx">
+      <DependentUpon>UI_FusohPenerimaanInvoiceDialogRev01AddItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohOrderPembelianDialogRevisiLength.resx">
+      <DependentUpon>UI_FusohOrderPembelianDialogRevisiLength.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohPenerimaanBarangDialogRev01.resx">
+      <DependentUpon>UI_FusohPenerimaanBarangDialogRev01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohPenerimaanBarangRev01.resx">
+      <DependentUpon>UI_FusohPenerimaanBarangRev01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohPenerimaanInvoiceRev01.resx">
+      <DependentUpon>UI_FusohPenerimaanInvoiceRev01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohPenerimaanInvoiceDialogRev01.resx">
+      <DependentUpon>UI_FusohPenerimaanInvoiceDialogRev01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohResetKursDialog.resx">
+      <DependentUpon>UI_FusohResetKursDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohResetKurs.resx">
+      <DependentUpon>UI_FusohResetKurs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohPembayaran.resx">
+      <DependentUpon>UI_FusohPembayaran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohPembayaranDialog.resx">
+      <DependentUpon>UI_FusohPembayaranDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohCostSheet.resx">
+      <DependentUpon>UI_FusohCostSheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohCostSheetDialog.resx">
+      <DependentUpon>UI_FusohCostSheetDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\RF_FusohVoucher.resx">
+      <DependentUpon>RF_FusohVoucher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_DataDataTransaksi.resx">
+      <DependentUpon>RF_DataDataTransaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_Hutang.resx">
+      <DependentUpon>RF_Hutang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_Item.resx">
+      <DependentUpon>RF_Item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_Rekap.resx">
+      <DependentUpon>RF_Rekap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Termin.resx">
+      <DependentUpon>UI_Termin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_TerminDialog.resx">
+      <DependentUpon>UI_TerminDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Via.resx">
+      <DependentUpon>UI_Via.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Setting\UI_Setting.resx">
+      <DependentUpon>UI_Setting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohPenerimaanBarangDialogSerial.resx">
+      <DependentUpon>UI_FusohPenerimaanBarangDialogSerial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohEximDialogSerial.resx">
+      <DependentUpon>UI_FusohEximDialogSerial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohOrderPembelian.resx">
+      <DependentUpon>UI_FusohOrderPembelian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_OrderPembelianApprove.resx">
+      <DependentUpon>UI_OrderPembelianApprove.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_OrderPembelianApproveDialog.resx">
+      <DependentUpon>UI_OrderPembelianApproveDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohOrderPembelianDialog.resx">
+      <DependentUpon>UI_FusohOrderPembelianDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_OrderPembelianDialog.resx">
+      <DependentUpon>UI_OrderPembelianDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_OrderPembelianDialogPR.resx">
+      <DependentUpon>UI_OrderPembelianDialogPR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PembelianCash.resx">
+      <DependentUpon>UI_PembelianCash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PembelianCashDialog.resx">
+      <DependentUpon>UI_PembelianCashDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PenerimaanBarang.resx">
+      <DependentUpon>UI_PenerimaanBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PenerimaanBarangDialogS.resx">
+      <DependentUpon>UI_PenerimaanBarangDialogS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PenerimaanBarangDialog.resx">
+      <DependentUpon>UI_PenerimaanBarangDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PenerimaanBarangDialogSerial.resx">
+      <DependentUpon>UI_PenerimaanBarangDialogSerial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PengirimanRetur.resx">
+      <DependentUpon>UI_PengirimanRetur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PengirimanReturDialog.resx">
+      <DependentUpon>UI_PengirimanReturDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_SaldoAwalHutangDialog.resx">
+      <DependentUpon>UI_SaldoAwalHutangDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_DPPembelian.resx">
+      <DependentUpon>UI_DPPembelian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_DPPembelianDialog.resx">
+      <DependentUpon>UI_DPPembelianDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_OrderPembelian.resx">
+      <DependentUpon>UI_OrderPembelian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_Pembayaran.resx">
+      <DependentUpon>UI_Pembayaran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PembayaranDialog.resx">
+      <DependentUpon>UI_PembayaranDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_Penawaran.resx">
+      <DependentUpon>UI_Penawaran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PenawaranDialog.resx">
+      <DependentUpon>UI_PenawaranDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PenerimaanInvoice.resx">
+      <DependentUpon>UI_PenerimaanInvoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PenerimaanInvoiceDialog.resx">
+      <DependentUpon>UI_PenerimaanInvoiceDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_SaldoAwalHutang.resx">
+      <DependentUpon>UI_SaldoAwalHutang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohKuotaImpor.resx">
+      <DependentUpon>UI_FusohKuotaImpor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohKuotaImporDialog.resx">
+      <DependentUpon>UI_FusohKuotaImporDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Fusoh\UI_FusohCostSheetResetAll.resx">
+      <DependentUpon>UI_FusohCostSheetResetAll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Nishi\RF_NishiVoucher.resx">
+      <DependentUpon>RF_NishiVoucher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Nishi\UI_NishiPembayaranAPP.resx">
+      <DependentUpon>UI_NishiPembayaranAPP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Nishi\UI_NishiPembayaran.resx">
+      <DependentUpon>UI_NishiPembayaran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Nishi\UI_NishiPembayaranDialog.resx">
+      <DependentUpon>UI_NishiPembayaranDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Nishi\UI_NishiPenerimaanInvoice.resx">
+      <DependentUpon>UI_NishiPenerimaanInvoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\Nishi\UI_NishiPenerimaanInvoiceDialog.resx">
+      <DependentUpon>UI_NishiPenerimaanInvoiceDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\zSanYu\RF_SanYuRekapPenerimaan.resx">
+      <DependentUpon>RF_SanYuRekapPenerimaan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\zSanYu\RF_SanYuVoucher.resx">
+      <DependentUpon>RF_SanYuVoucher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\zSanYu\RF_SanYuRekapPIB.resx">
+      <DependentUpon>RF_SanYuRekapPIB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\zSanYu\UI_SanYuCekStockPIB.resx">
+      <DependentUpon>UI_SanYuCekStockPIB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\zSanYu\UI_SanyuPembayaran.resx">
+      <DependentUpon>UI_SanyuPembayaran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\zSanYu\UI_SanYuPembayaranDialog.resx">
+      <DependentUpon>UI_SanYuPembayaranDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\zSanYu\UI_SanYuPenerimaanBarangLokal.resx">
+      <DependentUpon>UI_SanYuPenerimaanBarangLokal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\zSanYu\UI_SanYuPenerimaanBarangImpor.resx">
+      <DependentUpon>UI_SanYuPenerimaanBarangImpor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\zSanYu\UI_SanYuPenerimaanInvoiceGR.resx">
+      <DependentUpon>UI_SanYuPenerimaanInvoiceGR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\zSanYu\UI_SanYuPenerimaanInvoicePO.resx">
+      <DependentUpon>UI_SanYuPenerimaanInvoicePO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\zSanYu\UI_SanYuPenerimaanInvoice.resx">
+      <DependentUpon>UI_SanYuPenerimaanInvoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\zSanYu\UI_SanYuPenerimaanInvoiceDialog.resx">
+      <DependentUpon>UI_SanYuPenerimaanInvoiceDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\zSanYu\UI_SanYuPIBDialog.resx">
+      <DependentUpon>UI_SanYuPIBDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\zSanYu\UI_SanYuPIB.resx">
+      <DependentUpon>UI_SanYuPIB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\zSanYu\UI_SanYuPenerimaanBarangDialog.resx">
+      <DependentUpon>UI_SanYuPenerimaanBarangDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\zSanYu\UI_SanYuKuotaImpor.resx">
+      <DependentUpon>UI_SanYuKuotaImpor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\zSanYu\UI_SanYuKuotaImporDialog.resx">
+      <DependentUpon>UI_SanYuKuotaImporDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\zSanYu\UI_SanYuOrderPembelian.resx">
+      <DependentUpon>UI_SanYuOrderPembelian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\zSanYu\UI_SanYuOrderPembelianDialog.resx">
+      <DependentUpon>UI_SanYuOrderPembelianDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zCustomize\zSanYu\UI_SanYuPenerimaanBarang.resx">
+      <DependentUpon>UI_SanYuPenerimaanBarang.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account_balances_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account_balances_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

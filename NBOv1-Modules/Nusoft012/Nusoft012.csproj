@@ -1,0 +1,856 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{17D92C9D-11E8-48F5-938A-73352E425650}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NuSoft.NUI.Win.Forms.Modules.NuSoft012</RootNamespace>
+    <AssemblyName>Nusoft012</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Release\Modules\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.Charts.v13.2.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.Data.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.PivotGrid.v13.2.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.Utils.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.Xpo.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraBars.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraCharts.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2.UI, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraCharts.v13.2.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraEditors.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraGrid.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraLayout.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraPivotGrid.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraTreeList.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft">
+      <HintPath>..\..\Release\NuSoft.exe</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Core">
+      <HintPath>..\..\Release\NuSoft.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Core.Win.Forms">
+      <HintPath>..\..\Release\NuSoft.Core.Win.Forms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Data">
+      <HintPath>..\..\Release\NuSoft.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.NPO">
+      <HintPath>..\..\Release\NuSoft.NPO.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Utils">
+      <HintPath>..\..\Release\NuSoft.Utils.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft001, Version=1.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\Modules\NuSoft001.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Nusoft007, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\Modules\Nusoft007.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoftModSys, Version=1.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\Modules\NuSoftModSys.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainClass.cs" />
+    <Compile Include="Persistent\Dependencies.cs" />
+    <Compile Include="Persistent\Integrasi.cs" />
+    <Compile Include="Persistent\Invoice.cs" />
+    <Compile Include="Persistent\MasterData.cs" />
+    <Compile Include="Persistent\Pembayaran.cs" />
+    <Compile Include="Persistent\Piutang.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Services\DependentService.cs" />
+    <Compile Include="Services\IntegrasiService.cs" />
+    <Compile Include="Services\InvoiceService.cs" />
+    <Compile Include="Services\MasterDataService.cs" />
+    <Compile Include="Services\NomorService.cs" />
+    <Compile Include="Services\PembayaranService.cs" />
+    <Compile Include="Services\PencairanService.cs" />
+    <Compile Include="Services\PiutangService.cs" />
+    <Compile Include="Services\ServiceBase.cs" />
+    <Compile Include="Services\Setting.cs" />
+    <Compile Include="UI\DataIklan\UI_PiutangBerjalan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataIklan\UI_PiutangBerjalan.Designer.cs">
+      <DependentUpon>UI_PiutangBerjalan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataIklan\UI_PiutangJatuhTempo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataIklan\UI_PiutangJatuhTempo.Designer.cs">
+      <DependentUpon>UI_PiutangJatuhTempo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataCashback\UI_RekapCashback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataCashback\UI_RekapCashback.Designer.cs">
+      <DependentUpon>UI_RekapCashback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataCashback\UI_RekapPencairanCashback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataCashback\UI_RekapPencairanCashback.Designer.cs">
+      <DependentUpon>UI_RekapPencairanCashback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataCashback\UI_RekapHutangCashback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataCashback\UI_RekapHutangCashback.Designer.cs">
+      <DependentUpon>UI_RekapHutangCashback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataKomisi\UI_RekapHutangKomisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataKomisi\UI_RekapHutangKomisi.Designer.cs">
+      <DependentUpon>UI_RekapHutangKomisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataCashback\UI_RincianHutangCashback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataCashback\UI_RincianHutangCashback.Designer.cs">
+      <DependentUpon>UI_RincianHutangCashback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataKomisi\UI_RincianHutangKomisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataKomisi\UI_RincianHutangKomisi.Designer.cs">
+      <DependentUpon>UI_RincianHutangKomisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataKomisi\UI_RekapPencairanKomisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataKomisi\UI_RekapPencairanKomisi.Designer.cs">
+      <DependentUpon>UI_RekapPencairanKomisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataCashback\UI_RincianPencairanCashback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataCashback\UI_RincianPencairanCashback.Designer.cs">
+      <DependentUpon>UI_RincianPencairanCashback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataKomisi\UI_RincianPencairanKomisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataKomisi\UI_RincianPencairanKomisi.Designer.cs">
+      <DependentUpon>UI_RincianPencairanKomisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataKomisi\UI_RekapKomisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataKomisi\UI_RekapKomisi.Designer.cs">
+      <DependentUpon>UI_RekapKomisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataIklan\UI_RekapOmzet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataIklan\UI_RekapOmzet.Designer.cs">
+      <DependentUpon>UI_RekapOmzet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataIklan\UI_RekapPembayaran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataIklan\UI_RekapPembayaran.Designer.cs">
+      <DependentUpon>UI_RekapPembayaran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataIklan\UI_RekapPiutang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataIklan\UI_RekapPiutang.Designer.cs">
+      <DependentUpon>UI_RekapPiutang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataIklan\UI_RekapUmurPiutang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataIklan\UI_RekapUmurPiutang.Designer.cs">
+      <DependentUpon>UI_RekapUmurPiutang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataCashback\UI_RincianCashback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataCashback\UI_RincianCashback.Designer.cs">
+      <DependentUpon>UI_RincianCashback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataKomisi\UI_RincianKomisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataKomisi\UI_RincianKomisi.Designer.cs">
+      <DependentUpon>UI_RincianKomisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataIklan\UI_RincianOmzet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataIklan\UI_RincianOmzet.Designer.cs">
+      <DependentUpon>UI_RincianOmzet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataIklan\UI_RincianPembayaran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataIklan\UI_RincianPembayaran.Designer.cs">
+      <DependentUpon>UI_RincianPembayaran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataIklan\UI_RincianPiutang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataIklan\UI_RincianPiutang.Designer.cs">
+      <DependentUpon>UI_RincianPiutang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataIklan\UI_RincianUmurPiutang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataIklan\UI_RincianUmurPiutang.Designer.cs">
+      <DependentUpon>UI_RincianUmurPiutang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Konfigurasi\UI_IntegrasiIklan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Konfigurasi\UI_IntegrasiIklan.Designer.cs">
+      <DependentUpon>UI_IntegrasiIklan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Konfigurasi\UI_SettingIklan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Konfigurasi\UI_SettingIklan.Designer.cs">
+      <DependentUpon>UI_SettingIklan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_CaraBayar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_CaraBayar.designer.cs">
+      <DependentUpon>UI_CaraBayar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_CaraBayarDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_CaraBayarDialog.designer.cs">
+      <DependentUpon>UI_CaraBayarDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_TipeInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_TipeInvoice.Designer.cs">
+      <DependentUpon>UI_TipeInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_TipeInvoiceDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_TipeInvoiceDialog.Designer.cs">
+      <DependentUpon>UI_TipeInvoiceDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_KelompokOmzet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_KelompokOmzet.Designer.cs">
+      <DependentUpon>UI_KelompokOmzet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_KelompokOmzetDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_KelompokOmzetDialog.Designer.cs">
+      <DependentUpon>UI_KelompokOmzetDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_Kurir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_Kurir.Designer.cs">
+      <DependentUpon>UI_Kurir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_KurirDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_KurirDialog.Designer.cs">
+      <DependentUpon>UI_KurirDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_Merk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_Merk.Designer.cs">
+      <DependentUpon>UI_Merk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_MerkDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_MerkDialog.Designer.cs">
+      <DependentUpon>UI_MerkDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_Pemasang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_Pemasang.Designer.cs">
+      <DependentUpon>UI_Pemasang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_PemasangDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_PemasangDialog.Designer.cs">
+      <DependentUpon>UI_PemasangDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_Produk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_Produk.Designer.cs">
+      <DependentUpon>UI_Produk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_ProdukDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_ProdukDialog.Designer.cs">
+      <DependentUpon>UI_ProdukDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_Sales.Designer.cs">
+      <DependentUpon>UI_Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_SalesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_SalesDialog.Designer.cs">
+      <DependentUpon>UI_SalesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_TarifIklan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_TarifIklan.Designer.cs">
+      <DependentUpon>UI_TarifIklan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_TarifIklanDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_TarifIklanDialog.Designer.cs">
+      <DependentUpon>UI_TarifIklanDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_Wilayah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_Wilayah.Designer.cs">
+      <DependentUpon>UI_Wilayah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_WilayahDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MasterData\UI_WilayahDialog.Designer.cs">
+      <DependentUpon>UI_WilayahDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportFilter\UI_FilterBulan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportFilter\UI_FilterBulan.Designer.cs">
+      <DependentUpon>UI_FilterBulan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportFilter\UI_FilterInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportFilter\UI_FilterInvoice.Designer.cs">
+      <DependentUpon>UI_FilterInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportFilter\UI_FilterKonfirmasiPiutang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportFilter\UI_FilterKonfirmasiPiutang.Designer.cs">
+      <DependentUpon>UI_FilterKonfirmasiPiutang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportFilter\UI_FilterKwitansi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportFilter\UI_FilterKwitansi.Designer.cs">
+      <DependentUpon>UI_FilterKwitansi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportFilter\UI_FilterJatuhTempo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportFilter\UI_FilterJatuhTempo.Designer.cs">
+      <DependentUpon>UI_FilterJatuhTempo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportFilter\UI_FilterPembayaran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportFilter\UI_FilterPembayaran.Designer.cs">
+      <DependentUpon>UI_FilterPembayaran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportFilter\UI_FilterRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportFilter\UI_FilterRegister.Designer.cs">
+      <DependentUpon>UI_FilterRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_GabungIklanDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_GabungIklanDialog.Designer.cs">
+      <DependentUpon>UI_GabungIklanDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_GabungIklan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_GabungIklan.Designer.cs">
+      <DependentUpon>UI_GabungIklan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_Iklan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_Iklan.Designer.cs">
+      <DependentUpon>UI_Iklan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_IklanDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_IklanDialog.Designer.cs">
+      <DependentUpon>UI_IklanDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_IklanPenagihan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_IklanPenagihan.Designer.cs">
+      <DependentUpon>UI_IklanPenagihan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_IklanPenagihanDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_IklanPenagihanDialog.Designer.cs">
+      <DependentUpon>UI_IklanPenagihanDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_KoreksiOmzet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_KoreksiOmzet.Designer.cs">
+      <DependentUpon>UI_KoreksiOmzet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_KoreksiOmzetDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_KoreksiOmzetDialog.Designer.cs">
+      <DependentUpon>UI_KoreksiOmzetDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_BatalBayar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_BatalBayar.Designer.cs">
+      <DependentUpon>UI_BatalBayar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_BatalBayarDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_BatalBayarDialog.Designer.cs">
+      <DependentUpon>UI_BatalBayarDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_PencairanKomisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_PencairanKomisi.Designer.cs">
+      <DependentUpon>UI_PencairanKomisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_PencairanCashback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_PencairanCashback.Designer.cs">
+      <DependentUpon>UI_PencairanCashback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_PembayaranIklan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_PembayaranIklan.Designer.cs">
+      <DependentUpon>UI_PembayaranIklan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_PencairanKomisiDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_PencairanKomisiDialog.Designer.cs">
+      <DependentUpon>UI_PencairanKomisiDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_PencairanCashbackDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_PencairanCashbackDialog.Designer.cs">
+      <DependentUpon>UI_PencairanCashbackDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_PembayaranIklanDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_PembayaranIklanDialog.Designer.cs">
+      <DependentUpon>UI_PembayaranIklanDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_SaldoAwal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_SaldoAwal.Designer.cs">
+      <DependentUpon>UI_SaldoAwal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_SaldoAwalDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Transaksi\UI_SaldoAwalDialog.Designer.cs">
+      <DependentUpon>UI_SaldoAwalDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Utility\UI_EditTanggalTerbit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Utility\UI_EditTanggalTerbit.Designer.cs">
+      <DependentUpon>UI_EditTanggalTerbit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Utility\UI_EditTanggalTerbitDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Utility\UI_EditTanggalTerbitDialog.Designer.cs">
+      <DependentUpon>UI_EditTanggalTerbitDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Utility\UI_Pracetak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Utility\UI_Pracetak.Designer.cs">
+      <DependentUpon>UI_Pracetak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Utility\UI_WarningTerbit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Utility\UI_WarningTerbit.Designer.cs">
+      <DependentUpon>UI_WarningTerbit.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataIklan\UI_PiutangBerjalan.resx">
+      <DependentUpon>UI_PiutangBerjalan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataIklan\UI_PiutangJatuhTempo.resx">
+      <DependentUpon>UI_PiutangJatuhTempo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataCashback\UI_RekapCashback.resx">
+      <DependentUpon>UI_RekapCashback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataCashback\UI_RekapPencairanCashback.resx">
+      <DependentUpon>UI_RekapPencairanCashback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataCashback\UI_RekapHutangCashback.resx">
+      <DependentUpon>UI_RekapHutangCashback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataKomisi\UI_RekapHutangKomisi.resx">
+      <DependentUpon>UI_RekapHutangKomisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataCashback\UI_RincianHutangCashback.resx">
+      <DependentUpon>UI_RincianHutangCashback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataKomisi\UI_RincianHutangKomisi.resx">
+      <DependentUpon>UI_RincianHutangKomisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataKomisi\UI_RekapPencairanKomisi.resx">
+      <DependentUpon>UI_RekapPencairanKomisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataCashback\UI_RincianPencairanCashback.resx">
+      <DependentUpon>UI_RincianPencairanCashback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataKomisi\UI_RincianPencairanKomisi.resx">
+      <DependentUpon>UI_RincianPencairanKomisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataKomisi\UI_RekapKomisi.resx">
+      <DependentUpon>UI_RekapKomisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataIklan\UI_RekapOmzet.resx">
+      <DependentUpon>UI_RekapOmzet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataIklan\UI_RekapPembayaran.resx">
+      <DependentUpon>UI_RekapPembayaran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataIklan\UI_RekapPiutang.resx">
+      <DependentUpon>UI_RekapPiutang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataIklan\UI_RekapUmurPiutang.resx">
+      <DependentUpon>UI_RekapUmurPiutang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataCashback\UI_RincianCashback.resx">
+      <DependentUpon>UI_RincianCashback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataKomisi\UI_RincianKomisi.resx">
+      <DependentUpon>UI_RincianKomisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataIklan\UI_RincianOmzet.resx">
+      <DependentUpon>UI_RincianOmzet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataIklan\UI_RincianPembayaran.resx">
+      <DependentUpon>UI_RincianPembayaran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataIklan\UI_RincianPiutang.resx">
+      <DependentUpon>UI_RincianPiutang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataIklan\UI_RincianUmurPiutang.resx">
+      <DependentUpon>UI_RincianUmurPiutang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Konfigurasi\UI_IntegrasiIklan.resx">
+      <DependentUpon>UI_IntegrasiIklan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Konfigurasi\UI_SettingIklan.resx">
+      <DependentUpon>UI_SettingIklan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MasterData\UI_CaraBayar.resx">
+      <DependentUpon>UI_CaraBayar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MasterData\UI_CaraBayarDialog.resx">
+      <DependentUpon>UI_CaraBayarDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MasterData\UI_TipeInvoice.resx">
+      <DependentUpon>UI_TipeInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MasterData\UI_TipeInvoiceDialog.resx">
+      <DependentUpon>UI_TipeInvoiceDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MasterData\UI_KelompokOmzet.resx">
+      <DependentUpon>UI_KelompokOmzet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MasterData\UI_KelompokOmzetDialog.resx">
+      <DependentUpon>UI_KelompokOmzetDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MasterData\UI_Kurir.resx">
+      <DependentUpon>UI_Kurir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MasterData\UI_KurirDialog.resx">
+      <DependentUpon>UI_KurirDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MasterData\UI_Merk.resx">
+      <DependentUpon>UI_Merk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MasterData\UI_MerkDialog.resx">
+      <DependentUpon>UI_MerkDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MasterData\UI_Pemasang.resx">
+      <DependentUpon>UI_Pemasang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MasterData\UI_PemasangDialog.resx">
+      <DependentUpon>UI_PemasangDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MasterData\UI_Produk.resx">
+      <DependentUpon>UI_Produk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MasterData\UI_ProdukDialog.resx">
+      <DependentUpon>UI_ProdukDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MasterData\UI_Sales.resx">
+      <DependentUpon>UI_Sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MasterData\UI_SalesDialog.resx">
+      <DependentUpon>UI_SalesDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MasterData\UI_TarifIklan.resx">
+      <DependentUpon>UI_TarifIklan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MasterData\UI_TarifIklanDialog.resx">
+      <DependentUpon>UI_TarifIklanDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MasterData\UI_Wilayah.resx">
+      <DependentUpon>UI_Wilayah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MasterData\UI_WilayahDialog.resx">
+      <DependentUpon>UI_WilayahDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportFilter\UI_FilterBulan.resx">
+      <DependentUpon>UI_FilterBulan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportFilter\UI_FilterInvoice.resx">
+      <DependentUpon>UI_FilterInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportFilter\UI_FilterKonfirmasiPiutang.resx">
+      <DependentUpon>UI_FilterKonfirmasiPiutang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportFilter\UI_FilterKwitansi.resx">
+      <DependentUpon>UI_FilterKwitansi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportFilter\UI_FilterJatuhTempo.resx">
+      <DependentUpon>UI_FilterJatuhTempo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportFilter\UI_FilterPembayaran.resx">
+      <DependentUpon>UI_FilterPembayaran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportFilter\UI_FilterRegister.resx">
+      <DependentUpon>UI_FilterRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Transaksi\UI_GabungIklanDialog.resx">
+      <DependentUpon>UI_GabungIklanDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Transaksi\UI_GabungIklan.resx">
+      <DependentUpon>UI_GabungIklan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Transaksi\UI_Iklan.resx">
+      <DependentUpon>UI_Iklan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Transaksi\UI_IklanDialog.resx">
+      <DependentUpon>UI_IklanDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Transaksi\UI_IklanPenagihan.resx">
+      <DependentUpon>UI_IklanPenagihan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Transaksi\UI_IklanPenagihanDialog.resx">
+      <DependentUpon>UI_IklanPenagihanDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Transaksi\UI_KoreksiOmzet.resx">
+      <DependentUpon>UI_KoreksiOmzet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Transaksi\UI_KoreksiOmzetDialog.resx">
+      <DependentUpon>UI_KoreksiOmzetDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Transaksi\UI_BatalBayar.resx">
+      <DependentUpon>UI_BatalBayar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Transaksi\UI_BatalBayarDialog.resx">
+      <DependentUpon>UI_BatalBayarDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Transaksi\UI_PencairanKomisi.resx">
+      <DependentUpon>UI_PencairanKomisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Transaksi\UI_PencairanCashback.resx">
+      <DependentUpon>UI_PencairanCashback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Transaksi\UI_PembayaranIklan.resx">
+      <DependentUpon>UI_PembayaranIklan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Transaksi\UI_PencairanKomisiDialog.resx">
+      <DependentUpon>UI_PencairanKomisiDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Transaksi\UI_PencairanCashbackDialog.resx">
+      <DependentUpon>UI_PencairanCashbackDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Transaksi\UI_PembayaranIklanDialog.resx">
+      <DependentUpon>UI_PembayaranIklanDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Transaksi\UI_SaldoAwal.resx">
+      <DependentUpon>UI_SaldoAwal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Transaksi\UI_SaldoAwalDialog.resx">
+      <DependentUpon>UI_SaldoAwalDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Utility\UI_EditTanggalTerbit.resx">
+      <DependentUpon>UI_EditTanggalTerbit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Utility\UI_EditTanggalTerbitDialog.resx">
+      <DependentUpon>UI_EditTanggalTerbitDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Utility\UI_Pracetak.resx">
+      <DependentUpon>UI_Pracetak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Utility\UI_WarningTerbit.resx">
+      <DependentUpon>UI_WarningTerbit.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\StackedLayout_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StackedLayout_32x32.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

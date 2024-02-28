@@ -1,0 +1,27 @@
+Address = 172.17.0.3/24
+
+[Peer]
+PublicKey = /j139fSMGoFWqk1zF/rXm5NX4r4kxUpVVIJLkG/fwno=
+AllowedIPs = 172.17.0.0/24, 103.152.118.195/32
+Endpoint = 103.66.86.195:49394
+PersistentKeepalive = 300
+
+
+Wireguard
+
+sudo nano /etc/wireguard/wg0.conf
+
+[Interface]
+Address    = 172.17.0.1/24
+ListenPort = 49394
+PrivateKey = CK/SHPDAmszR7rBOLKpvUlTyPFtEaOG51Y2o9lLZJVQ=
+
+[Peer]
+## Fusoh ##
+PublicKey = AskT0Sc69uk4SEU16MaYashZVgfYwJBv+H0VkcxvXQE=
+AllowedIPs = 172.17.0.2/32
+
+sudo systemctl restart wg-quick@wg0
+
+
+103.66.86.195

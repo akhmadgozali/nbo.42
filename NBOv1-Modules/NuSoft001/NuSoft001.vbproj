@@ -1,0 +1,1528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{F5D947F8-1210-4223-914E-9E65201D4217}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NuSoft.NUI.Win.Forms.Modules.NuSoft001</RootNamespace>
+    <AssemblyName>NuSoft001</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\release\Modules\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+    <CodeAnalysisRuleSet>NuSoft001.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisRuleSet>NuSoft001.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.Charts.v13.2.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.Data.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.Office.v13.2.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.Spreadsheet.v13.2.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.Utils.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.Xpo.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraBars.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraCharts.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2.UI, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraCharts.v13.2.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraEditors.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraGrid.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraLayout.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraNavBar.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraPivotGrid.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraPrinting.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraScheduler.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraScheduler.v13.2.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraSpreadsheet.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraTreeList.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\release\DevExpress.XtraVerticalGrid.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft">
+      <HintPath>..\..\release\NuSoft.exe</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Core">
+      <HintPath>..\..\Release\NuSoft.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Core.Win.Forms">
+      <HintPath>..\..\Release\NuSoft.Core.Win.Forms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Data">
+      <HintPath>..\..\Release\NuSoft.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.NPO">
+      <HintPath>..\..\Release\NuSoft.NPO.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Utils">
+      <HintPath>..\..\Release\NuSoft.Utils.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Utils.Cryptograph">
+      <HintPath>..\..\Release\NuSoft.Utils.Cryptograph.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoftModSys, Version=1.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\Modules\NuSoftModSys.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LogicLayer\CashAdvance.vb" />
+    <Compile Include="LogicLayer\clsNumber.vb" />
+    <Compile Include="LogicLayer\Coa.vb" />
+    <Compile Include="LogicLayer\Kurs.vb" />
+    <Compile Include="LogicLayer\m001_aktivatetap.vb" />
+    <Compile Include="LogicLayer\m001_budget.vb" />
+    <Compile Include="LogicLayer\m001_cashopname.vb" />
+    <Compile Include="LogicLayer\m001_customreport.vb" />
+    <Compile Include="LogicLayer\m001_gl.vb" />
+    <Compile Include="LogicLayer\m001_loanadministration.vb" />
+    <Compile Include="LogicLayer\m001_master.vb" />
+    <Compile Include="LogicLayer\m001_paymentrequest.vb" />
+    <Compile Include="LogicLayer\m001_prepaidexpense.vb" />
+    <Compile Include="LogicLayer\m001_report.vb" />
+    <Compile Include="LogicLayer\m001_revaluasivalas.vb" />
+    <Compile Include="LogicLayer\m001_setting.vb" />
+    <Compile Include="LogicLayer\m001_aLogic.vb" />
+    <Compile Include="LogicLayer\m005_master.vb" />
+    <Compile Include="LogicLayer\m001_prepayment.vb" />
+    <Compile Include="MainClass.vb" />
+    <Compile Include="UILayer\Data\UI_AktivaTetapTransaksi.Designer.vb">
+      <DependentUpon>UI_AktivaTetapTransaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_AktivaTetapTransaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_DaftarGL2.Designer.vb">
+      <DependentUpon>UI_DaftarGL2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_DaftarGL2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_DaftarGLFilter.Designer.vb">
+      <DependentUpon>UI_DaftarGLFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_DaftarGLFilter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_DaftarGL.Designer.vb">
+      <DependentUpon>UI_DaftarGL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_DaftarGL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_DaftarGLDetail.Designer.vb">
+      <DependentUpon>UI_DaftarGLDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_DaftarGLDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_RasioKeuangan.Designer.vb">
+      <DependentUpon>UI_RasioKeuangan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_RasioKeuangan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_SaldoARAPNew.Designer.vb">
+      <DependentUpon>UI_SaldoARAPNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_SaldoARAPNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_SaldoARAPSetup.Designer.vb">
+      <DependentUpon>UI_SaldoARAPSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_SaldoARAPSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_SaldoLR.Designer.vb">
+      <DependentUpon>UI_SaldoLR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_SaldoLR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_BuktiHarian.Designer.vb">
+      <DependentUpon>RF_BuktiHarian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_BuktiHarian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_Asset.Designer.vb">
+      <DependentUpon>RF_Asset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_Asset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_CashFlowGlobal.Designer.vb">
+      <DependentUpon>RF_CashFlowGlobal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_CashFlowGlobal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_Divisi.Designer.vb">
+      <DependentUpon>RF_Divisi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_Divisi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_Giro.Designer.vb">
+      <DependentUpon>RF_Giro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_Giro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_NeracaLevel.Designer.vb">
+      <DependentUpon>RF_NeracaLevel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_NeracaLevel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_NeracaSaldo.Designer.vb">
+      <DependentUpon>RF_NeracaSaldo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_NeracaSaldo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_NEW.Designer.vb">
+      <DependentUpon>RF_NEW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_NEW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_SaldoCOAGlobal.Designer.vb">
+      <DependentUpon>RF_SaldoCOAGlobal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_SaldoCOAGlobal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_SaldoCOA.Designer.vb">
+      <DependentUpon>RF_SaldoCOA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_SaldoCOA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_SaldoProyek.Designer.vb">
+      <DependentUpon>RF_SaldoProyek.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_SaldoProyek.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_Invoice.Designer.vb">
+      <DependentUpon>RF_Invoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_Invoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_SaldoProyekSanding.Designer.vb">
+      <DependentUpon>RF_SaldoProyekSanding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_SaldoProyekSanding.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_TransaksiJurnal.Designer.vb">
+      <DependentUpon>RF_TransaksiJurnal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_TransaksiJurnal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Akun.Designer.vb">
+      <DependentUpon>UI_Akun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Akun.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AkunDialog.Designer.vb">
+      <DependentUpon>UI_AkunDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AkunDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AkunY.Designer.vb">
+      <DependentUpon>UI_AkunY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AkunY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AkunZ.Designer.vb">
+      <DependentUpon>UI_AkunZ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AkunZ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AkunZDialog.Designer.vb">
+      <DependentUpon>UI_AkunZDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AkunZDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Divisi.Designer.vb">
+      <DependentUpon>UI_Divisi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Divisi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_ProyekSub.Designer.vb">
+      <DependentUpon>UI_ProyekSub.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_ProyekSub.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_AktivaTetapHistory.Designer.vb">
+      <DependentUpon>UI_AktivaTetapHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_AktivaTetapHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_BukuBesar.Designer.vb">
+      <DependentUpon>UI_BukuBesar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_BukuBesar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_JurnalVoucher.Designer.vb">
+      <DependentUpon>UI_JurnalVoucher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_JurnalVoucher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_SaldoArAp.Designer.vb">
+      <DependentUpon>UI_SaldoArAp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_SaldoArAp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_Statistik.Designer.vb">
+      <DependentUpon>UI_Statistik.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Data\UI_Statistik.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_BukuBesar.Designer.vb">
+      <DependentUpon>RF_BukuBesar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_BukuBesar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_BukuBesar2.Designer.vb">
+      <DependentUpon>RF_BukuBesar2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_BukuBesar2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_CetakBuktiPotongPPH23.Designer.vb">
+      <DependentUpon>RF_CetakBuktiPotongPPH23.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_CetakBuktiPotongPPH23.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_DaftarHarian.Designer.vb">
+      <DependentUpon>RF_DaftarHarian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_DaftarHarian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_SaldoARAP.Designer.vb">
+      <DependentUpon>RF_SaldoARAP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_SaldoARAP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Aktiva.Designer.vb">
+      <DependentUpon>UI_Aktiva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Aktiva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_AktivaTetap.Designer.vb">
+      <DependentUpon>UI_AktivaTetap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_AktivaTetap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_AktivaTetapPembelian.Designer.vb">
+      <DependentUpon>UI_AktivaTetapPembelian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_AktivaTetapPembelian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_AktivaTetapPenjualan.Designer.vb">
+      <DependentUpon>UI_AktivaTetapPenjualan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_AktivaTetapPenjualan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_AktivaTetapSaldoAwal.Designer.vb">
+      <DependentUpon>UI_AktivaTetapSaldoAwal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_AktivaTetapSaldoAwal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_AktivaTetapWriteOff.Designer.vb">
+      <DependentUpon>UI_AktivaTetapWriteOff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_AktivaTetapWriteOff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\UI_TutupBukuDialog.Designer.vb">
+      <DependentUpon>UI_TutupBukuDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\UI_TutupBukuDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\UI_TutupBuku.Designer.vb">
+      <DependentUpon>UI_TutupBuku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\UI_TutupBuku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_CekGiroDialog.Designer.vb">
+      <DependentUpon>UI_CekGiroDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_CekGiroDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_LK.Designer.vb">
+      <DependentUpon>RF_LK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_LK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AktivaDialog.Designer.vb">
+      <DependentUpon>UI_AktivaDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AktivaDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AktivaKelompok.Designer.vb">
+      <DependentUpon>UI_AktivaKelompok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AktivaKelompok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AktivaKelompokDialog.Designer.vb">
+      <DependentUpon>UI_AktivaKelompokDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_AktivaKelompokDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_AktivaTetapPenyusutan.Designer.vb">
+      <DependentUpon>UI_AktivaTetapPenyusutan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_AktivaTetapPenyusutan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_KategoriKontak.Designer.vb">
+      <DependentUpon>UI_KategoriKontak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_KategoriKontak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Kontak.Designer.vb">
+      <DependentUpon>UI_Kontak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Kontak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_KontakDialog.Designer.vb">
+      <DependentUpon>UI_KontakDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_KontakDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_MataUangDialog.Designer.vb">
+      <DependentUpon>UI_MataUangDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_MataUangDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Proyek.Designer.vb">
+      <DependentUpon>UI_Proyek.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Proyek.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_ProyekDialog.Designer.vb">
+      <DependentUpon>UI_ProyekDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_ProyekDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_Anggaran.Designer.vb">
+      <DependentUpon>UI_Anggaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_Anggaran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_AnggaranDialog.Designer.vb">
+      <DependentUpon>UI_AnggaranDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_AnggaranDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_CashOpname.Designer.vb">
+      <DependentUpon>UI_CashOpname.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_CashOpname.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_CashOpnameDialog.Designer.vb">
+      <DependentUpon>UI_CashOpnameDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_CashOpnameDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_CekGiro.Designer.vb">
+      <DependentUpon>UI_CekGiro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_CekGiro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_EksportESPT.Designer.vb">
+      <DependentUpon>UI_EksportESPT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_EksportESPT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Bank.Designer.vb">
+      <DependentUpon>UI_Bank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_Bank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_MataUang.Designer.vb">
+      <DependentUpon>UI_MataUang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Master\UI_MataUang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UILayer\Setting\UI_SettingCRAkun.Designer.vb">
+      <DependentUpon>UI_SettingCRAkun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Setting\UI_SettingCRAkun.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Setting\UI_SettingCRNeraca.Designer.vb">
+      <DependentUpon>UI_SettingCRNeraca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Setting\UI_SettingCRNeraca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Setting\UI_SettingCROthers.Designer.vb">
+      <DependentUpon>UI_SettingCROthers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Setting\UI_SettingCROthers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Setting\UI_SettingGL.Designer.vb">
+      <DependentUpon>UI_SettingGL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Setting\UI_SettingGL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PengajuanDana.Designer.vb">
+      <DependentUpon>UI_PengajuanDana.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PengajuanDana.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PengajuanDanaDialog.Designer.vb">
+      <DependentUpon>UI_PengajuanDanaDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PengajuanDanaDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_Pinjaman.Designer.vb">
+      <DependentUpon>UI_Pinjaman.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_Pinjaman.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PinjamanDialog.Designer.vb">
+      <DependentUpon>UI_PinjamanDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PinjamanDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PrepaidExpense.Designer.vb">
+      <DependentUpon>UI_PrepaidExpense.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PrepaidExpense.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PrepaidExpenseAmortisasi.Designer.vb">
+      <DependentUpon>UI_PrepaidExpenseAmortisasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PrepaidExpenseAmortisasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PrepaidExpenseDialog.Designer.vb">
+      <DependentUpon>UI_PrepaidExpenseDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PrepaidExpenseDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PrepaymentzApprove.Designer.vb">
+      <DependentUpon>UI_PrepaymentzApprove.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PrepaymentzApprove.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_Prepayment.Designer.vb">
+      <DependentUpon>UI_Prepayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_Prepayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PrepaymentDialog.Designer.vb">
+      <DependentUpon>UI_PrepaymentDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PrepaymentDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PrepaymentzApproveDialog.Designer.vb">
+      <DependentUpon>UI_PrepaymentzApproveDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_PrepaymentzApproveDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_RekonsiliasiBank.Designer.vb">
+      <DependentUpon>UI_RekonsiliasiBank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_RekonsiliasiBank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_RekonsiliasiBankx.Designer.vb">
+      <DependentUpon>UI_RekonsiliasiBankx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_RekonsiliasiBankx.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_RevaluasiValas.Designer.vb">
+      <DependentUpon>UI_RevaluasiValas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_RevaluasiValas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_RevaluasiValasDialog.Designer.vb">
+      <DependentUpon>UI_RevaluasiValasDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_RevaluasiValasDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_SaldoAwal1.Designer.vb">
+      <DependentUpon>UI_SaldoAwal1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_SaldoAwal1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_SaldoAwalDialog.Designer.vb">
+      <DependentUpon>UI_SaldoAwalDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_SaldoAwalDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_SaldoAwal.Designer.vb">
+      <DependentUpon>UI_SaldoAwal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_SaldoAwal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_TransaksiBK.Designer.vb">
+      <DependentUpon>UI_TransaksiBK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_TransaksiBK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_TransaksiBM.Designer.vb">
+      <DependentUpon>UI_TransaksiBM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_TransaksiBM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_TransaksiGL.Designer.vb">
+      <DependentUpon>UI_TransaksiGL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_TransaksiGL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_TransaksiJA.Designer.vb">
+      <DependentUpon>UI_TransaksiJA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_TransaksiJA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_TransaksiJU.Designer.vb">
+      <DependentUpon>UI_TransaksiJU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_TransaksiJU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_TransaksiKK.Designer.vb">
+      <DependentUpon>UI_TransaksiKK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_TransaksiKK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_TransaksiKM.Designer.vb">
+      <DependentUpon>UI_TransaksiKM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_TransaksiKM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_UpdateBuktiPotongPPH23.Designer.vb">
+      <DependentUpon>UI_UpdateBuktiPotongPPH23.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\Transaksi\UI_UpdateBuktiPotongPPH23.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_SaldoProyek2.Designer.vb">
+      <DependentUpon>RF_SaldoProyek2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\FilterForm\RF_SaldoProyek2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\RF_CashFlow - Copy.Designer.vb">
+      <DependentUpon>RF_CashFlow - Copy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\RF_CashFlow - Copy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\RF_CashFlow.Designer.vb">
+      <DependentUpon>RF_CashFlow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\RF_CashFlow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\RF_MesitechPertanggungJawaban.Designer.vb">
+      <DependentUpon>RF_MesitechPertanggungJawaban.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\RF_MesitechPertanggungJawaban.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\RF_MesitechTransaksi.Designer.vb">
+      <DependentUpon>RF_MesitechTransaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\RF_MesitechTransaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\UI_Invoice.Designer.vb">
+      <DependentUpon>UI_Invoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\UI_Invoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\UI_MesitechSettingCashFlow.Designer.vb">
+      <DependentUpon>UI_MesitechSettingCashFlow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\UI_MesitechSettingCashFlow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xMesitechBuktiBankAR.Designer.vb">
+      <DependentUpon>xMesitechBuktiBankAR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xMesitechBuktiBankAR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xMesitechDaftarGL.Designer.vb">
+      <DependentUpon>xMesitechDaftarGL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xMesitechDaftarGL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xMesitechDaftarGLFilter.Designer.vb">
+      <DependentUpon>xMesitechDaftarGLFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xMesitechDaftarGLFilter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xMesitechGLFilter.Designer.vb">
+      <DependentUpon>xMesitechGLFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xMesitechGLFilter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xMesitechJMAR.Designer.vb">
+      <DependentUpon>xMesitechJMAR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xMesitechJMAR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xMesitechJM.Designer.vb">
+      <DependentUpon>xMesitechJM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xMesitechJM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILayer\UI_TutupBukuDialogOld.Designer.vb">
+      <DependentUpon>UI_TutupBukuDialogOld.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UILayer\UI_TutupBukuDialogOld.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xMesitechAPP.Designer.vb">
+      <DependentUpon>xMesitechAPP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xMesitechAPP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xMesitechGL.Designer.vb">
+      <DependentUpon>xMesitechGL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xMesitechGL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xGL.vb" />
+    <Compile Include="xCustomize\Mesitech\xMesitechBuktiKas.Designer.vb">
+      <DependentUpon>xMesitechBuktiKas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xMesitechBuktiKas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xMesitechBuktiBank.Designer.vb">
+      <DependentUpon>xMesitechBuktiBank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xMesitechBuktiBank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xMesitechVerifikasiJurnal.Designer.vb">
+      <DependentUpon>xMesitechVerifikasiJurnal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xMesitechVerifikasiJurnal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xMesitechVerifikasiJurnal2.Designer.vb">
+      <DependentUpon>xMesitechVerifikasiJurnal2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Mesitech\xMesitechVerifikasiJurnal2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\PJP\pjp_FilterPerProses.Designer.vb">
+      <DependentUpon>pjp_FilterPerProses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\PJP\pjp_FilterPerProses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\PJP\pjp_MasterProses.Designer.vb">
+      <DependentUpon>pjp_MasterProses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\PJP\pjp_MasterProses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\PJP\pjp_TransaksiGL.Designer.vb">
+      <DependentUpon>pjp_TransaksiGL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\PJP\pjp_TransaksiGL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\PJP\pjp_TransaksiKK.Designer.vb">
+      <DependentUpon>pjp_TransaksiKK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\PJP\pjp_TransaksiKK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\PJP\pjp_TransaksiKM.Designer.vb">
+      <DependentUpon>pjp_TransaksiKM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\PJP\pjp_TransaksiKM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\PJP\pjp_TransaksiJA.Designer.vb">
+      <DependentUpon>pjp_TransaksiJA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\PJP\pjp_TransaksiJA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\PJP\pjp_TransaksiJU.Designer.vb">
+      <DependentUpon>pjp_TransaksiJU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\PJP\pjp_TransaksiJU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\PJP\pjp_DaftarGL.Designer.vb">
+      <DependentUpon>pjp_DaftarGL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\PJP\pjp_DaftarGL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\PJP\pjp_DaftarGLDetail.Designer.vb">
+      <DependentUpon>pjp_DaftarGLDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\PJP\pjp_DaftarGLDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\PJP\pjp_DaftarGLFilter.Designer.vb">
+      <DependentUpon>pjp_DaftarGLFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\PJP\pjp_DaftarGLFilter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\PJP\pjp_SaldoARAP.Designer.vb">
+      <DependentUpon>pjp_SaldoARAP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\PJP\pjp_SaldoARAP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\PJP\xGL.vb" />
+    <Compile Include="xCustomize\PJP\pjp_TransaksiTKIDialog.Designer.vb">
+      <DependentUpon>pjp_TransaksiTKIDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\PJP\pjp_TransaksiTKIDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Woojin\RF_BukuBesar2.Designer.vb">
+      <DependentUpon>RF_BukuBesar2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Woojin\RF_BukuBesar2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Woojin\UI_Brankas.Designer.vb">
+      <DependentUpon>UI_Brankas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Woojin\UI_Brankas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Woojin\UI_Memo.Designer.vb">
+      <DependentUpon>UI_Memo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xCustomize\Woojin\UI_Memo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xCustomize\Woojin\zwoojin.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UILayer\Data\UI_AktivaTetapTransaksi.resx">
+      <DependentUpon>UI_AktivaTetapTransaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Data\UI_DaftarGL2.resx">
+      <DependentUpon>UI_DaftarGL2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Data\UI_DaftarGLFilter.resx">
+      <DependentUpon>UI_DaftarGLFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Data\UI_DaftarGL.resx">
+      <DependentUpon>UI_DaftarGL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Data\UI_DaftarGLDetail.resx">
+      <DependentUpon>UI_DaftarGLDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Data\UI_RasioKeuangan.resx">
+      <DependentUpon>UI_RasioKeuangan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Data\UI_SaldoARAPNew.resx">
+      <DependentUpon>UI_SaldoARAPNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Data\UI_SaldoARAPSetup.resx">
+      <DependentUpon>UI_SaldoARAPSetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Data\UI_SaldoLR.resx">
+      <DependentUpon>UI_SaldoLR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_BuktiHarian.resx">
+      <DependentUpon>RF_BuktiHarian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_Asset.resx">
+      <DependentUpon>RF_Asset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_CashFlowGlobal.resx">
+      <DependentUpon>RF_CashFlowGlobal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_Divisi.resx">
+      <DependentUpon>RF_Divisi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_Giro.resx">
+      <DependentUpon>RF_Giro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_NeracaLevel.resx">
+      <DependentUpon>RF_NeracaLevel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_NeracaSaldo.resx">
+      <DependentUpon>RF_NeracaSaldo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_SaldoCOAGlobal.resx">
+      <DependentUpon>RF_SaldoCOAGlobal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_SaldoCOA.resx">
+      <DependentUpon>RF_SaldoCOA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_SaldoProyek.resx">
+      <DependentUpon>RF_SaldoProyek.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_Invoice.resx">
+      <DependentUpon>RF_Invoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_SaldoProyekSanding.resx">
+      <DependentUpon>RF_SaldoProyekSanding.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_TransaksiJurnal.resx">
+      <DependentUpon>RF_TransaksiJurnal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Akun.resx">
+      <DependentUpon>UI_Akun.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_AkunDialog.resx">
+      <DependentUpon>UI_AkunDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_AkunY.resx">
+      <DependentUpon>UI_AkunY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_AkunZ.resx">
+      <DependentUpon>UI_AkunZ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_AkunZDialog.resx">
+      <DependentUpon>UI_AkunZDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Divisi.resx">
+      <DependentUpon>UI_Divisi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_ProyekSub.resx">
+      <DependentUpon>UI_ProyekSub.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_AktivaTetapHistory.resx">
+      <DependentUpon>UI_AktivaTetapHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Data\UI_BukuBesar.resx">
+      <DependentUpon>UI_BukuBesar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Data\UI_JurnalVoucher.resx">
+      <DependentUpon>UI_JurnalVoucher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Data\UI_SaldoArAp.resx">
+      <DependentUpon>UI_SaldoArAp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Data\UI_Statistik.resx">
+      <DependentUpon>UI_Statistik.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_BukuBesar.resx">
+      <DependentUpon>RF_BukuBesar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_BukuBesar2.resx">
+      <DependentUpon>RF_BukuBesar2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_CetakBuktiPotongPPH23.resx">
+      <DependentUpon>RF_CetakBuktiPotongPPH23.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_DaftarHarian.resx">
+      <DependentUpon>RF_DaftarHarian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_SaldoARAP.resx">
+      <DependentUpon>RF_SaldoARAP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Aktiva.resx">
+      <DependentUpon>UI_Aktiva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_AktivaTetap.resx">
+      <DependentUpon>UI_AktivaTetap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_AktivaTetapPembelian.resx">
+      <DependentUpon>UI_AktivaTetapPembelian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_AktivaTetapPenjualan.resx">
+      <DependentUpon>UI_AktivaTetapPenjualan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_AktivaTetapSaldoAwal.resx">
+      <DependentUpon>UI_AktivaTetapSaldoAwal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_AktivaTetapWriteOff.resx">
+      <DependentUpon>UI_AktivaTetapWriteOff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\UI_TutupBukuDialog.resx">
+      <DependentUpon>UI_TutupBukuDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\UI_TutupBuku.resx">
+      <DependentUpon>UI_TutupBuku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_CekGiroDialog.resx">
+      <DependentUpon>UI_CekGiroDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_LK.resx">
+      <DependentUpon>RF_LK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_AktivaDialog.resx">
+      <DependentUpon>UI_AktivaDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_AktivaKelompok.resx">
+      <DependentUpon>UI_AktivaKelompok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_AktivaKelompokDialog.resx">
+      <DependentUpon>UI_AktivaKelompokDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_AktivaTetapPenyusutan.resx">
+      <DependentUpon>UI_AktivaTetapPenyusutan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_KategoriKontak.resx">
+      <DependentUpon>UI_KategoriKontak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Bank.resx">
+      <DependentUpon>UI_Bank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Kontak.resx">
+      <DependentUpon>UI_Kontak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_KontakDialog.resx">
+      <DependentUpon>UI_KontakDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_MataUangDialog.resx">
+      <DependentUpon>UI_MataUangDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_Proyek.resx">
+      <DependentUpon>UI_Proyek.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_ProyekDialog.resx">
+      <DependentUpon>UI_ProyekDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_Anggaran.resx">
+      <DependentUpon>UI_Anggaran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_AnggaranDialog.resx">
+      <DependentUpon>UI_AnggaranDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_CashOpname.resx">
+      <DependentUpon>UI_CashOpname.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_CashOpnameDialog.resx">
+      <DependentUpon>UI_CashOpnameDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_CekGiro.resx">
+      <DependentUpon>UI_CekGiro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_EksportESPT.resx">
+      <DependentUpon>UI_EksportESPT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Master\UI_MataUang.resx">
+      <DependentUpon>UI_MataUang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Setting\UI_SettingCRAkun.resx">
+      <DependentUpon>UI_SettingCRAkun.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Setting\UI_SettingCRNeraca.resx">
+      <DependentUpon>UI_SettingCRNeraca.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Setting\UI_SettingCROthers.resx">
+      <DependentUpon>UI_SettingCROthers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Setting\UI_SettingGL.resx">
+      <DependentUpon>UI_SettingGL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PengajuanDana.resx">
+      <DependentUpon>UI_PengajuanDana.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PengajuanDanaDialog.resx">
+      <DependentUpon>UI_PengajuanDanaDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_Pinjaman.resx">
+      <DependentUpon>UI_Pinjaman.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PinjamanDialog.resx">
+      <DependentUpon>UI_PinjamanDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PrepaidExpense.resx">
+      <DependentUpon>UI_PrepaidExpense.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PrepaidExpenseAmortisasi.resx">
+      <DependentUpon>UI_PrepaidExpenseAmortisasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PrepaidExpenseDialog.resx">
+      <DependentUpon>UI_PrepaidExpenseDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PrepaymentzApprove.resx">
+      <DependentUpon>UI_PrepaymentzApprove.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_Prepayment.resx">
+      <DependentUpon>UI_Prepayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PrepaymentDialog.resx">
+      <DependentUpon>UI_PrepaymentDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_PrepaymentzApproveDialog.resx">
+      <DependentUpon>UI_PrepaymentzApproveDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_RekonsiliasiBank.resx">
+      <DependentUpon>UI_RekonsiliasiBank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_RekonsiliasiBankx.resx">
+      <DependentUpon>UI_RekonsiliasiBankx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_RevaluasiValas.resx">
+      <DependentUpon>UI_RevaluasiValas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_RevaluasiValasDialog.resx">
+      <DependentUpon>UI_RevaluasiValasDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_SaldoAwal1.resx">
+      <DependentUpon>UI_SaldoAwal1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_SaldoAwalDialog.resx">
+      <DependentUpon>UI_SaldoAwalDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_SaldoAwal.resx">
+      <DependentUpon>UI_SaldoAwal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_TransaksiBK.resx">
+      <DependentUpon>UI_TransaksiBK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_TransaksiBM.resx">
+      <DependentUpon>UI_TransaksiBM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_TransaksiGL.resx">
+      <DependentUpon>UI_TransaksiGL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_TransaksiJA.resx">
+      <DependentUpon>UI_TransaksiJA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_TransaksiJU.resx">
+      <DependentUpon>UI_TransaksiJU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_TransaksiKK.resx">
+      <DependentUpon>UI_TransaksiKK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_TransaksiKM.resx">
+      <DependentUpon>UI_TransaksiKM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\Transaksi\UI_UpdateBuktiPotongPPH23.resx">
+      <DependentUpon>UI_UpdateBuktiPotongPPH23.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\FilterForm\RF_SaldoProyek2.resx">
+      <DependentUpon>RF_SaldoProyek2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Mesitech\RF_CashFlow - Copy.resx">
+      <DependentUpon>RF_CashFlow - Copy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Mesitech\RF_CashFlow.resx">
+      <DependentUpon>RF_CashFlow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Mesitech\RF_MesitechPertanggungJawaban.resx">
+      <DependentUpon>RF_MesitechPertanggungJawaban.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Mesitech\RF_MesitechTransaksi.resx">
+      <DependentUpon>RF_MesitechTransaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Mesitech\UI_Invoice.resx">
+      <DependentUpon>UI_Invoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Mesitech\UI_MesitechSettingCashFlow.resx">
+      <DependentUpon>UI_MesitechSettingCashFlow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Mesitech\xMesitechBuktiBankAR.resx">
+      <DependentUpon>xMesitechBuktiBankAR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Mesitech\xMesitechDaftarGL.resx">
+      <DependentUpon>xMesitechDaftarGL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Mesitech\xMesitechDaftarGLFilter.resx">
+      <DependentUpon>xMesitechDaftarGLFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Mesitech\xMesitechGLFilter.resx">
+      <DependentUpon>xMesitechGLFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Mesitech\xMesitechJMAR.resx">
+      <DependentUpon>xMesitechJMAR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Mesitech\xMesitechJM.resx">
+      <DependentUpon>xMesitechJM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILayer\UI_TutupBukuDialogOld.resx">
+      <DependentUpon>UI_TutupBukuDialogOld.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Mesitech\xMesitechAPP.resx">
+      <DependentUpon>xMesitechAPP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Mesitech\xMesitechGL.resx">
+      <DependentUpon>xMesitechGL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Mesitech\xMesitechBuktiKas.resx">
+      <DependentUpon>xMesitechBuktiKas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Mesitech\xMesitechBuktiBank.resx">
+      <DependentUpon>xMesitechBuktiBank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Mesitech\xMesitechVerifikasiJurnal.resx">
+      <DependentUpon>xMesitechVerifikasiJurnal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Mesitech\xMesitechVerifikasiJurnal2.resx">
+      <DependentUpon>xMesitechVerifikasiJurnal2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\PJP\pjp_FilterPerProses.resx">
+      <DependentUpon>pjp_FilterPerProses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\PJP\pjp_MasterProses.resx">
+      <DependentUpon>pjp_MasterProses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\PJP\pjp_TransaksiGL.resx">
+      <DependentUpon>pjp_TransaksiGL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\PJP\pjp_TransaksiKK.resx">
+      <DependentUpon>pjp_TransaksiKK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\PJP\pjp_TransaksiTKIDialog.resx">
+      <DependentUpon>pjp_TransaksiTKIDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\PJP\pjp_TransaksiKM.resx">
+      <DependentUpon>pjp_TransaksiKM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\PJP\pjp_TransaksiJA.resx">
+      <DependentUpon>pjp_TransaksiJA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\PJP\pjp_TransaksiJU.resx">
+      <DependentUpon>pjp_TransaksiJU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\PJP\pjp_DaftarGL.resx">
+      <DependentUpon>pjp_DaftarGL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\PJP\pjp_DaftarGLDetail.resx">
+      <DependentUpon>pjp_DaftarGLDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\PJP\pjp_DaftarGLFilter.resx">
+      <DependentUpon>pjp_DaftarGLFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\PJP\pjp_SaldoARAP.resx">
+      <DependentUpon>pjp_SaldoARAP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Woojin\RF_BukuBesar2.resx">
+      <DependentUpon>RF_BukuBesar2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Woojin\UI_Brankas.resx">
+      <DependentUpon>UI_Brankas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xCustomize\Woojin\UI_Memo.resx">
+      <DependentUpon>UI_Memo.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NuSoft001.ruleset" />
+    <None Include="Resources\account_balances_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account_balances_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cellsautoheight-_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cellsautoheight-_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UILayer\Transaksi\Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

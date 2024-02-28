@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1D9CE7C0-6506-4D93-9FED-C12291206A1D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NuSoft.NUI.Win.Forms.Modules.NuSoft007</RootNamespace>
+    <AssemblyName>Nusoft007</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Release\Modules\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.Designer.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.Charts.Designer.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.Charts.v13.2.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.Data.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.Pdf.v13.2.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.PivotGrid.v13.2.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.Utils.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.Xpo.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraBars.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraCharts.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.2.UI, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraCharts.v13.2.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraEditors.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraGrid.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraLayout.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPdfViewer.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraPdfViewer.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraPivotGrid.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraTreeList.v13.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft">
+      <HintPath>..\..\Release\NuSoft.exe</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Core">
+      <HintPath>..\..\Release\NuSoft.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Core.Win.Forms">
+      <HintPath>..\..\Release\NuSoft.Core.Win.Forms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Data">
+      <HintPath>..\..\Release\NuSoft.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.NPO">
+      <HintPath>..\..\Release\NuSoft.NPO.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoft.Utils">
+      <HintPath>..\..\Release\NuSoft.Utils.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NuSoftModSys, Version=1.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\Modules\NuSoftModSys.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainClass.cs" />
+    <Compile Include="Persistent\Others.cs" />
+    <Compile Include="Persistent\PPh.cs" />
+    <Compile Include="Persistent\PPn.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PPh17.cs" />
+    <Compile Include="Services\PPh21.cs" />
+    <Compile Include="Services\PPh23.cs" />
+    <Compile Include="Services\PPnKeluaran.cs" />
+    <Compile Include="Services\PPnMasukan.cs" />
+    <Compile Include="Services\ServiceBase.cs" />
+    <Compile Include="Services\TaxSetting.cs" />
+    <Compile Include="UI\Konfigurasi\UI_SettingPajak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Konfigurasi\UI_SettingPajak.Designer.cs">
+      <DependentUpon>UI_SettingPajak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PPh\UI_PPh21.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PPh\UI_PPh21.Designer.cs">
+      <DependentUpon>UI_PPh21.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PPh\UI_PPh23.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PPh\UI_PPh23.Designer.cs">
+      <DependentUpon>UI_PPh23.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PPh\UI_TarifPPhPs17.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PPh\UI_TarifPPhPs17.Designer.cs">
+      <DependentUpon>UI_TarifPPhPs17.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PPh\UI_TarifPPhPs17Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PPh\UI_TarifPPhPs17Dialog.Designer.cs">
+      <DependentUpon>UI_TarifPPhPs17Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PPn\UI_FPKeluaran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PPn\UI_FPKeluaran.Designer.cs">
+      <DependentUpon>UI_FPKeluaran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PPn\UI_FPKeluaranDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PPn\UI_FPKeluaranDialog.Designer.cs">
+      <DependentUpon>UI_FPKeluaranDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PPn\UI_FPMasukan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PPn\UI_FPMasukan.Designer.cs">
+      <DependentUpon>UI_FPMasukan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PPn\UI_FPMasukanDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PPn\UI_FPMasukanDialog.Designer.cs">
+      <DependentUpon>UI_FPMasukanDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PPn\UI_NomorFaktur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PPn\UI_NomorFaktur.Designer.cs">
+      <DependentUpon>UI_NomorFaktur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PPn\UI_NomorFakturDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PPn\UI_NomorFakturDialog.Designer.cs">
+      <DependentUpon>UI_NomorFakturDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UI_ImageViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UI_ImageViewer.Designer.cs">
+      <DependentUpon>UI_ImageViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UI_PDFViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UI_PDFViewer.Designer.cs">
+      <DependentUpon>UI_PDFViewer.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Konfigurasi\UI_SettingPajak.resx">
+      <DependentUpon>UI_SettingPajak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PPh\UI_PPh21.resx">
+      <DependentUpon>UI_PPh21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PPh\UI_PPh23.resx">
+      <DependentUpon>UI_PPh23.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PPh\UI_TarifPPhPs17.resx">
+      <DependentUpon>UI_TarifPPhPs17.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PPh\UI_TarifPPhPs17Dialog.resx">
+      <DependentUpon>UI_TarifPPhPs17Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PPn\UI_FPKeluaran.resx">
+      <DependentUpon>UI_FPKeluaran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PPn\UI_FPKeluaranDialog.resx">
+      <DependentUpon>UI_FPKeluaranDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PPn\UI_FPMasukan.resx">
+      <DependentUpon>UI_FPMasukan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PPn\UI_FPMasukanDialog.resx">
+      <DependentUpon>UI_FPMasukanDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PPn\UI_NomorFaktur.resx">
+      <DependentUpon>UI_NomorFaktur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PPn\UI_NomorFakturDialog.resx">
+      <DependentUpon>UI_NomorFakturDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UI_ImageViewer.resx">
+      <DependentUpon>UI_ImageViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UI_PDFViewer.resx">
+      <DependentUpon>UI_PDFViewer.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Percentage_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Percentage_32x32.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,22 @@
++++++ Start 11-05-2014+++++ ##tmkm
+#### m05 - PURCHASE ####
+-Rubah persisten untuk semua transaksi (hilangkan : subtotal, total, dll dari field)
+-Buat jurnal penerimaan barang
+-Rubah Form untuk "TOtal Transaksi, PPN, PPH, SubTotal"
+-
+
++++++  End 13-05-2014+++++
+
++++++ Start 01-05-2014+++++ ##tmkm
+#### m05 - PURCHASE ####
+-Rubah Layout Semua Form 
+-Standarkan lebar kolom untuk combo
++++++  End 06-05-2014+++++
+
+
++++++ Start 22-04-2014+++++ ##agn
+#### m05 - PURCHASE ####
+-Rubah Persistent, ada perubahan di ENUM
+-Rubah untuk Code Nomor Transaksi di semua Form
++++++  End 22-04-2014+++++
+
