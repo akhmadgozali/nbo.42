@@ -1,0 +1,9 @@
+D:\Project\SyBiruNew\Release\SyBiru.Report.exe.config
+D:\Project\SyBiruNew\Release\SyBiru.Report.exe
+D:\Project\SyBiruNew\Framework\SyBiru.Report\obj\x86\Debug\SyBiru.SUI.Win.Report.UI_Designer.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Report\obj\x86\Debug\SyBiru.SUI.Win.Report.Resources.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Report\obj\x86\Debug\SyBiru.SUI.Win.Report.UI_Viewer.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Report\obj\x86\Debug\SyBiru.Report.exe.licenses
+D:\Project\SyBiruNew\Framework\SyBiru.Report\obj\x86\Debug\SyBiru.Report.exe
+D:\Project\SyBiruNew\Framework\SyBiru.Report\obj\x86\Debug\SyBiru.Report.vbprojResolveAssemblyReference.cache
+D:\Project\SyBiruNew\Framework\SyBiru.Report\obj\x86\Debug\SyBiru.Report.vbproj.GenerateResource.Cache

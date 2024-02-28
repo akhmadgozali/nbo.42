@@ -1,0 +1,16 @@
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\SyBiru.Forms.UI.Resources.resources
+D:\Project\SyBiruNew\Release\SyBiru.Forms.UI.dll
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\SyBiru.Forms.UI.dll
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\SyBiru.Forms.UI.UI_DatabaseList.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\SyBiru.Forms.UI.dll.licenses
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\SyBiru.Forms.UI.UI_MenusList.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\SyBiru.Forms.UI.UI_ModulesList.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\SyBiru.Forms.UI.UI_ReportsList.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\SyBiru.Forms.UI.UI_ReportListDb.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\GenerateResource.read.1.tlog
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\GenerateResource.write.1.tlog
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\SyBiru.Forms.UI.UIX_UserManager.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\SyBiru.Forms.UI.UIX_UserManagerDialog.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\SyBiru.Forms.UI.UIX_UserLog.resources
+D:\Project\SyBiruNew\Release\Modules\SyBiru.Forms.UI.dll

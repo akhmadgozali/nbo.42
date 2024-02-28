@@ -1,0 +1,45 @@
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\SyBiru.SUI.Win.Forms.Resources.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\SyBiru.SUI.Win.Forms.UIX_UserLog.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\SyBiru.SUI.Win.Forms.UIX_UserManager.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\SyBiru.SUI.Win.Forms.UIX_UserManagerDialog.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\SyBiru.SUI.Win.Forms.UI_DatabaseList.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\SyBiru.SUI.Win.Forms.UI_MenusList.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\SyBiru.SUI.Win.Forms.UI_ModulesList.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\SyBiru.SUI.Win.Forms.UI_ReportListDb.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\SyBiru.SUI.Win.Forms.UI_ReportsList.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\GenerateResource.read.1.tlog
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\GenerateResource.write.1.tlog
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\SyBiru.SUI.Win.Forms.dll.licenses
+D:\Project\SyBiruNew\Framework\SyBiru.Forms.UI\obj\Debug\SyBiru.SUI.Win.Forms.dll
+D:\Project\SyBiruNew\Release\SyBiru.SUI.Win.Forms.dll
+D:\Project\SyBiruNew\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.Resources.resources
+D:\Project\SyBiruNew\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.UIX_UserLog.resources
+D:\Project\SyBiruNew\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.UIX_UserManager.resources
+D:\Project\SyBiruNew\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.UIX_UserManagerDialog.resources
+D:\Project\SyBiruNew\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.UI_DatabaseList.resources
+D:\Project\SyBiruNew\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.UI_MenusList.resources
+D:\Project\SyBiruNew\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.UI_ModulesList.resources
+D:\Project\SyBiruNew\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.UI_ReportListDb.resources
+D:\Project\SyBiruNew\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.UI_ReportsList.resources
+D:\Project\SyBiruNew\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.dll.licenses
+D:\Project\SyBiruNew\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.dll
+D:\Project\SyBiruNew\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.UIX_SystemLog.resources
+D:\Project\SyBiruNew\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.vbprojResolveAssemblyReference.cache
+D:\Project\SyBiruNew\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.vbproj.GenerateResource.Cache
+D:\SyBiru 5.4\Release\SyBiru.SUI.Win.Forms.dll
+D:\SyBiru 5.4\Framework\SyBiru.SUI.Win.Forms\obj\Debug\ResolveAssemblyReference.cache
+D:\SyBiru 5.4\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.Resources.resources
+D:\SyBiru 5.4\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.UIX_SystemLog.resources
+D:\SyBiru 5.4\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.UIX_UserLog.resources
+D:\SyBiru 5.4\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.UIX_UserManager.resources
+D:\SyBiru 5.4\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.UIX_UserManagerDialog.resources
+D:\SyBiru 5.4\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.UI_DatabaseList.resources
+D:\SyBiru 5.4\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.UI_MenusList.resources
+D:\SyBiru 5.4\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.UI_ModulesList.resources
+D:\SyBiru 5.4\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.UI_ReportListDb.resources
+D:\SyBiru 5.4\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.UI_ReportsList.resources
+D:\SyBiru 5.4\Framework\SyBiru.SUI.Win.Forms\obj\Debug\GenerateResource.read.1.tlog
+D:\SyBiru 5.4\Framework\SyBiru.SUI.Win.Forms\obj\Debug\GenerateResource.write.1.tlog
+D:\SyBiru 5.4\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.dll.licenses
+D:\SyBiru 5.4\Framework\SyBiru.SUI.Win.Forms\obj\Debug\SyBiru.SUI.Win.Forms.dll

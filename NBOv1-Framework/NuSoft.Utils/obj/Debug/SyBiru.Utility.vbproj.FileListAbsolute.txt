@@ -1,0 +1,9 @@
+D:\Project\SyBiruNew\Release\SyBiru.Utility.dll
+D:\Project\SyBiruNew\Framework\SyBiru.Utility\obj\Debug\SyBiru.Utility.ExceptionBox.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Utility\obj\Debug\SyBiru.Utility.dll
+D:\Project\SyBiruNew\Framework\SyBiru.Utility\obj\Debug\SyBiru.Utility.dll.licenses
+D:\Project\SyBiruNew\Framework\SyBiru.Utility\obj\Debug\SyBiru.Utility.MessageBox.UI_MessageBox.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Utility\obj\Debug\Resources.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Utility\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\SyBiruNew\Framework\SyBiru.Utility\obj\Debug\GenerateResource.read.1.tlog
+D:\Project\SyBiruNew\Framework\SyBiru.Utility\obj\Debug\GenerateResource.write.1.tlog

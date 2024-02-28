@@ -1,0 +1,21 @@
+=========================================================================================================
+=======================                   Provided by sbm nusoft                  =======================  
+=========================================================================================================
+
+REQUIREMENT SYSTEM :
+- MySQL Server 5.6
+- OpenSSL
+- MySQL Connector 6.6.5
+- DevExpress 13.1
+
+KONFIGURASI DATABASE :
+- Port = 48384
+- InnoDB = ON
+- innodb_file_per_table = 1
+- ssl
+- ssl-key = "[PATH]/server-key.pem"
+- ssl-cert = "[PATH]/server-cert.pem"
+- ssl-ca = "[PATH]/ca-cert.pem"
+
+DEFAULT USER
+nusoft ==> nu123@soft

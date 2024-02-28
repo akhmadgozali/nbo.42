@@ -1,0 +1,155 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.5": {
+      "FluentFTP/32.4.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Web"
+        ],
+        "compile": {
+          "lib/net45/FluentFTP.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FluentFTP.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5/win": {
+      "FluentFTP/32.4.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Web"
+        ],
+        "compile": {
+          "lib/net45/FluentFTP.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FluentFTP.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5/win-x64": {
+      "FluentFTP/32.4.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Web"
+        ],
+        "compile": {
+          "lib/net45/FluentFTP.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FluentFTP.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5/win-x86": {
+      "FluentFTP/32.4.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Web"
+        ],
+        "compile": {
+          "lib/net45/FluentFTP.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FluentFTP.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FluentFTP/32.4.3": {
+      "sha512": "2Haoxl4tWITU9mcbTAH17JAAjUY8ZPwoN9qW/Z/XRv2aAneajcNZJIhTkuhBu+PsOPG93yizeM5hxW0vguy6Xg==",
+      "type": "package",
+      "path": "fluentftp/32.4.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentftp.32.4.3.nupkg.sha512",
+        "fluentftp.nuspec",
+        "lib/net20/FluentFTP.dll",
+        "lib/net20/FluentFTP.xml",
+        "lib/net35/FluentFTP.dll",
+        "lib/net35/FluentFTP.xml",
+        "lib/net40/FluentFTP.dll",
+        "lib/net40/FluentFTP.xml",
+        "lib/net45/FluentFTP.dll",
+        "lib/net45/FluentFTP.xml",
+        "lib/netstandard1.4/FluentFTP.dll",
+        "lib/netstandard1.4/FluentFTP.xml",
+        "lib/netstandard1.6/FluentFTP.dll",
+        "lib/netstandard1.6/FluentFTP.xml",
+        "lib/netstandard2.0/FluentFTP.dll",
+        "lib/netstandard2.0/FluentFTP.xml"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.5": [
+      "FluentFTP >= 32.4.3"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\jali\\.nuget\\packages\\": {},
+    "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\SourceCode\\NBOv1-Framework\\Nusoft.Update\\Nusoft.Update.csproj",
+      "projectName": "Nusoft.Update",
+      "projectPath": "C:\\SourceCode\\NBOv1-Framework\\Nusoft.Update\\Nusoft.Update.csproj",
+      "packagesPath": "C:\\Users\\jali\\.nuget\\packages\\",
+      "outputPath": "C:\\SourceCode\\NBOv1-Framework\\Nusoft.Update\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\jali\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net45"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.devexpress.com/iTloDKK63jQ6wmlyTtPBY7eNoUA28Ipa2oZQ6NbaGXpImiKA3q/api": {}
+      },
+      "frameworks": {
+        "net45": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net45": {
+        "dependencies": {
+          "FluentFTP": {
+            "target": "Package",
+            "version": "[32.4.3, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

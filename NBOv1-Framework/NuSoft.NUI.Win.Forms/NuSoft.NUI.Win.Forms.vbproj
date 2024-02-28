@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{2453A914-4084-4CC3-8F4A-3E30227BB7C9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NuSoft.NUI.Win.Forms</RootNamespace>
+    <AssemblyName>NuSoft.NUI.Win.Forms</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>nusoftkey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.Data.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.Utils.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.Xpo.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraBars.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraEditors.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraGrid.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\DevExpress.XtraTreeList.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainClass.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UIX_Dashboard.Designer.vb">
+      <DependentUpon>UIX_Dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIX_Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIX_SystemLog.Designer.vb">
+      <DependentUpon>UIX_SystemLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIX_SystemLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIX_UserLogSimple.Designer.vb">
+      <DependentUpon>UIX_UserLogSimple.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIX_UserLogSimple.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIX_UserLog.Designer.vb">
+      <DependentUpon>UIX_UserLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIX_UserLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIX_UserManager.Designer.vb">
+      <DependentUpon>UIX_UserManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIX_UserManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIX_UserManagerDialog.Designer.vb">
+      <DependentUpon>UIX_UserManagerDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIX_UserManagerDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_DatabaseList.Designer.vb">
+      <DependentUpon>UI_DatabaseList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI_DatabaseList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_MenusList.Designer.vb">
+      <DependentUpon>UI_MenusList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI_MenusList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_ModulesList.Designer.vb">
+      <DependentUpon>UI_ModulesList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI_ModulesList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_ReportListDb.Designer.vb">
+      <DependentUpon>UI_ReportListDb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI_ReportListDb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_ReportsList.Designer.vb">
+      <DependentUpon>UI_ReportsList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI_ReportsList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIX_Dashboard.resx">
+      <DependentUpon>UIX_Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIX_SystemLog.resx">
+      <DependentUpon>UIX_SystemLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIX_UserLogSimple.resx">
+      <DependentUpon>UIX_UserLogSimple.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIX_UserLog.resx">
+      <DependentUpon>UIX_UserLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIX_UserManager.resx">
+      <DependentUpon>UIX_UserManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIX_UserManagerDialog.resx">
+      <DependentUpon>UIX_UserManagerDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_DatabaseList.resx">
+      <DependentUpon>UI_DatabaseList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_MenusList.resx">
+      <DependentUpon>UI_MenusList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_ModulesList.resx">
+      <DependentUpon>UI_ModulesList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_ReportListDb.resx">
+      <DependentUpon>UI_ReportListDb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_ReportsList.resx">
+      <DependentUpon>UI_ReportsList.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="nusoftkey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NuSoft.Core\NuSoft.Core.vbproj">
+      <Project>{c49d8e04-d186-4192-95ae-c3e5a9eb3d97}</Project>
+      <Name>NuSoft.Core</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\NuSoft.Data\NuSoft.Data.vbproj">
+      <Project>{2FE7679D-D706-47C8-9EC1-A4EFA35E9D49}</Project>
+      <Name>NuSoft.Data</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\NuSoft.Core.Win.Forms\NuSoft.Core.Win.Forms.vbproj">
+      <Project>{0F625E80-F7D9-4AC7-90F5-34D475B5C687}</Project>
+      <Name>NuSoft.Core.Win.Forms</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\NuSoft.NPO\NuSoft.NPO.vbproj">
+      <Project>{aceb0f8a-b4da-4c3d-9a93-b160520c0938}</Project>
+      <Name>NuSoft.NPO</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\NuSoft.Utils.Cryptograph\NuSoft.Utils.Cryptograph.vbproj">
+      <Project>{93d3c9d0-04d1-44b4-8ece-19ebf4f13e85}</Project>
+      <Name>NuSoft.Utils.Cryptograph</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\NuSoft.Utils\NuSoft.Utils.vbproj">
+      <Project>{C242E80C-67A9-4741-9AC8-A00F1340E370}</Project>
+      <Name>NuSoft.Utils</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

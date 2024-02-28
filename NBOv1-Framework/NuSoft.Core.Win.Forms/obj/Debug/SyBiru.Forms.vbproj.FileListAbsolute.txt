@@ -1,0 +1,15 @@
+D:\Project\SyBiruNew\Release\SyBiru.Forms.dll
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\SyBiru.Forms.Parent.DialogForm.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\SyBiru.Forms.Parent.Resources.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\SyBiru.Forms.dll
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\SyBiru.Forms.Parent.GridBinding.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\SyBiru.Forms.dll.licenses
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\SyBiru.Forms.Parent.InputDialog.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\SyBiru.Forms.Parent.GridInput.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\GenerateResource.read.1.tlog
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\GenerateResource.write.1.tlog
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\SyBiru.Forms.Parent.YearMonthFilter.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\SyBiru.Forms.Parent.FilterForm.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\SyBiru.Forms.Parent.TreeInput.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\SyBiru.Forms.Parent.InputFilter.resources

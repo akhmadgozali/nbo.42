@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Projects\\Old\\WD\\Framework\\Nusoft.Update\\Nusoft.Update.csproj": {}
+  },
+  "projects": {
+    "D:\\Projects\\Old\\WD\\Framework\\Nusoft.Update\\Nusoft.Update.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Old\\WD\\Framework\\Nusoft.Update\\Nusoft.Update.csproj",
+        "projectName": "Nusoft.Update",
+        "projectPath": "D:\\Projects\\Old\\WD\\Framework\\Nusoft.Update\\Nusoft.Update.csproj",
+        "packagesPath": "C:\\Users\\PT JJMN\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Old\\WD\\Framework\\Nusoft.Update\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\PT JJMN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net45"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/iTloDKK63jQ6wmlyTtPBY7eNoUA28Ipa2oZQ6NbaGXpImiKA3q/api": {}
+        },
+        "frameworks": {
+          "net45": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net45": {
+          "dependencies": {
+            "FluentFTP": {
+              "target": "Package",
+              "version": "[32.4.3, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

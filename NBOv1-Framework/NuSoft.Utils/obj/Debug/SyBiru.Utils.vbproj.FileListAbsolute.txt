@@ -1,0 +1,25 @@
+D:\Project\SyBiruNew\Framework\SyBiru.Utility\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\SyBiruNew\Framework\SyBiru.Utility\obj\Debug\SyBiru.Utils.Win.ExceptionBox.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Utility\obj\Debug\Resources.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Utility\obj\Debug\SyBiru.Utils.Win.MessageBox.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Utility\obj\Debug\GenerateResource.read.1.tlog
+D:\Project\SyBiruNew\Framework\SyBiru.Utility\obj\Debug\GenerateResource.write.1.tlog
+D:\Project\SyBiruNew\Framework\SyBiru.Utility\obj\Debug\SyBiru.Utils.dll.licenses
+D:\Project\SyBiruNew\Framework\SyBiru.Utility\obj\Debug\SyBiru.Utils.dll
+D:\Project\SyBiruNew\Release\SyBiru.Utils.dll
+D:\Project\SyBiruNew\Framework\SyBiru.Utils\obj\Debug\SyBiru.Utils.Win.ExceptionBox.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Utils\obj\Debug\Resources.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Utils\obj\Debug\SyBiru.Utils.Win.MessageBox.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Utils\obj\Debug\SyBiru.Utils.dll.licenses
+D:\Project\SyBiruNew\Framework\SyBiru.Utils\obj\Debug\SyBiru.Utils.dll
+D:\SyBiru 5.4\Release\SyBiru.Utils.dll
+D:\SyBiru 5.4\Framework\SyBiru.Utils\obj\Debug\ResolveAssemblyReference.cache
+D:\SyBiru 5.4\Framework\SyBiru.Utils\obj\Debug\SyBiru.Utils.Win.ExceptionBox.resources
+D:\SyBiru 5.4\Framework\SyBiru.Utils\obj\Debug\Resources.resources
+D:\SyBiru 5.4\Framework\SyBiru.Utils\obj\Debug\SyBiru.Utils.Win.MessageBox.resources
+D:\SyBiru 5.4\Framework\SyBiru.Utils\obj\Debug\GenerateResource.read.1.tlog
+D:\SyBiru 5.4\Framework\SyBiru.Utils\obj\Debug\GenerateResource.write.1.tlog
+D:\SyBiru 5.4\Framework\SyBiru.Utils\obj\Debug\SyBiru.Utils.dll.licenses
+D:\SyBiru 5.4\Framework\SyBiru.Utils\obj\Debug\SyBiru.Utils.dll
+D:\Project\SyBiruNew\Framework\SyBiru.Utils\obj\Debug\SyBiru.Utils.vbproj.GenerateResource.Cache
+D:\Project\SyBiruNew\Framework\SyBiru.Utils\obj\Debug\SyBiru.Utils.vbprojResolveAssemblyReference.cache

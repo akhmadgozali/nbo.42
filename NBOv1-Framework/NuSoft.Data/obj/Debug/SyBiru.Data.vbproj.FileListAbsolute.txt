@@ -1,0 +1,5 @@
+D:\Project\SyBiruNew\Release\SyBiru.Data.dll
+D:\Project\SyBiruNew\Framework\SyBiru.Data\obj\Debug\Resources.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Data\obj\Debug\SyBiru.Data.dll
+D:\Project\SyBiruNew\Framework\SyBiru.Data\obj\Debug\SyBiru.Data.vbprojResolveAssemblyReference.cache
+D:\Project\SyBiruNew\Framework\SyBiru.Data\obj\Debug\SyBiru.Data.vbproj.GenerateResource.Cache

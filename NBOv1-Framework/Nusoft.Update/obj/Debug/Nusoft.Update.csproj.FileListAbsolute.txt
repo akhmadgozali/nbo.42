@@ -1,0 +1,15 @@
+D:\Document\Personal\nusoft\WD\Release\Nusoft.Update.exe
+D:\Document\Personal\nusoft\WD\Framework\Nusoft.Update\obj\Debug\Nusoft.Update.csproj.CoreCompileInputs.cache
+D:\Document\Personal\nusoft\WD\Framework\Nusoft.Update\obj\Debug\Nusoft.Update.csproj.CopyComplete
+D:\Document\Personal\nusoft\WD\Framework\Nusoft.Update\obj\Debug\Nusoft.Update.exe
+D:\Document\Personal\nusoft\WD\Framework\Nusoft.Update\obj\Debug\Nusoft.Update.csproj.AssemblyReference.cache
+D:\Projects\Old\WD\Release\Nusoft.Update.exe
+D:\Projects\Old\WD\Framework\Nusoft.Update\obj\Debug\Nusoft.Update.csproj.AssemblyReference.cache
+D:\Projects\Old\WD\Framework\Nusoft.Update\obj\Debug\Nusoft.Update.csproj.CoreCompileInputs.cache
+D:\Projects\Old\WD\Framework\Nusoft.Update\obj\Debug\Nusoft.Update.csproj.CopyComplete
+D:\Projects\Old\WD\Framework\Nusoft.Update\obj\Debug\Nusoft.Update.exe
+C:\SourceCode\Release\Nusoft.Update.exe
+C:\SourceCode\NBOv1-Framework\Nusoft.Update\obj\Debug\Nusoft.Update.csprojAssemblyReference.cache
+C:\SourceCode\NBOv1-Framework\Nusoft.Update\obj\Debug\Nusoft.Update.csproj.CoreCompileInputs.cache
+C:\SourceCode\NBOv1-Framework\Nusoft.Update\obj\Debug\Nusoft.Update.csproj.CopyComplete
+C:\SourceCode\NBOv1-Framework\Nusoft.Update\obj\Debug\Nusoft.Update.exe

@@ -1,0 +1,13 @@
+D:\Project\SyBiruNew\Release\SyBiru.exe
+D:\Project\SyBiruNew\Framework\SyBiru\obj\x86\Debug\SyBiru.SUI.Win.Forms.Resources.resources
+D:\Project\SyBiruNew\Framework\SyBiru\obj\x86\Debug\SyBiru.SUI.Win.Forms.x_Password.resources
+D:\Project\SyBiruNew\Framework\SyBiru\obj\x86\Debug\SyBiru.SUI.Win.Forms.x_Splash.resources
+D:\Project\SyBiruNew\Framework\SyBiru\obj\x86\Debug\SyBiru.SUI.Win.Forms.x_Wait.resources
+D:\Project\SyBiruNew\Framework\SyBiru\obj\x86\Debug\SyBiru.SUI.Win.Forms.x_Config.resources
+D:\Project\SyBiruNew\Framework\SyBiru\obj\x86\Debug\SyBiru.SUI.Win.Forms.x_Login.resources
+D:\Project\SyBiruNew\Framework\SyBiru\obj\x86\Debug\SyBiru.SUI.Win.Forms.x_Main.resources
+D:\Project\SyBiruNew\Framework\SyBiru\obj\x86\Debug\SyBiru.exe.licenses
+D:\Project\SyBiruNew\Framework\SyBiru\obj\x86\Debug\SyBiru.exe
+D:\Project\SyBiruNew\Framework\SyBiru\obj\x86\Debug\SyBiru.vbprojResolveAssemblyReference.cache
+D:\Project\SyBiruNew\Framework\SyBiru\obj\x86\Debug\SyBiru.vbproj.GenerateResource.Cache
+D:\Document\Personal\nusoft\WD\Framework\SyBiru\obj\x86\Debug\SyBiru.exe

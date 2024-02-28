@@ -1,0 +1,15 @@
+D:\Project\SyBiruNew\Framework\SyBiru.Utility.Cryptograph\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\SyBiruNew\Framework\SyBiru.Utility.Cryptograph\obj\Debug\SyBiru.Utils.Cryptograph.Resources.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Utility.Cryptograph\obj\Debug\GenerateResource.read.1.tlog
+D:\Project\SyBiruNew\Framework\SyBiru.Utility.Cryptograph\obj\Debug\GenerateResource.write.1.tlog
+D:\Project\SyBiruNew\Framework\SyBiru.Utility.Cryptograph\obj\Debug\SyBiru.Utils.Cryptograph.dll
+D:\Project\SyBiruNew\Release\SyBiru.Utils.Cryptograph.dll
+D:\Project\SyBiruNew\Framework\SyBiru.Utils.Cryptograph\obj\Debug\SyBiru.Utils.Cryptograph.Resources.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Utils.Cryptograph\obj\Debug\SyBiru.Utils.Cryptograph.dll
+D:\SyBiru 5.4\Release\SyBiru.Utils.Cryptograph.dll
+D:\SyBiru 5.4\Framework\SyBiru.Utils.Cryptograph\obj\Debug\ResolveAssemblyReference.cache
+D:\SyBiru 5.4\Framework\SyBiru.Utils.Cryptograph\obj\Debug\SyBiru.Utils.Cryptograph.Resources.resources
+D:\SyBiru 5.4\Framework\SyBiru.Utils.Cryptograph\obj\Debug\GenerateResource.read.1.tlog
+D:\SyBiru 5.4\Framework\SyBiru.Utils.Cryptograph\obj\Debug\GenerateResource.write.1.tlog
+D:\SyBiru 5.4\Framework\SyBiru.Utils.Cryptograph\obj\Debug\SyBiru.Utils.Cryptograph.dll
+D:\Project\SyBiruNew\Framework\SyBiru.Utils.Cryptograph\obj\Debug\SyBiru.Utils.Cryptograph.vbproj.GenerateResource.Cache

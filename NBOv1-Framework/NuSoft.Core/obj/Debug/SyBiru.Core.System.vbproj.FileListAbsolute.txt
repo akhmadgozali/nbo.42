@@ -1,0 +1,6 @@
+D:\Project\SyBiruNew\Release\SyBiru.Core.System.dll
+D:\Project\SyBiruNew\Framework\SyBiru.Core.System\obj\Debug\SyBiru.Core.System.Resources.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Core.System\obj\Debug\SyBiru.Core.System.dll
+D:\Project\SyBiruNew\Framework\SyBiru.Core.System\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\SyBiruNew\Framework\SyBiru.Core.System\obj\Debug\GenerateResource.read.1.tlog
+D:\Project\SyBiruNew\Framework\SyBiru.Core.System\obj\Debug\GenerateResource.write.1.tlog

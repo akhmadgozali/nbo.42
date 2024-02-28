@@ -1,0 +1,16 @@
+D:\Project\SyBiruNew\Framework\SyBiru.Core\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\SyBiruNew\Framework\SyBiru.Core\obj\Debug\SyBiru.SUI.Win.Resources.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Core\obj\Debug\GenerateResource.read.1.tlog
+D:\Project\SyBiruNew\Framework\SyBiru.Core\obj\Debug\GenerateResource.write.1.tlog
+D:\Project\SyBiruNew\Framework\SyBiru.Core\obj\Debug\SyBiru.SUI.Win.dll
+D:\Project\SyBiruNew\Release\SyBiru.SUI.Win.dll
+D:\Project\SyBiruNew\Framework\SyBiru.SUI.Win\obj\Debug\SyBiru.SUI.Win.Resources.resources
+D:\Project\SyBiruNew\Framework\SyBiru.SUI.Win\obj\Debug\SyBiru.SUI.Win.dll
+D:\Project\SyBiruNew\Framework\SyBiru.SUI.Win\obj\Debug\SyBiru.SUI.Win.vbprojResolveAssemblyReference.cache
+D:\Project\SyBiruNew\Framework\SyBiru.SUI.Win\obj\Debug\SyBiru.SUI.Win.vbproj.GenerateResource.Cache
+D:\SyBiru 5.4\Release\SyBiru.SUI.Win.dll
+D:\SyBiru 5.4\Framework\SyBiru.SUI.Win\obj\Debug\ResolveAssemblyReference.cache
+D:\SyBiru 5.4\Framework\SyBiru.SUI.Win\obj\Debug\SyBiru.SUI.Win.Resources.resources
+D:\SyBiru 5.4\Framework\SyBiru.SUI.Win\obj\Debug\GenerateResource.read.1.tlog
+D:\SyBiru 5.4\Framework\SyBiru.SUI.Win\obj\Debug\GenerateResource.write.1.tlog
+D:\SyBiru 5.4\Framework\SyBiru.SUI.Win\obj\Debug\SyBiru.SUI.Win.dll

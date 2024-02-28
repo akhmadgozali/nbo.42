@@ -1,0 +1,8 @@
+D:\Project\SyBiruNew\Release\SyBiru.Sync.exe
+D:\Project\SyBiruNew\Framework\SyBiru.Sync\obj\x86\Debug\SyBiru.SUI.Win.Sync.Frm_Proses.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Sync\obj\x86\Debug\SyBiru.SUI.Win.Sync.Frm_Setting.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Sync\obj\x86\Debug\SyBiru.SUI.Win.Sync.Resources.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Sync\obj\x86\Debug\SyBiru.Sync.exe.licenses
+D:\Project\SyBiruNew\Framework\SyBiru.Sync\obj\x86\Debug\SyBiru.Sync.exe
+D:\Project\SyBiruNew\Framework\SyBiru.Sync\obj\x86\Debug\SyBiru.Sync.vbprojResolveAssemblyReference.cache
+D:\Project\SyBiruNew\Framework\SyBiru.Sync\obj\x86\Debug\SyBiru.Sync.vbproj.GenerateResource.Cache

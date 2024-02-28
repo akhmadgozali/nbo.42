@@ -1,0 +1,55 @@
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\SyBiru.Core.Win.Forms.FilterForm.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\SyBiru.Core.Win.Forms.TreeInput.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\SyBiru.Core.Win.Forms.YearMonthFilter.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\SyBiru.Core.Win.Forms.InputFilter.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\SyBiru.Core.Win.Forms.InputDialog.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\SyBiru.Core.Win.Forms.GridInput.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\SyBiru.Core.Win.Forms.DialogForm.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\SyBiru.Core.Win.Forms.GridBinding.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\SyBiru.Core.Win.Forms.Resources.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\GenerateResource.read.1.tlog
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\GenerateResource.write.1.tlog
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\SyBiru.Core.Win.Forms.dll.licenses
+D:\Project\SyBiruNew\Framework\SyBiru.Forms\obj\Debug\SyBiru.Core.Win.Forms.dll
+D:\Project\SyBiruNew\Release\SyBiru.Core.Win.Forms.dll
+D:\Project\SyBiruNew\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.FilterForm.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.TreeInput.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.YearMonthFilter.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.InputFilter.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.InputDialog.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.GridInput.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.DialogForm.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.GridBinding.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.dll.licenses
+D:\Project\SyBiruNew\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.dll
+D:\Project\SyBiruNew\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.vbprojResolveAssemblyReference.cache
+D:\Project\SyBiruNew\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.BlankForm.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.vbproj.GenerateResource.Cache
+D:\SyBiru 5.4\Release\SyBiru.Core.Win.Forms.dll
+D:\SyBiru 5.4\Framework\SyBiru.Core.Win.Forms\obj\Debug\ResolveAssemblyReference.cache
+D:\SyBiru 5.4\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.BlankForm.resources
+D:\SyBiru 5.4\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.FilterForm.resources
+D:\SyBiru 5.4\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.TreeInput.resources
+D:\SyBiru 5.4\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.YearMonthFilter.resources
+D:\SyBiru 5.4\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.InputFilter.resources
+D:\SyBiru 5.4\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.InputDialog.resources
+D:\SyBiru 5.4\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.GridInput.resources
+D:\SyBiru 5.4\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.DialogForm.resources
+D:\SyBiru 5.4\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.GridBinding.resources
+D:\SyBiru 5.4\Framework\SyBiru.Core.Win.Forms\obj\Debug\GenerateResource.read.1.tlog
+D:\SyBiru 5.4\Framework\SyBiru.Core.Win.Forms\obj\Debug\GenerateResource.write.1.tlog
+D:\SyBiru 5.4\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.dll.licenses
+D:\SyBiru 5.4\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.dll
+D:\Project\SyBiruNew\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.TreeBinding.resources
+D:\SyBiru 5.4\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.TreeBinding.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.InputBase.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.InputMDI.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Core.Win.Forms\obj\Debug\Resources.resources
+D:\SyBiru 5.4\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.InputBase.resources
+D:\SyBiru 5.4\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.InputMDI.resources
+D:\SyBiru 5.4\Framework\SyBiru.Core.Win.Forms\obj\Debug\Resources.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.GridOutput.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.TreeOutput.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.PivotOutput.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Core.Win.Forms\obj\Debug\SyBiru.Core.Win.Forms.ProsesDialog.resources

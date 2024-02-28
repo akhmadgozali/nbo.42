@@ -1,0 +1,10 @@
+D:\Project\SyBiruNew\Framework\SyBiru.Core.System\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\SyBiruNew\Framework\SyBiru.Core.System\obj\Debug\Resources.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Core.System\obj\Debug\GenerateResource.read.1.tlog
+D:\Project\SyBiruNew\Framework\SyBiru.Core.System\obj\Debug\GenerateResource.write.1.tlog
+D:\Project\SyBiruNew\Framework\SyBiru.Core.System\obj\Debug\SyBiru.Core.dll
+D:\Project\SyBiruNew\Release\SyBiru.Core.dll
+D:\Project\SyBiruNew\Framework\SyBiru.Core\obj\Debug\Resources.resources
+D:\Project\SyBiruNew\Framework\SyBiru.Core\obj\Debug\SyBiru.Core.dll
+D:\Project\SyBiruNew\Framework\SyBiru.Core\obj\Debug\SyBiru.Core.vbprojResolveAssemblyReference.cache
+D:\Project\SyBiruNew\Framework\SyBiru.Core\obj\Debug\SyBiru.Core.vbproj.GenerateResource.Cache
