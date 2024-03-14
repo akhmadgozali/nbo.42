@@ -51,11 +51,13 @@ Friend Class UI_BarangDialog
       txtUang.EditValue = Core.Win.Component.XtraLookUpEdit.GetFirstValue(txtUang)
 
       Dim dsSatuan = CType(txtSatuan.Properties.DataSource, XPCollection(Of NuSoft004.Persistent.Satuan))
-      If dsSatuan.Count > 0 Then
-        txtSatuan.EditValue = dsSatuan(0) 'Core.Win.Component.XtraLookUpEdit.GetFirstValue(txtSatuan)
-        txtSatuanDasar.EditValue = dsSatuan(0) 'Core.Win.Component.XtraLookUpEdit.GetFirstValue(txtSatuanDasar)
-      End If
-    Else
+			If dsSatuan.Count > 0 Then
+				txtSatuan.EditValue = dsSatuan(0) 'Core.Win.Component.XtraLookUpEdit.GetFirstValue(txtSatuan)
+				txtSatuanDasar.EditValue = dsSatuan(0) 'Core.Win.Component.XtraLookUpEdit.GetFirstValue(txtSatuanDasar)
+			End If
+
+			txtQtyBahanJadi.EditValue = 0.0
+		Else
       instance = session.GetObjectByKey(Of Persistent.Barang)(CType(IdToEdit, Int64))
       txtAktif.EditValue = instance.Aktif
       txtKode.EditValue = instance.Kode
@@ -99,6 +101,8 @@ Friend Class UI_BarangDialog
       txtCustom8.Text = instance.Custom8
       txtCustom9.Text = instance.Custom9
 			txtCustom10.Text = instance.Custom10
+			txtKodeBahanJadi.EditValue = instance.BahanJadiBarang
+			txtQtyBahanJadi.EditValue = instance.BahanJadiQty
 
 			'txtOD.Value = instance.OutDiameter
 			'txtID.Value = instance.InDiameter
@@ -162,6 +166,8 @@ Friend Class UI_BarangDialog
 		'instance.Length = txtLength.Value
 		instance.Custom1 = txtBarcode.Text
 
+		instance.BahanJadiBarang = CType(txtKodeBahanJadi.EditValue, Persistent.Barang)
+		instance.BahanJadiQty = CType(txtQtyBahanJadi.EditValue, Double)
 		instance.Save()
 		session.CommitChanges()
   End Sub
@@ -211,7 +217,8 @@ Friend Class UI_BarangDialog
     txtMerk.Properties.DataSource = New XPCollection(Of Persistent.Merk)(session)
 
     colGudangRepo.DataSource = New XPCollection(Of NuSoft004.Persistent.Gudang)(session)
-    colKodeBarangRepo.DataSource = New XPCollection(Of Persistent.Barang)(session)
+		colKodeBarangRepo.DataSource = New XPCollection(Of Persistent.Barang)(session)
+		txtKodeBahanJadi.Properties.DataSource = New XPCollection(Of Persistent.Barang)(session)
 		colSatuanRepo.DataSource = New XPCollection(Of Persistent.Satuan)(session)
 		If settinginventory.KunciSettingCOA = True Then
 			lytSettingAkuntansi.Enabled = False

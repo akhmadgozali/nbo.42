@@ -411,6 +411,8 @@ Namespace Persistent
     Private _custom8 As String
     Private _custom9 As String
 		Private _custom10 As String
+		Private _dbahanjadi As Barang
+		Private _dqtybahanjadi As Double
 		'Private _outDiameter As Decimal
 		'Private _inDiameter As Decimal
 		'Private _thickness As Decimal
@@ -759,6 +761,24 @@ Namespace Persistent
 			End Get
 			Set(value As String)
 				SetPropertyValue(Of String)("Custom10", _custom10, value)
+			End Set
+		End Property
+
+		<Persistent("d_bahanjadi")> Property BahanJadiBarang As Barang
+			Get
+				Return _dbahanjadi
+			End Get
+			Set(value As Barang)
+				SetPropertyValue(Of Barang)("BahanJadiBarang", _dbahanjadi, value)
+			End Set
+		End Property
+
+		<Persistent("d_bahanjadiqty")> Property BahanJadiQty As Double
+			Get
+				Return _dqtybahanjadi
+			End Get
+			Set(value As Double)
+				SetPropertyValue(Of Double)("BahanJadiQty", _dqtybahanjadi, value)
 			End Set
 		End Property
 		'<Persistent("d_od")> Property OutDiameter As Decimal

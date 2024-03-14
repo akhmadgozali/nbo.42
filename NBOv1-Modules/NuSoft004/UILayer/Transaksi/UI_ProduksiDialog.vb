@@ -124,6 +124,7 @@ Friend Class UI_ProduksiDialog
 			Next
 
 			editAssign = False
+			AllowSave = False
 		End If
 		'xGridView.ActiveFilterString = "[QtyOut]>0"
 		'xGridBahanJadiView.ActiveFilterString = "[QtyIn]>0"
@@ -149,6 +150,7 @@ Friend Class UI_ProduksiDialog
 			If NuSoft.Core.SSystem.User.GetPrivilegesMenu(MenuId, NamaDatabase).Edit = False Then
 				DisableControl()
 			End If
+			DisableControl()
 		End If
 	End Sub
 	Overrides Sub SimpanData()
@@ -714,14 +716,21 @@ Friend Class UI_ProduksiDialog
 		listBahanBaku = New BindingList(Of Persistent.StockDetailToSave)
 		listBahanJadi = New BindingList(Of Persistent.StockDetailToSave)
 
+
+		If xItem.BahanJadiBarang Is Nothing Then
+			Throw New Utils.Exception("Bahan jadi masih belum disetting, silahkan perbaiki terlebih dahulu.", 0, "", "Simpan Transaksi")
+			Exit Sub
+		End If
+
+
 		Dim xDtDetail As Persistent.StockDetailToSave
 		'bahan jadi
 		xDtDetail = New Persistent.StockDetailToSave
-		xDtDetail.Barang = xItem
+		xDtDetail.Barang = xItem.BahanJadiBarang
 		xDtDetail.Satuan = xDtDetail.Barang.Satuan
 		If xJumlah = 1 Then
-			If xItem.HargaJual5 > 1 Then
-				xDtDetail.QtyIn = xItem.HargaJual5
+			If xItem.BahanJadiQty > 1 Then
+				xDtDetail.QtyIn = xItem.BahanJadiQty
 			Else
 				xDtDetail.QtyIn = xJumlah
 			End If
